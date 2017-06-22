@@ -1,0 +1,20 @@
+# Naziv zadatka
+title: ?
+
+# Vremensko ogranicenje u sekundama, recimo 1.0
+timelimit: ?
+
+# Memorijsko ogranicenje u MB, recimo 64
+memlimit: ?
+
+# Ime i prezime autora zadatka (opciono)
+setter: ?
+
+# Ime i prezime autora editorijala (opciono)
+editorial: ?
+
+# Lista ljudi koji su doprineli zadatku (opciono)
+contributors: []
+
+# Izvor zadatka (opciono)
+origin: ?
