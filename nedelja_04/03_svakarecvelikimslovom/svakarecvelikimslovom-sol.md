@@ -1,0 +1,4 @@
+## Analiza
+Koristicemo funkciju getchar() da prodjemo kroz svaki karakter u tekstu koji korisnik unosi. Potrebna nam je jedna promenljiva u kojoj cemo pamtiti prethodno uneti karakter, jer se ovaj zadatak svodi na to da se malo slovo pretvori u veliko ako je pre tog slova unet razmak.
+Proveravamo da li je prvo karakter malo slovo, ukoliko jeste prebacujemo ga u veliko, i postavljamo ga kao prethodno uneto slovo(last=c).
+U while petlji, koja ce se vrtiti sve dok korisnik ne unese '\n' (enter), u kojoj cemo proci kroz ceo tekst, proveravamo da li je prethodni karakter razmak, ukoliko jeste, proveravamo da li je trenutni karakter malo slovo i prebacujemo ga u veliko ukoliko jeste(ukoliko nije, to znaci da je karakter ili veliko slovo ili razmak, pa nije potrebno vrsiti izmene nad njim). Ispisujemo trenutni karakter, i oznacavamo ga da kao poslednjeg(last=c). 
