@@ -39,7 +39,7 @@ Neki od specijalnih karaktera u funkciji printf:
 | \\r| vraća kursora na početak trenutnog reda|
 | \\a| oglašava biper|
 | \\"| ispisuje "|
-| \\ \\| ispisuje \\|
+| \\\\ | ispisuje \\ |
 | \\'| ispisuje '|
 | \\t| horizontalni tab|
 | \\v| vertikalni tab|
