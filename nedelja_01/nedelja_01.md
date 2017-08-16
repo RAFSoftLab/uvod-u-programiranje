@@ -35,14 +35,14 @@ Neki od specijalnih karaktera u funkciji printf:
 
 | Karakteri| Značenje|
 | :------------- | :------------- |
-| \n| prelazi u novi red|
-| \r| vraća kursora na početak trenutnog reda|
-| \a| oglašava biper|
+| \\n| prelazi u novi red|
+| \\r| vraća kursora na početak trenutnog reda|
+| \\a| oglašava biper|
 | \\"| ispisuje "|
-| \\\\| ispisuje \\|
-| \'| ispisuje '|
-| \t| horizontalni tab|
-| \v| vertikalni tab|
+| \\ \\| ispisuje \\|
+| \\'| ispisuje '|
+| \\t| horizontalni tab|
+| \\v| vertikalni tab|
 
 ## Funckija scanf
 
