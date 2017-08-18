@@ -1,5 +1,5 @@
 
-Napisati program kojim se izbacuje svako pojavljivanje cifre CF iz datog broja.
+Napisati program kojim se izbacuje svako pojavljivanje cifre CF iz datog broja N.
 
 ## Opis ulaza
 
