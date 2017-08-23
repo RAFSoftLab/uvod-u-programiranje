@@ -1,4 +1,4 @@
-Napisati program koji za zadatu dimenziju $N$, (`N > 0`)  crta jednakokraki trougao pomoću znakova `*` i praznog prostora.
+Napisati program koji za zadatu dimenziju $N$, (`N > 0`)  crta jednakokraki pravougli trougao pomoću znakova `*` i praznog prostora.
 
 ## Опис улаза
 
