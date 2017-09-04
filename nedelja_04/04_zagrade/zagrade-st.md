@@ -1,5 +1,5 @@
 
-Napisati program kojim se unosi tekst. Potrebno je izbaciti iz teksta zagrade i sve sto je u njima.
+Napisati program kojim se unosi tekst. Potrebno je izbaciti iz teksta zagrade i sve što je u njima.
 
 ## Opis ulaza
 
@@ -7,7 +7,7 @@ Napisati program kojim se unosi tekst. Potrebno je izbaciti iz teksta zagrade i 
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje se trazeni tekst.
+  - Na standardi izlaz ispisuje se traženi tekst.
 
 ## Primer 1
 
@@ -39,7 +39,7 @@ dskjd  vv
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik unosi tekst 'ab(cde)ef(g)' . Ukoliko se izbace zagrade, i karakteri koji se izmedju njih nalaze, dobija se tekst: abef, pa je to ono sto treba ispisati na standardnom izlazu.
+Prva linija standardnog ulaza označava da korisnik unosi tekst 'ab(cde)ef(g)' . Ukoliko se izbace zagrade, i karakteri koji se između njih nalaze, dobija se tekst: abef, pa je to ono sto treba ispisati na standardnom izlazu.
 
 ## Napomena
-Ne ocekivati slucajeve u kom su zagrade ugnjezdene-  (ab(cd)e)f.
+Ne očekivati slučajeve u kojima su zagrade ugnježdene-  (ab(cd)e)f.

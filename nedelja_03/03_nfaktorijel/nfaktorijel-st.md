@@ -1,5 +1,5 @@
 
-Napisati program koji izracunava n! .
+Napisati program koji izračunava n! .
 
 ## Opis ulaza
 
@@ -39,6 +39,6 @@ Napisati program koji izracunava n! .
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik zeli da izracuna 4!
+Prva linija standardnog ulaza označava da korisnik želi da izračuna 4!
 
-Posto je 1*2*3*4=24, na standradnom izlazu potrebno je ispisati broj 24.
+Pošto je 1*2*3*4=24, na standradnom izlazu potrebno je ispisati broj 24.

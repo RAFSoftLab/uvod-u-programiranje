@@ -1,6 +1,6 @@
 ## Analiza
 
-Ucitava se prirodan broj N. Potrebno je dodeliti promenljivoj broj vrednost 0 (zato sto je 0 neutral za operaciju sabiranja-ne utice na krajnu vrednost). Do-while petlja se koristi zato sto je sigurno da ce N imati makar jednu cifru. U ovoj petlji koja se vrti sve dok je N vece od 0, izracunavamo poslednju cifru broja N, i nju dodajemo na trenutnu vrednost promenljive broj, s tim sto cemo pre toga promenljivu broj pomnoziti sa 10, takodje cemo N podeliti sa 10, time oznacavamo da smo "prebacili poslednju cifru" broja N. Po zavrsetku petlje, potrebno je ispisati promenljuvu broj, koja predstavlja broj koji ima obrnute cifre u odnosu na broj N.
+Učitava se prirodan broj N. Potrebno je dodeliti promenljivoj broj vrednost 0 (zato sto je 0 neutral za operaciju sabiranja-ne utiče na krajnju vrednost). Do-while petlja se koristi zato što je sigurno da će N imati makar jednu cifru. U ovoj petlji koja se vrti sve dok je N veće od 0, izračunavamo poslednju cifru broja N, i nju dodajemo na trenutnu vrednost promenljive broj, s tim sto cemo pre toga promenljivu broj pomnožiti sa 10, takođe ćemo N podeliti sa 10, time označavamo da smo "prebacili poslednju cifru" broja N. Po završetku petlje, potrebno je ispisati promenljuvu broj, koja predstavlja broj koji ima obrnute cifre u odnosu na broj N.
 
 #### Simulacija
 

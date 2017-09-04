@@ -1,5 +1,5 @@
 
-Napisati program u kojem se izbacuju samoglasnici iz unetog teksta
+Napisati program u kojem se izbacuju samoglasnici iz unetog teksta.
 
 ## Opis ulaza
 
@@ -7,7 +7,7 @@ Napisati program u kojem se izbacuju samoglasnici iz unetog teksta
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje se uneti tekst bez velikih i malih samoglasnika
+  - Na standardi izlaz ispisuje se uneti tekst bez velikih i malih samoglasnika.
 
 ## Primer 1
 
@@ -39,4 +39,4 @@ Drg tsT prmR
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik unosi tekst "Ovo je prvI zAdatAk". Samoglasnici u ovom tekstu su redom: O,o,e,I,A,a,A. Ova slova ce biti izbacena iz unetog teksta, pa na standardnom izlazu treba ispisati "v j prv zdtk".
+Prva linija standardnog ulaza označava da korisnik unosi tekst "Ovo je prvI zAdatAk". Samoglasnici u ovom tekstu su redom: O,o,e,I,A,a,A. Ova slova će biti izbačena iz unetog teksta, pa na standardnom izlazu treba ispisati "v j prv zdtk".

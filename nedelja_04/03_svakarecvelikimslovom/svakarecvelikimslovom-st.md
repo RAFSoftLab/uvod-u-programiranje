@@ -1,5 +1,5 @@
 
-Napisati program kojim se ispisuje uneti tekst tako da svaka rec pocinje velikim slovom.
+Napisati program kojim se ispisuje uneti tekst tako da svaka reč počinje velikim slovom.
 
 ## Opis ulaza
 
@@ -7,7 +7,7 @@ Napisati program kojim se ispisuje uneti tekst tako da svaka rec pocinje velikim
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje se uneti tekst, tako da svaka rec pocinje velikim slovom.
+  - Na standardi izlaz ispisuje se uneti tekst, tako da svaka reč počinje velikim slovom.
 
 ## Primer 1
 
@@ -39,6 +39,6 @@ Pera Studira RAF
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik unosi tekst: "pera je odlican student". Reci u ovom tekstu su redom: pera, je, odlican, student. Svaka od ovih reci mora poceti velikim slovom, pa je na standardnom izlazu potrebno ispisati "Pera Je Odlican Student".
+Prva linija standardnog ulaza označava da korisnik unosi tekst: "pera je odlican student". Reči u ovom tekstu su redom: pera, je, odlican, student. Svaka od ovih reci mora početi velikim slovom, pa je na standardnom izlazu potrebno ispisati "Pera Je Odlican Student".
 ## Napomena
-Tekst moze poceti razmakom.
+Tekst moze početi razmakom.

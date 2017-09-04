@@ -7,7 +7,7 @@ Napisati program kojim se izbacuje svako pojavljivanje cifre CF iz datog broja N
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje se broj N u kom je izbaceno svo pojavljivanje cifre CF.
+  - Na standardi izlaz ispisuje se broj N koji ne sadrži cifru CF.
 
 ## Primer 1
 
@@ -39,4 +39,4 @@ Napisati program kojim se izbacuje svako pojavljivanje cifre CF iz datog broja N
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik zeli da izbaci svo pojavljivanje cifre 4 iz broja 12344567. Na standardnom izlazu potrebno je ispisati broj 123567.
+Prva linija standardnog ulaza označava da korisnik želi da izbaci svo pojavljivanje cifre 4 iz broja 12344567. Na standardnom izlazu potrebno je ispisati broj 123567.

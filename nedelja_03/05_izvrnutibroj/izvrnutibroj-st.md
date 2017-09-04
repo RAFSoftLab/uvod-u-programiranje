@@ -1,5 +1,5 @@
 
-Napisati program koji od unetog broja N ispisuje broj koji ima cifre kao broj N, samo u obrnutom redosledu. Primetiti da obrnuti broj nema vodecih nula.
+Napisati program koji od unetog broja N ispisuje broj koji ima cifre kao broj N, samo u obrnutom redosledu. Primetiti da obrnuti broj nema vodećih nula.
 
 ## Opis ulaza
 
@@ -39,4 +39,4 @@ Napisati program koji od unetog broja N ispisuje broj koji ima cifre kao broj N,
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik unosi broj 1234. Na standardnom izlazu potrebno je ispisati broj koji ima cifre u obrnutom redosledu, pa je to broj 4321.  
+Prva linija standardnog ulaza označava da korisnik unosi broj 1234. Na standardnom izlazu potrebno je ispisati broj koji ima cifre u obrnutom redosledu, pa je to broj 4321.  

@@ -1,14 +1,14 @@
 
-Napisati program koji pronalazi najveci od unetih n celih brojeva.
+Napisati program koji pronalazi najveći od unetih n celih brojeva.
 
 ## Opis ulaza
 
   - Preko standardnog ulaza korisnik unosi ceo broj N (N>0)
-  - U sledecih N linija korisnik unosi tacno jedan ceo broj preko standardnog ulaza(moguc je unos negativnih brojeva).
+  - U sledećih N linija korisnik unosi tačno jedan ceo broj preko standardnog ulaza(moguć je unos negativnih brojeva).
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje se najveci od unetih n celih brojeva.
+  - Na standardi izlaz ispisuje se najveći od unetih n celih brojeva.
 
 ## Primer 1
 
@@ -52,5 +52,5 @@ Napisati program koji pronalazi najveci od unetih n celih brojeva.
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik zeli da unese 5 brojeva. Potrebno je naci maksimum(najveci od njih).
-Posto je najveci uneti broj 7, potrebno je ispisati na standardnom izlazu broj 7.
+Prva linija standardnog ulaza označava da korisnik zeli da unese 5 brojeva. Potrebno je naći maksimum(najveći od njih).
+Posto je najveći uneti broj 7, potrebno je ispisati na standardnom izlazu broj 7.

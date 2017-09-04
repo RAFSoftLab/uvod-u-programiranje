@@ -1,5 +1,5 @@
 
-Napisati funkciju pom(int arg) koja vraca najvecu razliku izmedju susednih cifara argumenta (pretpostavimo da argument uvek ima bar dve cifre). Zatim ispisati sve brojeve iz intervala koji unosi korisnik a kojima je najveca razlika izmedju cifara manja od 3.
+Napisati funkciju pom(int arg) koja vraća najveću razliku između susednih cifara argumenta (pretpostavimo da argument uvek ima bar dve cifre). Zatim ispisati sve brojeve iz intervala koji unosi korisnik a kojima je najveća razlika između cifara manja od 3.
 
 ## Opis ulaza
 
@@ -7,7 +7,7 @@ Napisati funkciju pom(int arg) koja vraca najvecu razliku izmedju susednih cifar
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisati sve brojeve iz intervala [A,B] kojima je najveca razlika izmedju dve susedne cifre manja od 3
+  - Na standardi izlaz ispisati sve brojeve iz intervala [A,B] kojima je najveća razlika između dve susedne cifre manja od 3
 
 ## Primer 1
 
@@ -61,4 +61,4 @@ Napisati funkciju pom(int arg) koja vraca najvecu razliku izmedju susednih cifar
 
 ## Objasnjenje primera 1
 
-Prva linija standardnog ulaza oznacava da korisnik unosi A=20 i B=30. Brojevi 20, 21 22, 23, 24 zadovoljavaju uslov da je najveca razlika izmedju susednih cifara manja od 3.
+Prva linija standardnog ulaza označava da korisnik unosi A=20 i B=30. Brojevi 20, 21 22, 23, 24 zadovoljavaju uslov da je najveća razlika između susednih cifara manja od 3.
