@@ -3,11 +3,10 @@
 int main(){
     double tc, tk;
 
-    printf("Unesite vrednost temperature u Celzijusima: ");
     scanf("%lf", &tc);
 
     tk = tc + 273.15;
 
-    printf("%.1lfK\n", tk);
+    printf("%.1lf\n", tk);
     return 0;
 }

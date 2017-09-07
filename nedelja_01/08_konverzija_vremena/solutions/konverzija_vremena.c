@@ -5,7 +5,6 @@ int main(){
     int sati;
     int minuti;
 
-    printf("Unesite vremenski interval u sekundama: ");
     scanf("%d", &sekunde);
 
     sati = sekunde / 3600;
@@ -13,7 +12,7 @@ int main(){
     minuti = sekunde / 60;
     sekunde %= 60;
 
-    printf("%d %d %d\n", sati, minuti, sekunde);
+    printf("%d %d %d", sati, minuti, sekunde);
 
     return 0;
 }

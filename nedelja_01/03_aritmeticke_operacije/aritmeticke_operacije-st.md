@@ -19,5 +19,5 @@ Na standardni izlaz ispisuju su redom zbir, razlika, celobrojni količnik i osta
 ### Izlaz
 
 ~~~
-zbir 10, razlika 4, proizvod 21, kolicnik 2, ostatak 1
+10 4 21 2 1
 ~~~
