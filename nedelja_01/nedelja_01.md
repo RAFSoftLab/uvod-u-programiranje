@@ -26,7 +26,22 @@ printf("Zdravo!\n"); - ispis na konzolu jednog stringa (niz karaktera pod navodn
 
 *}* – kraj bloka u kom je implementirana funkcija main.
 
-U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što su blok naredbi, string, funkcija, biblioteka i svi ovi pojmovi biće detaljno objašnjenji u nastavku. 
+U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što su blok naredbi, string, funkcija, biblioteka i svi ovi pojmovi biće detaljno objašnjenji u nastavku.
+
+# Predstavljanje podataka u računaru
+
+Osnovna jedinica informacije u računaru je *bit* (skraćenica od engleske reči bynary digit) koji ima dve moguće vrednosti 1 ili 0 (odnosno tačno ili netačno, ili upaljeno i ugašeno). Kombincijom više bitova dobijamo složenije jedinice informacija na računarima, kao što je *bajt* koji sadrži 8 bitova. Veće količine informacija se u računaru predstavljaju preko *kilobajta* (skraćeno KB) koji sadrži 1024 bajtova, *megabajta* (skraćeno MB) koji sadrži 1024 kilobajta, *gigabajta* (1024 megabajtova) i *terabajta* (1024 gigabajta). 
+
+Svi podaci u račanuaru se na najnižem nivou predstavljaju preko bitova, odnosno 0 i 1, ali se oni interpretiraju i u programima koriste u obliku brojeva ili karaktera koji su čoveku prepoznatljivi. 
+
+# Brojevni sistemi
+
+Pored binarnog brojevnog sistema, u računarstvu se koriste još i sledeći brojevni sistemi:
+* decimalni ili dekadni je sistem sa osnovom 10 i to je sistem koji je nama poznat i koji svakodnevno koristimo, za predstavljanje brojeva koristi se 10 cifara, 0,1,2,..9, 
+* oktalni sistem je sistem sa osnovom 8, to su cifre 0,1,2,3,4,5,6,7, 
+* heksadecimalni sistem je sistem sa osnovom 16 i koristi sledeće vrednosti 0,1,2,3,4,5,6,7,8,9,A, B, C,D,E i F (mogu biti i mala slova). 
+
+
 
 # Tipovi podataka i promenljive
 
@@ -50,6 +65,34 @@ U programskom jeziku C postoje tri osnovna tipa podataka, to su:
 
 Složeni tipovi podataka se odnose na tipove koji nastaju kombinacijom jednog ili više prostih tipova na primer nizovi celih brojeva, nizovi karaktera, zatim strukture koje sadrže ceo broj i niz karaktera i sl. Postoji i specijalan tip podataka pod nazivom *void* koji predstavlja praznu, odnosno nepostojeću vrednost i koristi se najviše kod funkcija da označi da funkcija nema povratnu vrednost.  
 
+Tipovima podataka su vrsta podataka koji se mogu koristiti u programima i primeri u tabeli koristili konstantne vrednosti. Na primer podatak 'a' je podatak tipa char koji je konstanta i njegova vrednost se ne može menjati. Sa druge strane, ako želimo da koristimo podatke koji se mogu menjati u programima, na primer mogu se učitati od korisnika preko konzole ili im se u toku rada programa menja vrednost koristimo *promenljive*. 
+
+Promenljive predstavljaju podatke kojima se upravlja u programima. Promenljive mogu menjati vrednost u toku izvršavanja programa, otuda potiče reč promenljiva ili na engleskom variable. U najprostijem smislu to su imenovani delovi memorije kojima se pristupa u programu. Svaka promenljiva u C-u mora imati ime i definisan tip kojim je određena veličina u memoriji rezervisana za promenljivu kao i skup operacija koje se mogu vršiti nad promenljivom.  
+
+Imena promenljivih mogu sadržati cifre, slova i donju crticu, a moraju početi slovom ili donjom crticom. Mala i velika slova razlikuju u programskom jeziku C, odnosno da C ima osobinu case sensitive i ona se odnosi i na nazive promenljivih, to znači da su promenljive sa nazivima mojaPromenljiva i mojapromenljiva potpuno različite promenljive koje čak mogu biti i različitog tipa i odnose se na različita mesta u memoriji. Na osnovu imena u programu se pristupa promenljivoj i možemo saznati njenu trenutnu vrednost ili joj promeniti vrednost. 
+
+Svaka promenljiva koja se koristi u programu mora se prvo deklarisati. Deklaracija promenljive navodi se u obliku:
+tip lista_promenljivih;
+
+Primeri deklaracije promenljivih 
+
+```c
+int i, j, k;
+char c, ch;
+float duzina, sirina;
+double d;
+```
+Prvi red deklariše tri promenljive tipa int pod nazivom i, j i k. Drugi red deklariše dve promenljive tipa karakter sa nazivima c i ch. 
+
+Prilikom deklaracije promenljiva se može inicijalizovati, što znači može joj se dodeliti početna vrednost. Na primer:
+```c
+int i=0, j=1; 
+```
+Vrednost promenljive se može dodeliti i kasnije u programu, na primer:
+
+```c
+j=3;
+```
 
 # Funkcije printf i scanf
 
@@ -76,7 +119,7 @@ Za učitavanje znakova preko konzole koristi se funkcija scanf koja se poziva u 
 scanf(format_unosa, pokazivač_na_promenljivu1, pokazivač_na_promenljivu2...);
 ```
 
-Prvi argument funkcije scanf je niz izraza koji počinju znakom % i koji označavaju vrstu podataka koji se čitaju preko konzole. Ostali argumenti predstavljaju pokazivače na promenljive u koje će se smestiti učitane vrednosti. 
+Prvi argument funkcije scanf je niz izraza koji počinju znakom % i koji označavaju vrstu podataka koji se čitaju preko konzole, a koriste se iste oznake kao za ispis sa printf. Ostali argumenti predstavljaju pokazivače na promenljive u koje će se smestiti učitane vrednosti. 
 
 
 
