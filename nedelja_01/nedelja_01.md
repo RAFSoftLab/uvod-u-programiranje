@@ -33,7 +33,7 @@ U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što
 Svaki podatak u programu pripada određenom *tipu*. Primeri nekih tipova dati su u naredoj tabeli. 
 
 Podatak|Tip
------------
+-----------|---------
 'a'|	karakter
 5 |ceo broj
 "abc"|string (niz karaktera)
