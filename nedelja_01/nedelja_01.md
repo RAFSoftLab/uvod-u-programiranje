@@ -42,6 +42,7 @@ Podatak|Tip
 Tipovi podataka se mogu podeliti u dve grupe:
 * prosti ili osnovni tipovi podataka i
 * složeni tipovi podataka. 
+
 U programskom jeziku C postoje tri osnovna tipa podataka, to su:
 * int -  za predstavljanje celih brojeva,
 * float - za predstavljanje realnih brojeva,
