@@ -49,7 +49,7 @@ Osnovna slovna informacija u programima je *karakter*. Karakter se odnosi na slo
 
 Najpoznatiji sistem za predstavlajnje karaktera je *ASCII (American Standard Code for Information Interchange)*. ASCII standard predstavlja pravilo za preslikavanje karaktera na brojeve kojima se ti karakteri predstavljaju u računaru. To mapiranje predstavljano je tabelom koja je dostupna na http://www.asciitable.com/. 
 
-ASCII tabela ima 128 karaktera označeni brojevima od 0 do 127. Prvih 30-ak karaktera (od 0 do 31) u ASCII tabeli se ne štampa i predstavlja kontrolne karaktere. Mala slova engleske abecede predstavljena su redom od a do z brojevima 97 do 122 (u decimalnom brojevnom sistemu), velika slova su predstavlje takođe redom od 65 do 90, dok su cifre predstavljene brojevima od 48 do 57. Treba primetiti da je razlika između malog i velikog slova u tabeli ista za sva slova i iznosi 32, ova informacija se može koristiti uprogramima u kojima je potrebno pretvoriti malo slovo u veliko i obrnuto.  
+ASCII tabela ima 128 karaktera označeni brojevima od 0 do 127. Prvih 30-ak karaktera (od 0 do 31) u ASCII tabeli se ne štampa i predstavlja kontrolne karaktere. Mala slova engleske abecede predstavljena su redom od a do z brojevima 97 do 122 (u decimalnom brojevnom sistemu), velika slova su predstavljena takođe redom od 65 do 90, dok su cifre predstavljene brojevima od 48 do 57. Treba primetiti da je razlika između malog i velikog slova u tabeli ista za sva slova i iznosi 32, ova informacija se može koristiti uprogramima u kojima je potrebno pretvoriti malo slovo u veliko i obrnuto.  
 
 
 # Tipovi podataka
