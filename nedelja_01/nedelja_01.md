@@ -16,7 +16,9 @@ include <stdio.h> - uvoz potrebnih biblioteka iz okruženja (već gotovih konstr
 *main()* – definicija funkcije pod nazivom „main“ koja nema ulaznih parametara, što je označeno praznim zagradama
 
 *{* - početak bloka naredbi u kom je implementirana funkcija main
-printf("Zdravo!\n"); - ispis na konzolu jednog stringa (niz karaktera pod navodnicima), oznaka \n predstavlja oznaku za novi red. Funkcija printf je uvezena iz standardne biblioteke i prima kao ulazni parametar string koji će se ispisati. 
+printf("Zdravo!\n"); - ispis na konzolu jednog stringa (niz karaktera pod navodnicima), oznaka \n predstavlja oznaku za novi red. Funkcija printf je uvezena iz standardne biblioteke i prima kao ulazni parametar string koji će se ispisati.
+
+*return 0;* - povratna vrednost funkcije main(), ovde vraćamo broj nula koji označava pravilan izlazak iz programa, neki drugi broj (različit od 0) označava da program nije završen pravilno.  
 
 *}* – kraj bloka u kom je implementirana funkcija main.
 
