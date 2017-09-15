@@ -39,6 +39,15 @@ Podatak|Tip
 "abc"|string (niz karaktera)
 8.456|realan broj
 
+Tipovi podataka se mogu podeliti u dve grupe:
+* prosti ili osnovni tipovi podataka i
+* složeni tipovi podataka. 
+U programskom jeziku C postoje tri osnovna tipa podataka, to su:
+* int -  za predstavljanje celih brojeva,
+* float - za predstavljanje realnih brojeva,
+* char - za predstavljanje kataktera. 
+
+Složeni tipovi podataka se odnose na tipove koji nastaju kombinacijom jednog ili više prostih tipova na primer nizovi celih brojeva, nizovi karaktera, zatim strukture koje sadrže ceo broj i niz karaktera i sl. Postoji i specijalan tip podataka pod nazivom *void* koji predstavlja praznu, odnosno nepostojeću vrednost i koristi se najviše kod funkcija da označi da funkcija nema povratnu vrednost.  
 
 
 # Funkcije printf i scanf
