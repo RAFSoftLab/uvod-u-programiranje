@@ -1,6 +1,10 @@
 # Funkcija main
 
-Funkcija main je funkcija koja se izvršava kada se pokrene program. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sintaksa funkcije je:
+Funkcija main je funkcija koja se izvršava kada se pokrene program. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih parametara.  
+
+Funkcija main je posebna funkcija u programskom jeziku C, jer kada neki program pokrenemo izvršavaju se naredbe koje su napisane u ovoj funkciji. 
+
+Sintaksa funkcije main je:
 
 ```c
 #include <stdio.h>
@@ -22,6 +26,10 @@ printf("Zdravo!\n"); - ispis na konzolu jednog stringa (niz karaktera pod navodn
 
 *}* – kraj bloka u kom je implementirana funkcija main.
 
-U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što su blok narebi, string, funkcija, biblioteka i svi ovi pojmovi biće detaljno objašnjenji u nastavku. 
+U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što su blok naredbi, string, funkcija, biblioteka i svi ovi pojmovi biće detaljno objašnjenji u nastavku. 
 
 # Funkcije printf i scanf
+
+Programi koje ovde pravimo pisani su za *konzolu*. Konzola je jedan poseban računarski program koji je deo operativnog sistema preko koga je moguće vršiti komunikaciju sa programom ili operativnim sistemom bez grafičkog korisničkog interfejsa.  Preko konzole se komunikacija vrši samo korišćenjem tastature, i ona obuhvata ispis nekog teksta koji se prikazuje korisniku ili unos nekog teksta od strane korisnika programa.
+
+U programskom jeziku C postoje dve ugrađene funkcije koje ćemo za sada koristiti za komunikaciju preko konzolu, to su funkcija *printf* koaj se koristi za ispis na konzolu i funkcija *scanf* koja se koristi za učitavanje sa konzole. U primeru za funkciju main koristili smo funkciju printf za ispis pozdtava na konzolu. 
