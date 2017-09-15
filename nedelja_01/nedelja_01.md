@@ -41,6 +41,15 @@ Pored binarnog brojevnog sistema, u računarstvu se koriste još i sledeći broj
 * oktalni sistem je sistem sa osnovom 8, to su cifre 0,1,2,3,4,5,6,7, 
 * heksadecimalni sistem je sistem sa osnovom 16 i koristi sledeće vrednosti 0,1,2,3,4,5,6,7,8,9,A, B, C,D,E i F (mogu biti i mala slova). 
 
+# Predstavljanje karaktera i ASCII tabela
+
+Svi podaci se u računaru predstavljaju preko brojeva, otuda potiče naziv digitalni računar, od engleske reči digit koja znači cifru ili broj. Preko brojeva se predstavljaju celi i realni brojevi, ali i slova, boje, i drugo. 
+
+Osnovna slovna informacija u programima je *karakter*. Karakter se odnosi na slovo, cifru, znakove interpukcije, a postoje i karakteri koji se ne prikazuju kao što je na primer karakter koji označava kraj reda.
+
+Najpoznatiji sistem za predstavlajnje karaktera je *ASCII (American Standard Code for Information Interchange)*. ASCII standard predstavlja pravilo za preslikavanje karaktera na brojeve kojima se ti karakteri predstavljaju u računaru. To mapiranje predstavljano je tabelom koja je dostupna na http://www.asciitable.com/. 
+
+ASCII tabela ima 128 karaktera označeni brojevima od 0 do 127. Prvih 30-ak karaktera (od 0 do 31) u ASCII tabeli se ne štampa i predstavlja kontrolne karaktere. Mala slova engleske abecede predstavljena su redom od a do z brojevima 97 do 122 (u decimalnom brojevnom sistemu), velika slova su predstavlje takođe redom od 65 do 90, dok su cifre predstavljene brojevima od 48 do 57. Treba primetiti da je razlika između malog i velikog slova u tabeli ista za sva slova i iznosi 32, ova informacija se može koristiti uprogramima u kojima je potrebno pretvoriti malo slovo u veliko i obrnuto.  
 
 
 # Tipovi podataka i promenljive
@@ -108,7 +117,7 @@ printf(ispis, izraz1, izraz2,...)
 
 Prvi argument funkcije je niz znakova koji će se ispisati na konzolu, i on može sadržati specijalne znakove koji počenju znakom %, na primer %i, %d, %c, %s. Mesto gde se nalaze ovi znakovi će u rezultujućem ispisu biti popunjeno redom izrazima koji se navedeni kao argumenti funkcije printf (od drugog i dalje). Svaki oznaka koja počinje znakom % formatira ispis izraz na odgovarajući način, na primer %d ispisuje ceo broj u decimalnom brojevnom sistemu, a %x ispisuje ceo broj u heksadecimalnom brojevnom sistemu, %f ispisuje realan broj, a može se zadati i broj decimala koje će se ispisati, %c ispisuje karakter.  
 
-Na primer, sledeća poziv funkcije printf će isisati broj 500 prvo u decimalnom pa u heksadecimalnom formatu
+Na primer, sledeća poziv funkcije printf će ispisati broj 500 prvo u decimalnom pa u heksadecimalnom formatu
 
 ```c
 printf("Decimalni: %d, heksadecimalni: %x", 500, 500);
@@ -119,7 +128,26 @@ Za učitavanje znakova preko konzole koristi se funkcija scanf koja se poziva u 
 scanf(format_unosa, pokazivač_na_promenljivu1, pokazivač_na_promenljivu2...);
 ```
 
-Prvi argument funkcije scanf je niz izraza koji počinju znakom % i koji označavaju vrstu podataka koji se čitaju preko konzole, a koriste se iste oznake kao za ispis sa printf. Ostali argumenti predstavljaju pokazivače na promenljive u koje će se smestiti učitane vrednosti. 
+Prvi argument funkcije scanf je niz izraza koji počinju znakom % i koji označavaju vrstu podataka koji se čitaju preko konzole, a koriste se iste oznake kao za ispis sa printf. Ostali argumenti predstavljaju pokazivače na promenljive u koje će se smestiti učitane vrednosti. Pokazivače za sada treba shvatiti kao adrese promenljivih, a označavaju se početnim znakom & iza koga sledi ime promenljive. Promenljive koje se ovde nalaze moraju biti prethodno deklarisane u programu. 
 
+Sledi primer poziva funkcije scanf koja sa konzole učitava jedan ceo i jedan realan broj. 
+
+```c
+int br;
+float br1;
+char karakter;
+scanf("%d%f%c", &br, &br1,&karakter);
+```
+U navedenom primeru deklarišu se tri promenljive čije vrednosti će se učitati sa konzole korišćenjem funkcije scanf. 
+
+# Aritmetički operatori
+
+U programskom jeziku C dostupni su standradni binarni aritmetički operatori +, - , * , / i %. Operator / predtsvlja celobrojno deljenje ako se koristi sa tipom podataka int ili klasično deljenje ako se koristi sa tipom podataka float. Operator % daje ostatak pri deljenju i koristi se sa celim brojevima. 
+
+Pored binarnih operatora u programskom jeziku C dostupna su i dva unarna operatora to su uvećanja i umanjenja za 1 (++ i --) 
+
+Aritmetički opratori imaju prioritet izvršavanja, na primer množenje se izvršava pre sabiranja, slično  kao u matematici, a najveći prioritet imaju unarni operatori. 
+
+Jedna važna napomena odnosi se na operacije uvećanja i umanjenja za 1. Oznaka -- i ++, može se navesti pre (prefiksno navođenje) ili posle (sufiksno navođenje) oznake promenljive i ima različito značenje. Ukoliko se navede prefiksno, operacija se odmah izvršava i vrednost promenljive se menja u momentu poziva operacije, a ako se navede sufiksno u izrazu u kom se poziva operacija koristi se stara vrednost promenljive ali će se njena vrednost promeniti u sledećem pozivu. 
 
 
