@@ -52,7 +52,7 @@ Najpoznatiji sistem za predstavlajnje karaktera je *ASCII (American Standard Cod
 ASCII tabela ima 128 karaktera označeni brojevima od 0 do 127. Prvih 30-ak karaktera (od 0 do 31) u ASCII tabeli se ne štampa i predstavlja kontrolne karaktere. Mala slova engleske abecede predstavljena su redom od a do z brojevima 97 do 122 (u decimalnom brojevnom sistemu), velika slova su predstavlje takođe redom od 65 do 90, dok su cifre predstavljene brojevima od 48 do 57. Treba primetiti da je razlika između malog i velikog slova u tabeli ista za sva slova i iznosi 32, ova informacija se može koristiti uprogramima u kojima je potrebno pretvoriti malo slovo u veliko i obrnuto.  
 
 
-# Tipovi podataka i promenljive
+# Tipovi podataka
 
 Svaki podatak u programu pripada određenom *tipu*. Primeri nekih tipova dati su u naredoj tabeli. 
 
@@ -72,9 +72,15 @@ U programskom jeziku C postoje tri osnovna tipa podataka, to su:
 * float - za predstavljanje realnih brojeva,
 * char - za predstavljanje kataktera. 
 
-Složeni tipovi podataka se odnose na tipove koji nastaju kombinacijom jednog ili više prostih tipova na primer nizovi celih brojeva, nizovi karaktera, zatim strukture koje sadrže ceo broj i niz karaktera i sl. Postoji i specijalan tip podataka pod nazivom *void* koji predstavlja praznu, odnosno nepostojeću vrednost i koristi se najviše kod funkcija da označi da funkcija nema povratnu vrednost.  
+Složeni tipovi podataka se odnose na tipove koji nastaju kombinacijom jednog ili više prostih tipova na primer nizovi celih brojeva, nizovi karaktera, zatim strukture koje sadrže ceo broj i niz karaktera i sl. Postoji i specijalan tip podataka pod nazivom *void* koji predstavlja praznu, odnosno nepostojeću vrednost i koristi se najviše kod funkcija da označi da funkcija nema povratnu vrednost.
 
-Tipovima podataka su vrsta podataka koji se mogu koristiti u programima i primeri u tabeli koristili konstantne vrednosti. Na primer podatak 'a' je podatak tipa char koji je konstanta i njegova vrednost se ne može menjati. Sa druge strane, ako želimo da koristimo podatke koji se mogu menjati u programima, na primer mogu se učitati od korisnika preko konzole ili im se u toku rada programa menja vrednost koristimo *promenljive*. 
+Pored tipa podataka int celi brojevi se mogu predstaviti tipovima podataka short i long, a razlika između njih je samo u količini memorije (broju bajtova) koja se koristi za predstavljanje, a samim tim i u rasponu mogućih vrednosti. Od tipova podataka za predstavljanje celih brojeva najmanje memorijskog prostora zauzima short, zatim int i na kraju long. Ni jedan tip podataka ne može da predstavi sve cele brojeve, već samo brojeve u određenom opsegu.  
+
+Pored tipa float realni brojevi se u C-u mogu predstaviti tipovima double i long double. Dok tip float zauzima 4 bajta, double 8 bajtova, a long double najčešće 10 ili 12 bajtova. Tipovi podataka koji zauzimaju više memorije omogućavaju i veću preciznost predstavljanja broja i veći raspon mogućih vrednosti.
+
+# Promenljive
+
+Tipovi podataka su vrsta podataka koji se mogu koristiti u programima i mogu se odnositi na konstantne vrednosti. Na primer podatak 'a' je podatak tipa char koji je konstanta i njegova vrednost se ne može menjati. Sa druge strane, ako želimo da koristimo podatke koji se mogu menjati u programima, na primer mogu se učitati od korisnika preko konzole ili im se u toku rada programa menja vrednost koristimo *promenljive*. 
 
 Promenljive predstavljaju podatke kojima se upravlja u programima. Promenljive mogu menjati vrednost u toku izvršavanja programa, otuda potiče reč promenljiva ili na engleskom variable. U najprostijem smislu to su imenovani delovi memorije kojima se pristupa u programu. Svaka promenljiva u C-u mora imati ime i definisan tip kojim je određena veličina u memoriji rezervisana za promenljivu kao i skup operacija koje se mogu vršiti nad promenljivom.  
 
@@ -149,5 +155,19 @@ Pored binarnih operatora u programskom jeziku C dostupna su i dva unarna operato
 Aritmetički opratori imaju prioritet izvršavanja, na primer množenje se izvršava pre sabiranja, slično  kao u matematici, a najveći prioritet imaju unarni operatori. 
 
 Jedna važna napomena odnosi se na operacije uvećanja i umanjenja za 1. Oznaka -- i ++, može se navesti pre (prefiksno navođenje) ili posle (sufiksno navođenje) oznake promenljive i ima različito značenje. Ukoliko se navede prefiksno, operacija se odmah izvršava i vrednost promenljive se menja u momentu poziva operacije, a ako se navede sufiksno u izrazu u kom se poziva operacija koristi se stara vrednost promenljive ali će se njena vrednost promeniti u sledećem pozivu. 
+
+# Ugrađene funkcije kao operatori
+
+Pored operatora koje smo do sada videli i koji koriste specijalne simbole, svaki viši programski jezik ima veliki broj već gotovih ugrađenih funkcija koji mogu da odrade veliki broj korisnih operacija. P
+
+Jedna od ugrađenih funkcija je funkcija pow(a,n) koja računa stepen n-ti stepen broja a. Funkcija pow , kao i većina drugih funkcija dostupna je u biblioteci math.h i da bi se koristila potrebno je u zaglavlje programa dodati sledeću liniju:
+
+```c
+#include <math.h>
+```
+Još neke od korisnih funkcija iz biblioteke math.h su:
+* fabs(n) - vraća apsolutnu vrednost promenljive n,
+* sqrt(n) - vraća kvadratni koren promenljive n,
+* rand() - vraća slučajno generisani broj. 
 
 
