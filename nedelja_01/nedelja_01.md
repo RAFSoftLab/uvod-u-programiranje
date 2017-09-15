@@ -28,6 +28,19 @@ printf("Zdravo!\n"); - ispis na konzolu jednog stringa (niz karaktera pod navodn
 
 U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što su blok naredbi, string, funkcija, biblioteka i svi ovi pojmovi biće detaljno objašnjenji u nastavku. 
 
+# Tipovi podataka i promenljive
+
+Svaki podatak u programu pripada određenom *tipu*. Primeri nekih tipova dati su u naredoj tabeli. 
+
+Podatak|Tip
+-----------
+'a'|	karakter
+5 |ceo broj
+"abc"|string (niz karaktera)
+8.456|realan broj
+
+
+
 # Funkcije printf i scanf
 
 Programi koje ovde pravimo pisani su za *konzolu*. Konzola je jedan poseban računarski program koji je deo operativnog sistema preko koga je moguće vršiti komunikaciju sa programom ili operativnim sistemom bez grafičkog korisničkog interfejsa.  Preko konzole se komunikacija vrši samo korišćenjem tastature, i ona obuhvata ispis nekog teksta koji se prikazuje korisniku ili unos nekog teksta od strane korisnika programa.
@@ -40,8 +53,20 @@ Poziv funkcija printf ima sledeći oblik:
 printf(ispis, izraz1, izraz2,...)
 ```
 
-Prvi argument funkcije je niz znakova koji će se ispisati na konzolu, i on može sadržati specijalne znakove koji počenju znakom %, na primer %i, %d, %c, %s. Mesto gde se nalaze ovi znakove će u rezultujućem ispisu biti popunjeno redom izrazima koji se navedeni kao argumenti funkcije printf (od drugog i dalje). Svaki oznaka koja počinje znakom % formatira ispis izraz na odgovarajući način, na primer %d ispisuje ceo broj u decimalnom brojevnom sistemu, a %x ispisuje ceo broj u heksadecimalnom brojevnom sistemu, %f ispisuje realan broj, a može se zadati i broj decimala koje će se ispisati, %c ispisuje karakter.  
+Prvi argument funkcije je niz znakova koji će se ispisati na konzolu, i on može sadržati specijalne znakove koji počenju znakom %, na primer %i, %d, %c, %s. Mesto gde se nalaze ovi znakovi će u rezultujućem ispisu biti popunjeno redom izrazima koji se navedeni kao argumenti funkcije printf (od drugog i dalje). Svaki oznaka koja počinje znakom % formatira ispis izraz na odgovarajući način, na primer %d ispisuje ceo broj u decimalnom brojevnom sistemu, a %x ispisuje ceo broj u heksadecimalnom brojevnom sistemu, %f ispisuje realan broj, a može se zadati i broj decimala koje će se ispisati, %c ispisuje karakter.  
 
+Na primer, sledeća poziv funkcije printf će isisati broj 500 prvo u decimalnom pa u heksadecimalnom formatu
+
+```c
+printf("Decimalni: %d, heksadecimalni: %x", 500, 500);
+```
+Za učitavanje znakova preko konzole koristi se funkcija scanf koja se poziva u sledećem obliku:
+
+```c
+scanf(format_unosa, pokazivač_na_promenljivu1, pokazivač_na_promenljivu2...);
+```
+
+Prvi argument funkcije scanf je niz izraza koji počinju znakom % i koji označavaju vrstu podataka koji se čitaju preko konzole. Ostali argumenti predstavljaju pokazivače na promenljive u koje će se smestiti učitane vrednosti. 
 
 
 
