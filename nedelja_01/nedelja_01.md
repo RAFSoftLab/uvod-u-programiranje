@@ -1,6 +1,6 @@
 # Funkcija main
 
-Funkcija main je funkcija koja se izvršava kada se pokrene program. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih parametara.  
+Funkcija main je funkcija koja se izvršava kada se pokrene program. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih argumenata (parametara).  
 
 Funkcija main je posebna funkcija u programskom jeziku C, jer kada neki program pokrenemo izvršavaju se naredbe koje su napisane u ovoj funkciji. 
 
@@ -33,3 +33,15 @@ U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što
 Programi koje ovde pravimo pisani su za *konzolu*. Konzola je jedan poseban računarski program koji je deo operativnog sistema preko koga je moguće vršiti komunikaciju sa programom ili operativnim sistemom bez grafičkog korisničkog interfejsa.  Preko konzole se komunikacija vrši samo korišćenjem tastature, i ona obuhvata ispis nekog teksta koji se prikazuje korisniku ili unos nekog teksta od strane korisnika programa.
 
 U programskom jeziku C postoje dve ugrađene funkcije koje ćemo za sada koristiti za komunikaciju preko konzolu, to su funkcija *printf* koaj se koristi za ispis na konzolu i funkcija *scanf* koja se koristi za učitavanje sa konzole. U primeru za funkciju main koristili smo funkciju printf za ispis pozdrava na konzolu. 
+
+Poziv funkcija printf ima sledeći oblik:
+
+```c
+printf(ispis, izraz1, izraz2,...)
+```
+
+Prvi argument funkcije je niz znakova koji će se ispisati na konzolu, i on može sadržati specijalne znakove koji počenju znakom %, na primer %i, %d, %c, %s. Mesto gde se nalaze ovi znakove će u rezultujućem ispisu biti popunjeno redom izrazima koji se navedeni kao argumenti funkcije printf (od drugog i dalje). Svaki oznaka koja počinje znakom % formatira ispis izraz na odgovarajući način, na primer %d ispisuje ceo broj u decimalnom brojevnom sistemu, a %x ispisuje ceo broj u heksadecimalnom brojevnom sistemu, %f ispisuje realan broj, a može se zadati i broj decimala koje će se ispisati, %c ispisuje karakter.  
+
+
+
+
