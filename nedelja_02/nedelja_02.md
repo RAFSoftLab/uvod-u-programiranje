@@ -62,6 +62,70 @@ B = 0000 1101.
 |<<|šiftovanje bitova u levo, iza znaka se zadaje broj za koliko se bitovi pomeraju u levo, za upraznjena mesta upisuje se 0|A << 2 je 1111 0000|
 |>>|šiftovanje bitova u desno, iza znaka se zadaje broj za koliko se bitovi pomeraju u desno,  za upraznjena mesta upisuje se 0|A >> 2 je 0000 1111|
 
+## Prioritet izvršavanja operacija
+
+Programske konstrukcije i aritmetički izrazi mogu sadržati više operatora i postoji pravilo koje definiše redosled izvršavanja operacija. U donjoj tabeli prikazan je redosled prioriteta izvršavanja operatora. Operatori su poređani redom po prioritetu izvršavanja. 
+
+|Vrsta|Operator|
+|-----|--------|
+|Unarni|! ~ ++ --| 
+|Aritmetičke operacije množenje i deljenje|\* / %| 
+|Aritmetičke operacije sabiranje i oduzimanje|+ -|
+|Operacije sa bitovima|<< >>| 
+|Relacione operacije|< <= > >=| 
+|Relacione operacije|== !=| 
+|Operacije sa bitovima|&| 
+|Operacije sa bitovima|^| 
+|Operacije sa bitovima|\|| 
+|Logičko i|&&| 
+|Logičko ili|\|\|| 
+|Naredbe dodele|= += -= \*= /= %=>>= <<= &= ^= |=| 
+
+Prioritet izvršavanja objasnićemo na sledećem primeru. Posmatrajmo izraz
+```c
+a += b \* ++c - 5
+```
+Kako unarna operacija ++ ima najveći prioritet prvo će se vrednost promenljive c povećati za jedan, zatim će se izvršiti operacija množenja (\*), jer ima veći prioritet u odnosu na oduzimanje. Pošto operator oduzimanja ima veći prioritet nego operator dodele vrednosti += , prvo će se izvršiti oduzimanje, pa će se tek onda promenljivoj a dodati vrednost dobijenog izraza. 
+Prioritet izvršavanja operacija se može izmeniti korišćenjem zagrada ( i ). 
+Tako u prethodnom primeru možemo da promenimo da se oduzimanje vrši pre množenja dodavanjem zagrada na sledeći način:
+```c
+a += b \* (++c - 5)
+```
+## Naredbe grananja
+
+Jedan program predstavlja skup naredbi. Svaka naredba se u programskom jeziku C završava oznakom tačka-zarez. Program može biti sekvenca naredbi koje su se izvršavale redom jedna posle druge, međutim veliki broj zadataka koji se rešavaju programiranjem podrazumeva da se neke naredbe izvršavaju ili ne izvršavaju u zavisnosti od nekog uslova. U ovakvim slučajevima govorimo o nekoj vrsti grananja u programima i koristimo naredbe grananja. 
+
+Pretpostavimo da treba napraviti program koji učitava dva broja i ispisuje koji je veći. Tekstalni opis rešenja bi bio:
+
+```{r, eval = FALSE}
+učitamo brojeve a i b
+ako je a>b ispišemo a
+inače ispišemo b.
+```
+
+Ovo je jedan jednostavan primer grananja u programima koji je označen rečju ako je. 
+
+###if-else naredba
+
+Najčešći način za implementaciju grananja u programima je if-else naredba. 
+Implementacija zadatka koji pronalazi i ispisuje veći od dva broja u C-u bi izgledala ovako:
+
+```c
+int main()
+{
+    int a, b;
+    printf("Unesite prvi broj:");
+    scanf("%d", &a);
+    printf("Unesite drugi broj:");
+    scanf("%d", &b);
+    if(a>b){
+       printf("Veci broj je %d", a);
+    }else{
+       printf("Veci broj je %d", b);
+    }
+    return 0;
+}
+```
 
 
 
