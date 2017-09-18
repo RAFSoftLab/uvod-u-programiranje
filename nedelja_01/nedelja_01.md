@@ -169,4 +169,10 @@ Još neke od korisnih funkcija iz biblioteke math.h su:
 * pow(x,n) - vraća n-ti stepen broja x
 * rand() - vraća slučajno generisani broj. 
 
+## Operatori dodele vrednosti
+
+Operatori dodele vrednosti postavljaju vrednost promenljive. Osnovni operator dodele je znak =, ali se on može kombinovati sa ostalim aritmetičkim operacijama kako bi se kraće zapisale često korišćene operacije. 
+Tako na primer imamo operator dodele += koji na promenljivu sa leve strane dodaje vrednost sa desne, na primer C += A je isto kao da smo zapisali C = C + A. 
+Pored sabiranja, operatori dodele se mogu kombinovati i sa drugim aritmetičkim operacijama i tako dobijamo sledeće operatore dodele vrednosti  -=, %=, /=, \*= i slično.  
+
 
