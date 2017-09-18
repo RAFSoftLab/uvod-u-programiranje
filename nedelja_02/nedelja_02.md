@@ -8,7 +8,7 @@ Relacioni operatori u programskom jeziku se dati su u tabeli.
 |---------|-----|----------|
 |==|proverava da li su dva operanda jednaka i vraća tačno ako jesu, inače vraća netačno|(A == B) je 0|
 |!=|proverava da li su dva operanda različita i vraća tačno ako jesu, inače vraća netačno|(A != B) je 1| 
-|>|proverava da li je vrednost levog operanda veća i vraća tačno ako jeste|(A > B) je tačno|
+|>|proverava da li je vrednost levog operanda veća i vraća tačno ako jeste|(A > B) je 1|
 |<|proverava da li je vrednost levog operanda manja i vraća tačno ako jeste|(A < B) je 0|
 |>=|proverava da li je vrednost levog operanda veća ili jednaka i vraća tačno ako jeste|(A >= B) je 1|
 |<=|proverava da li je vrednost levog operanda manja ili jednaka vraća tačno ako jeste|(A <= B) je 0|
