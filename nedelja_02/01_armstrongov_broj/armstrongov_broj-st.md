@@ -1,4 +1,4 @@
-Napisati program koji za uneti troficreni broj proverava da li je armstrongov. Broj je armstrongov ako je jednak zbiru kubova svojih cifara. Npr. 371 = 3<sup>3</sup> + 7<sup>3</sup> + 1<sup>3</sup>
+Napisati program koji za uneti troficreni broj proverava da li je armstrongov. Broj je armstrongov ako je jednak zbiru kubova svojih cifara. **Primer: 371 = 3<sup>3</sup> + 7<sup>3</sup> + 1<sup>3</sup>**
 
 ## Opis ulaza
 
