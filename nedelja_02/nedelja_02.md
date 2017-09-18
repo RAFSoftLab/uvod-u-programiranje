@@ -131,9 +131,9 @@ Sintaksa if naredbe je sledeća
 
 ```{r, eval = FALSE}
 if(uslov){
-blok naredbi koje će se izvršiti ako je uslov tačan (if grana)
+  blok naredbi koje će se izvršiti ako je uslov tačan (if grana)
 }else{
-blok naredbi koje će se izvršiti ako uslov nije tačan (else grana)
+  blok naredbi koje će se izvršiti ako uslov nije tačan (else grana)
 }
 ```
 
