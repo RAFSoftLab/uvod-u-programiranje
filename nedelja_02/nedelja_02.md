@@ -108,7 +108,7 @@ Ovo je jedan jednostavan primer grananja u programima koji je označen rečju ak
 ## if-else naredba
 
 Najčešći način za implementaciju grananja u programima je if-else naredba. 
-Implementacija zadatka koji pronalazi i ispisuje veći od dva broja u C-u bi izgledala ovako:
+Implementacija zadatka koji u;itava dva broja i ispisuje koji je veći u C-u bi izgledala ovako:
 
 ```c
 int main()
