@@ -1,0 +1,2 @@
+## Analiza
+Ucitava se ceo brojevi N. Zatim se u for petlji (koja se vrti N puta) ucitava tacno jedan ceo broj. Tokom unosa, brojevi se smeštaju u binarno stablo pretrage korišćenjem funkcije insert. Ukoliko stablo ne sadrži čvorove, visina je 0. U suprotnom visina je jednaka maksimalnoj vrednosti visina levog podstabla, odnosno, desnog podstabla, uvećana za jedan.
