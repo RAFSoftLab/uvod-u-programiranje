@@ -6,8 +6,26 @@ U C-u postoje tri naredbe kojima se mogu implementirati programi sa cikličnom s
 
 * for
 * while
-* do...while. 
+* do..while. 
 
-Svaka od ovih naredbi omogućava nam da implementirao ponavljanje bloka naredbi. Jedno izvršavanje bloka naredbi u okviru petlje naziva se *iteracija. 
+Svaka od ovih naredbi omogućava nam da implementirao ponavljanje bloka naredbi. Jedno izvršavanje bloka naredbi u okviru petlje naziva se iteracija. 
+
+
+## Naredba for
+
+Sintaksa for naredbe je 
+
+```{r, eval = FALSE}
+for(inicijalizacija; uslov; inkrementacija){
+	blok naredbi
+}
+```
+
+Dijagram toka koji ilustruje način izvršavanja for naredbe. 
+
+
+
+
+Prvo se izvrši inicijalizacija, i zatim se proverava uslov. Ukoliko je njegova vrednost tačna (odnosno u C-u veća od 0), ulazi se u blok naredni koji je naveden u petlji. Kada se izvrše sve naredbe izvršava se inkrementacija i tok programa se vraća na ponovno ispitivanje uslova. Opisani proces se ponavlja sve dok je ispunjen uslov. Ako uslov nije ispunjen izlazi se iz petlje i nastavlja se sa izvršavanjem naredbi koje su navedene posle for petlje. Deo za inkrementaciju najčešće menja vrednost promenljive koja se pojavljuje u uslovu.   
 
 
