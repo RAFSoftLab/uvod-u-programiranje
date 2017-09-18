@@ -1,8 +1,6 @@
 # Funkcija main
 
-Funkcija main je funkcija koja se izvršava kada se pokrene program. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih argumenata (parametara).  
-
-Funkcija main je posebna funkcija u programskom jeziku C, jer kada neki program pokrenemo izvršavaju se naredbe koje su napisane u ovoj funkciji. 
+Funkcija main je posebna funkcija u programskom jeziku C, jer kada neki program pokrenemo izvršavaju se naredbe koje su napisane u ovoj funkciji. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih argumenata (parametara).  
 
 Sintaksa funkcije main je:
 
@@ -166,8 +164,9 @@ Jedna od ugrađenih funkcija je funkcija pow(a,n) koja računa stepen n-ti stepe
 #include <math.h>
 ```
 Još neke od korisnih funkcija iz biblioteke math.h su:
-* fabs(n) - vraća apsolutnu vrednost promenljive n,
+* abs(n) - vraća apsolutnu vrednost promenljive n,
 * sqrt(n) - vraća kvadratni koren promenljive n,
+* pow(x,n) - vraća n-ti stepen broja x
 * rand() - vraća slučajno generisani broj. 
 
 
