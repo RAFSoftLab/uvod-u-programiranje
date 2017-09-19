@@ -140,8 +140,56 @@ Zbog prirode do..while naredbe korisniku će se zahtev ispisati barem jednom, na
 
 Postoje dve ugrađene naredbe koje mogu da promene tok izvršavanja petlji i mogu se koristiti u kombinaciji sa bilo kojom od tri navedene naredbe ponavljanja. 
 
-Prva je naredba break, koja prekida proces izvršavanja petlje, a druga je naredba continue koja prekida izvršavanje jedne iteracije petlje.  
+Prva je naredba break, koja prekida proces izvršavanja petlje, a druga je naredba continue koja prekida izvršavanje jedne iteracije petlje.
 
+Zadatak sa učitavanjem broja koji je deljiv sa 3 koji smo prethodno uradili korišćenjem do..while naredbe može se implementirati korišćenjem while petlje i naredbe break: 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int broj;
+    while(1){
+        printf("unesite broj deljiv sa tri: \n");
+        scanf("%i", &broj);
+        if(broj%3==0)
+            break;
+    }
+    printf("%i / 3 = %i", broj, broj/3);
+    return 0;
+}
+```
+Ovde smo izabrali da napravimo beskonačnu petlju (uslov za naredbu while je uvek tačan), ali čim dobijemo odgovarajući broj izlazimo iz petlje naredbom break i program nastavlja sa naredbom posle while-a, odnosno ispisuje rezultat deljenja unetog broja sa 3.
+
+
+Naredba continue se može ilustrovati na primeru programa koji sabira 10 brojeva koje unosi korisnik, ali preskača negativne brojeve. 
+
+```c
+# include <stdio.h>
+int main()
+{
+    int i;
+    double broj, suma = 0.0;
+    for(i=1; i <= 10; ++i){
+        printf("Unesite broj %d: ",i);
+        scanf("%lf",&broj);
+        // ako korisnik unese negativan broj, preskacemo ga
+        if(broj < 0.0){
+            continue;
+        }
+        suma += broj;
+    }
+    printf("Suma = %.2lf",suma);
+    return 0;
+}
+```
+
+Imamo for petlju koja će imati deset iteracija, u svakoj iteraciji učitavamo broj od korisnika i ako korisnik unese negativan broj naredbom continue prelazimo na sledeću iteraciju, odnosno preskačemo naredbu koja sabira uneti broj sa trenutnom sumom. 
+
+
+## Uvod u funkcije
 
 
 
