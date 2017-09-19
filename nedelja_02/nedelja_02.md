@@ -108,7 +108,7 @@ Ovo je jedan jednostavan primer grananja u programima koji je označen rečju ak
 ## if-else naredba
 
 Najčešći način za implementaciju grananja u programima je if-else naredba. 
-Implementacija zadatka koji u;itava dva broja i ispisuje koji je veći u C-u bi izgledala ovako:
+Implementacija zadatka koji učitava dva broja i ispisuje koji je veći u C-u bi izgledala ovako:
 
 ```c
 int main()
@@ -197,13 +197,13 @@ int main()
 ```
 ## Ternarni uslovni operator
 
-Još jedan način grananja u C-u je korišćenjem posebnog operatora koji ima sledeću sintaksu:
+Još jedan način grananja u C-u je korišćenjem ternarnog uslovnog operatora koji ima sledeću sintaksu:
 
 ```{r, eval = FALSE}
 Izraz1 ? Izraz2 : Izraz3;
 ```
 
-Vrednost izračunavanja operatora se dobija tako što se prvo izračuna vrednost izraza Izraz1 i ako je njegova vrednost tačno, kao rezultat operacije uzima se Izraz2, ako je vrednost netačna, rezultat je Izraz3. 
+Vrednost izračunavanja operatora se dobija tako što se prvo izračuna vrednost izraza Izraz1 i ako je njegova vrednost tačno (odnosno u C-u veća od nule), kao rezultat operacije uzima se Izraz2, ako je vrednost netačna, rezultat je Izraz3. 
 
 Na primer, ako posmatramo sledeći niz naredbi
 
