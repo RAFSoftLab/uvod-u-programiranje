@@ -71,8 +71,8 @@ Prvo se proverava ispunjenje zadatog uslova, ukoliko je uslov ispunjen, izvršav
 Primer kojim ćemo ilustrovati while naredbu je primer izračunavanja faktorijela za neki broj koji unosi korisnik. Faktorijel nekog broja se računa na sledeći način:
 
 ```{r, eval = FALSE}
-0! = 1;
-n! = n\*(n-1)\*(n-2)\*...\*1.
+0! = 1
+n! = n\*(n-1)\*(n-2)\*...\*1
 ```
 
 Implementacija ovog programa korišćenjem while naredbe: 
@@ -201,6 +201,52 @@ Imamo for petlju koja će imati deset iteracija, u svakoj iteraciji učitavamo b
 
 
 ## Uvod u funkcije
+
+Pojam funkcija je jedan od najznačajnijih pojmova u programiranju bez kog je teško zamisliti bilo koji ozbiljniji program. Funkcija se može opisati kao imenovani blok naredbi kojima se implementira neki zadatak. Ovakav imenovani blok naredbi se može pozvati više puta bez potrebe da se ponovo navode iste naredbe. Korišćenjem funkcija moguće je izvršiti dekompoziciju i bolju organizaciju programskog koda.
+Postoje veliki broj već gotovih funkcija koje uvozimo iz različitih biblioteka, neke od njih smo videli: rand(), scanf(), printf(). Iza svakog od ovih naziva krije se blok naredbi koje je neko implementirao.
+
+Deklaracija funkcije ima sledeći oblik
+
+```{r, eval = FALSE}
+tip_povratne_vrednosti  ime_funkcije(lista parametara){
+	blok naredbi
+}
+```
+
+Funkcija može da vrati neku vrednost i u tom slučaju se pre imena funkcije navodi tip vrednosti koju funkcija vraća. Ukoliko se navede tip povratne vrednosti funkcija mora u svakoj grani izvršavanja da vrati vrednost tog tipa. Ukoliko funkcija ne vraća ništa za tip povratne vrednosti stavlja se reč void.
+
+Lista parametara sadrži spisak ulaznih podataka u funkciju. Svaki parametar se navodi kao par tip i naziv parametra, a parametri se razdvajaju zarezom. 
+
+Funkcija se poziva na osnovu svog imena, a za parametre funkcije se prosleđuju konkretne vrednosti. Ako funkcija vraća neku vrednost, pri pozivu funkcije se povratna vrednost mora dodeliti nekoj promenljivoj da bi ostala sačuvana.
+
+Primer funkcije koja vraća maksimum dva zadata broja i njen poziv u funkciji main: 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int maxOfTwo(int num1, int num2){
+    int result;
+    if(num1>num2)
+       result = num1;
+    else
+       result = num2;
+    return result;
+}
+
+int main()
+{
+   int a = 100;
+   int b = 200;
+   int ret;
+   ret = maxOfTwo(a, b);
+   printf( "Maksimalna vrednost je : %d\n", ret );
+   return 0;
+}
+```
+Naziv funkcije je maxOfTwo i funkcija vraća podatak koji je tipa int, a prima dva parametra, num1 i num2 koji su takođe tipa int. Ovi parametri se sa zadatim imenima koriste u telu funkcije, a u funkciji se mogu definisati i lokalne promenljive, kao što je u ovom slučaju promenljiva result.
+
+
 
 
 
