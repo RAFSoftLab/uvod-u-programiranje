@@ -23,7 +23,7 @@ for(inicijalizacija; uslov; inkrementacija){
 
 Dijagram toka koji ilustruje način izvršavanja for naredbe: 
 
-![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/for-blok%20dijagram.jpg)
+![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/slike/for-blok%20dijagram.jpg)
 
 
 Prvo se izvrši inicijalizacija, i zatim se proverava uslov. Ukoliko je njegova vrednost tačna (odnosno u C-u veća od 0), ulazi se u blok naredni koji je naveden u petlji. Kada se izvrše sve naredbe izvršava se inkrementacija i tok programa se vraća na ponovno ispitivanje uslova. Opisani proces se ponavlja sve dok je ispunjen uslov. Ako uslov nije ispunjen izlazi se iz petlje i nastavlja se sa izvršavanjem naredbi koje su navedene posle for petlje. Deo za inkrementaciju najčešće menja vrednost promenljive koja se pojavljuje u uslovu.   
@@ -64,7 +64,7 @@ while (uslov){
 
 Dijagram toka koji ilustruje izvršavanje while naredbe:
 
-![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/while-blok%20dijagram.jpg)
+![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/slike/while-blok%20dijagram.jpg)
 
 Prvo se proverava ispunjenje zadatog uslova, ukoliko je uslov ispunjen, izvršava se blok naredbi i ide se ponovo na proveru uslova. Ukoliko uslov nije ispunjen izlazi se iz while petlje i nastavlja sa izvršavanjem naredbi koje su navedene posle while naredbe. Ovde možemo zaključiti da se blok naredbi u while-u ne mora izvršiti ni jednom. Uslov while naredbe je logičkog tipa, odnosno u C-u celobrojnog tipa. 
 
@@ -110,7 +110,7 @@ do{
 ```
 Dijagram toka koji ilustruje izvršavanje naredbe do...while:
 
-![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/dowhile-blok%20dijagram.jpg)
+![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/slike/dowhile-blok%20dijagram.jpg)
 
 Naredba se izvršava tako što se prvo izvrši blok naredbi, nakon čega se proverava ispunjenost uslova. Ukoliko je ispunjen uslov, ponovo se izvršava blok naredbi, ukoliko uslov nije ispunjen izlazi se iz petlje i nastavlja se sa izvršavanjem naredbi koje su navedene posle do..while naredbe. Osnovna razlika između naredbi while i do..while je što će se kod naredbe do..while blok naredbi sigurno izvršiti barem jednom.   
 
@@ -142,6 +142,12 @@ Postoje dve ugrađene naredbe koje mogu da promene tok izvršavanja petlji i mog
 
 Prva je naredba break, koja prekida proces izvršavanja petlje, a druga je naredba continue koja prekida izvršavanje jedne iteracije petlje.
 
+Način na koji naredba break funkcioniše ako se pozove u petlji može se ilustovati na sledeći način
+
+![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/slike/break.jpg)
+
+Ovde se naredba break koristi u while petlji, ali na isti način se može pozvati i sa ostalim naredbama ponavljanja. Ako se toku izvršavanja petlje u određenoj grani pozove naredba break, na tom mestu se prekida izvršavanje petlje i prelazi se na sledeću naredbu posle petlje. 
+
 Zadatak sa učitavanjem broja koji je deljiv sa 3 koji smo prethodno uradili korišćenjem do..while naredbe može se implementirati korišćenjem while petlje i naredbe break: 
 
 ```c
@@ -163,8 +169,13 @@ int main()
 ```
 Ovde smo izabrali da napravimo beskonačnu petlju (uslov za naredbu while je uvek tačan), ali čim dobijemo odgovarajući broj izlazimo iz petlje naredbom break i program nastavlja sa naredbom posle while-a, odnosno ispisuje rezultat deljenja unetog broja sa 3.
 
+Naredba continue ne prekida celu petlju već trenutnu iteraciju i može se ilustrovati na sledeći način
 
-Naredba continue se može ilustrovati na primeru programa koji sabira 10 brojeva koje unosi korisnik, ali preskača negativne brojeve. 
+![alt text](https://github.com/RAFSoftLab/uvod-u-programiranje/blob/master/nedelja_03/slike/continue.jpg)
+
+Kada se u toku izvršavanje petlje u nekoj grani programa naiđe na naredbu continue, prekida se izvršavanje trenutne iteracije, odnosno preskaču se naredbe u bloku naredbi 2 i tok izvršavanja programa vraća se na ispitivanje uslova za sledeću iteraciju petlje (for, while ili do..while). Ukoliko je uslov ispunjen, izvršava se sledeća iteracija petlje. 
+
+Naredba continue se može iskoristiti u implementaciji programa koji sabira 10 brojeva koje unosi korisnik, ali preskača negativne brojeve. 
 
 ```c
 # include <stdio.h>
