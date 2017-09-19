@@ -225,26 +225,30 @@ Primer funkcije koja vraća maksimum dva zadata broja i njen poziv u funkciji ma
 #include <stdio.h>
 #include <stdlib.h>
 
-int maxOfTwo(int num1, int num2){
-    int result;
-    if(num1>num2)
-       result = num1;
+int maksimumDvaBroja(int broj1, int broj2){
+    int rezultat;
+    if(broj1>broj2)
+       rezultat = broj1;
     else
-       result = num2;
-    return result;
+       rezultat = broj2;
+    return rezultat;
 }
 
 int main()
 {
    int a = 100;
    int b = 200;
-   int ret;
-   ret = maxOfTwo(a, b);
-   printf( "Maksimalna vrednost je : %d\n", ret );
+   int rez;
+   rez = maksimumDvaBroja(a, b);   // poziv funkcije i smestanje rezultata u promenljivu rez
+   printf( "Maksimalna vrednost je : %d\n", rez );
    return 0;
 }
 ```
-Naziv funkcije je maxOfTwo i funkcija vraća podatak koji je tipa int, a prima dva parametra, num1 i num2 koji su takođe tipa int. Ovi parametri se sa zadatim imenima koriste u telu funkcije, a u funkciji se mogu definisati i lokalne promenljive, kao što je u ovom slučaju promenljiva result.
+Naziv funkcije je maksimumDvaBroja i funkcija vraća podatak koji je tipa int, a prima dva parametra, broj1 i broj2. Ovi parametri se sa zadatim imenima koriste u telu funkcije, a u funkciji se mogu definisati i lokalne promenljive, kao što je u ovom slučaju promenljiva rezultat. Promenljiva rezultat je vrednost koja se prosleđuje kao rezultat izvršavanja funkcije pozivom naredbe return. 
+
+Kada se funkcija poziva u funkciji main, potrebno je proslediti konkretne vrednosti za sve ulazne parametre funkcije, a tip prosleđenih vrednosti mora se poklapati sa tipovima ulaznih parametara u definiciji funkcije. Pošto funkcija vraća vrednost tipa int, prilikom poziva funkcije povratnu vrednost smo dodelili promenljivoj rez.  
+
+
 
 
 
