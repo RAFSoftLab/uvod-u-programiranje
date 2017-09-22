@@ -1,20 +1,12 @@
-# Naziv zadatka
-title: Kolokvijum 2016 1.zadatak 1.grupa 
-
-# Vremensko ogranicenje u sekundama
+---
+title: Kolokvijum 2016. 1.zadatak 1.grupa
 timelimit: 1.0
-
-# Memorijsko ogranicenje u MB
 memlimit: 64
-
-# Autor zadatka (opciono)
-setter: RAF
-
-# Autor editorijala (opciono)
-editorial: RAF
-
-# Lista ljudi koji su doprineli zadatku (opciono)
-contributors: [Stefan Burgic]
-
-# Izvor zadatka (opciono)
+owner: RAF
 origin: RAF
+tags: []
+solutions:
+    c: Rešenje (C)
+status: KANDIDAT
+status-od: 2017-10-01
+---

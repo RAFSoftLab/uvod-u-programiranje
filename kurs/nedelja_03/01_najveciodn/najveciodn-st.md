@@ -8,7 +8,7 @@ Napisati program koji pronalazi najveći od unetih n celih brojeva.
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje se najveći od unetih n celih brojeva.
+  - Na standardi izlaz ispisuje se najveći od unetih N celih brojeva.
 
 ## Primer 1
 
