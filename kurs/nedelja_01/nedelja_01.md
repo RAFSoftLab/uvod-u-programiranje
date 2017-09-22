@@ -1,3 +1,8 @@
+---
+title: ?
+author: RAF
+---
+
 ## Funkcija main
 
 Funkcija main je posebna funkcija u programskom jeziku C, jer kada neki program pokrenemo izvršavaju se naredbe koje su napisane u ovoj funkciji. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih argumenata (parametara).  
@@ -28,31 +33,31 @@ U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što
 
 ## Predstavljanje podataka u računaru
 
-Osnovna jedinica informacije u računaru je *bit* (skraćenica od engleske reči bynary digit) koji ima dve moguće vrednosti 1 ili 0 (odnosno tačno ili netačno, ili upaljeno i ugašeno). Kombincijom više bitova dobijamo složenije jedinice informacija na računarima, kao što je *bajt* koji sadrži 8 bitova. Veće količine informacija se u računaru predstavljaju preko *kilobajta* (skraćeno KB) koji sadrži 1024 bajtova, *megabajta* (skraćeno MB) koji sadrži 1024 kilobajta, *gigabajta* (1024 megabajtova) i *terabajta* (1024 gigabajta). 
+Osnovna jedinica informacije u računaru je *bit* (skraćenica od engleske reči bynary digit) koji ima dve moguće vrednosti 1 ili 0 (odnosno tačno ili netačno, ili upaljeno i ugašeno). Kombincijom više bitova dobijamo složenije jedinice informacija na računarima, kao što je *bajt* koji sadrži 8 bitova. Veće količine informacija se u računaru predstavljaju preko *kilobajta* (skraćeno KB) koji sadrži 1024 bajtova, *megabajta* (skraćeno MB) koji sadrži 1024 kilobajta, *gigabajta* (1024 megabajtova) i *terabajta* (1024 gigabajta).
 
-Svi podaci u račanuaru se na najnižem nivou predstavljaju preko bitova, odnosno 0 i 1, ali se oni interpretiraju i u programima koriste u obliku brojeva ili karaktera koji su čoveku prepoznatljivi. 
+Svi podaci u račanuaru se na najnižem nivou predstavljaju preko bitova, odnosno 0 i 1, ali se oni interpretiraju i u programima koriste u obliku brojeva ili karaktera koji su čoveku prepoznatljivi.
 
 ## Brojevni sistemi
 
 Pored binarnog brojevnog sistema, u računarstvu se koriste još i sledeći brojevni sistemi:
-* decimalni ili dekadni je sistem sa osnovom 10 i to je sistem koji je nama poznat i koji svakodnevno koristimo, za predstavljanje brojeva koristi se 10 cifara, 0,1,2,..9, 
-* oktalni sistem je sistem sa osnovom 8, to su cifre 0,1,2,3,4,5,6,7, 
-* heksadecimalni sistem je sistem sa osnovom 16 i koristi sledeće vrednosti 0,1,2,3,4,5,6,7,8,9,A, B, C,D,E i F (mogu biti i mala slova). 
+* decimalni ili dekadni je sistem sa osnovom 10 i to je sistem koji je nama poznat i koji svakodnevno koristimo, za predstavljanje brojeva koristi se 10 cifara, 0,1,2,..9,
+* oktalni sistem je sistem sa osnovom 8, to su cifre 0,1,2,3,4,5,6,7,
+* heksadecimalni sistem je sistem sa osnovom 16 i koristi sledeće vrednosti 0,1,2,3,4,5,6,7,8,9,A, B, C,D,E i F (mogu biti i mala slova).
 
 ## Predstavljanje karaktera i ASCII tabela
 
-Svi podaci se u računaru predstavljaju preko brojeva, otuda potiče naziv digitalni računar, od engleske reči digit koja znači cifru ili broj. Preko brojeva se predstavljaju celi i realni brojevi, ali i slova, boje, i drugo. 
+Svi podaci se u računaru predstavljaju preko brojeva, otuda potiče naziv digitalni računar, od engleske reči digit koja znači cifru ili broj. Preko brojeva se predstavljaju celi i realni brojevi, ali i slova, boje, i drugo.
 
 Osnovna slovna informacija u programima je *karakter*. Karakter se odnosi na slovo, cifru, znakove interpukcije, a postoje i karakteri koji se ne prikazuju kao što je na primer karakter koji označava kraj reda.
 
-Najpoznatiji sistem za predstavlajnje karaktera je *ASCII (American Standard Code for Information Interchange)*. ASCII standard predstavlja pravilo za preslikavanje karaktera na brojeve kojima se ti karakteri predstavljaju u računaru. To mapiranje predstavljano je tabelom koja je dostupna na http://www.asciitable.com/. 
+Najpoznatiji sistem za predstavlajnje karaktera je *ASCII (American Standard Code for Information Interchange)*. ASCII standard predstavlja pravilo za preslikavanje karaktera na brojeve kojima se ti karakteri predstavljaju u računaru. To mapiranje predstavljano je tabelom koja je dostupna na http://www.asciitable.com/.
 
 ASCII tabela ima 128 karaktera označeni brojevima od 0 do 127. Prvih 30-ak karaktera (od 0 do 31) u ASCII tabeli se ne štampa i predstavlja kontrolne karaktere. Mala slova engleske abecede predstavljena su redom od a do z brojevima 97 do 122 (u decimalnom brojevnom sistemu), velika slova su predstavljena takođe redom od 65 do 90, dok su cifre predstavljene brojevima od 48 do 57. Treba primetiti da je razlika između malog i velikog slova u tabeli ista za sva slova i iznosi 32, ova informacija se može koristiti uprogramima u kojima je potrebno pretvoriti malo slovo u veliko i obrnuto.  
 
 
 ## Tipovi podataka
 
-Svaki podatak u programu pripada određenom *tipu*. Primeri nekih tipova dati su u naredoj tabeli. 
+Svaki podatak u programu pripada određenom *tipu*. Primeri nekih tipova dati su u naredoj tabeli.
 
 Podatak|Tip
 -----------|---------
@@ -63,12 +68,12 @@ Podatak|Tip
 
 Tipovi podataka se mogu podeliti u dve grupe:
 * prosti ili osnovni tipovi podataka i
-* složeni tipovi podataka. 
+* složeni tipovi podataka.
 
 U programskom jeziku C postoje tri osnovna tipa podataka, to su:
 * int -  za predstavljanje celih brojeva,
 * float - za predstavljanje realnih brojeva,
-* char - za predstavljanje kataktera. 
+* char - za predstavljanje kataktera.
 
 Složeni tipovi podataka se odnose na tipove koji nastaju kombinacijom jednog ili više prostih tipova na primer nizovi celih brojeva, nizovi karaktera, zatim strukture koje sadrže ceo broj i niz karaktera i sl. Postoji i specijalan tip podataka pod nazivom *void* koji predstavlja praznu, odnosno nepostojeću vrednost i koristi se najviše kod funkcija da označi da funkcija nema povratnu vrednost.
 
@@ -78,16 +83,16 @@ Pored tipa float realni brojevi se u C-u mogu predstaviti tipovima double i long
 
 ## Promenljive
 
-Tipovi podataka su vrsta podataka koji se mogu koristiti u programima i mogu se odnositi na konstantne vrednosti. Na primer podatak 'a' je podatak tipa char koji je konstanta i njegova vrednost se ne može menjati. Sa druge strane, ako želimo da koristimo podatke koji se mogu menjati u programima, na primer mogu se učitati od korisnika preko konzole ili im se u toku rada programa menja vrednost koristimo *promenljive*. 
+Tipovi podataka su vrsta podataka koji se mogu koristiti u programima i mogu se odnositi na konstantne vrednosti. Na primer podatak 'a' je podatak tipa char koji je konstanta i njegova vrednost se ne može menjati. Sa druge strane, ako želimo da koristimo podatke koji se mogu menjati u programima, na primer mogu se učitati od korisnika preko konzole ili im se u toku rada programa menja vrednost koristimo *promenljive*.
 
 Promenljive predstavljaju podatke kojima se upravlja u programima. Promenljive mogu menjati vrednost u toku izvršavanja programa, otuda potiče reč promenljiva ili na engleskom variable. U najprostijem smislu to su imenovani delovi memorije kojima se pristupa u programu. Svaka promenljiva u C-u mora imati ime i definisan tip kojim je određena veličina u memoriji rezervisana za promenljivu kao i skup operacija koje se mogu vršiti nad promenljivom.  
 
-Imena promenljivih mogu sadržati cifre, slova i donju crticu, a moraju početi slovom ili donjom crticom. Mala i velika slova razlikuju u programskom jeziku C, odnosno da C ima osobinu case sensitive i ona se odnosi i na nazive promenljivih, to znači da su promenljive sa nazivima mojaPromenljiva i mojapromenljiva potpuno različite promenljive koje čak mogu biti i različitog tipa i odnose se na različita mesta u memoriji. Na osnovu imena u programu se pristupa promenljivoj i možemo saznati njenu trenutnu vrednost ili joj promeniti vrednost. 
+Imena promenljivih mogu sadržati cifre, slova i donju crticu, a moraju početi slovom ili donjom crticom. Mala i velika slova razlikuju u programskom jeziku C, odnosno da C ima osobinu case sensitive i ona se odnosi i na nazive promenljivih, to znači da su promenljive sa nazivima mojaPromenljiva i mojapromenljiva potpuno različite promenljive koje čak mogu biti i različitog tipa i odnose se na različita mesta u memoriji. Na osnovu imena u programu se pristupa promenljivoj i možemo saznati njenu trenutnu vrednost ili joj promeniti vrednost.
 
 Svaka promenljiva koja se koristi u programu mora se prvo deklarisati. Deklaracija promenljive navodi se u obliku:
 tip lista_promenljivih;
 
-Primeri deklaracije promenljivih 
+Primeri deklaracije promenljivih
 
 ```c
 int i, j, k;
@@ -95,11 +100,11 @@ char c, ch;
 float duzina, sirina;
 double d;
 ```
-Prvi red deklariše tri promenljive tipa int pod nazivom i, j i k. Drugi red deklariše dve promenljive tipa karakter sa nazivima c i ch. 
+Prvi red deklariše tri promenljive tipa int pod nazivom i, j i k. Drugi red deklariše dve promenljive tipa karakter sa nazivima c i ch.
 
 Prilikom deklaracije promenljiva se može inicijalizovati, što znači može joj se dodeliti početna vrednost. Na primer:
 ```c
-int i=0, j=1; 
+int i=0, j=1;
 ```
 Vrednost promenljive se može dodeliti i kasnije u programu, na primer:
 
@@ -111,7 +116,7 @@ j=3;
 
 Programi koje ovde pravimo pisani su za *konzolu*. Konzola je jedan poseban računarski program koji je deo operativnog sistema preko koga je moguće vršiti komunikaciju sa programom ili operativnim sistemom bez grafičkog korisničkog interfejsa.  Preko konzole se komunikacija vrši samo korišćenjem tastature, i ona obuhvata ispis nekog teksta koji se prikazuje korisniku ili unos nekog teksta od strane korisnika programa.
 
-U programskom jeziku C postoje dve ugrađene funkcije koje ćemo za sada koristiti za komunikaciju preko konzolu, to su funkcija *printf* koaj se koristi za ispis na konzolu i funkcija *scanf* koja se koristi za učitavanje sa konzole. U primeru za funkciju main koristili smo funkciju printf za ispis pozdrava na konzolu. 
+U programskom jeziku C postoje dve ugrađene funkcije koje ćemo za sada koristiti za komunikaciju preko konzolu, to su funkcija *printf* koaj se koristi za ispis na konzolu i funkcija *scanf* koja se koristi za učitavanje sa konzole. U primeru za funkciju main koristili smo funkciju printf za ispis pozdrava na konzolu.
 
 Poziv funkcija printf ima sledeći oblik:
 
@@ -132,9 +137,9 @@ Za učitavanje znakova preko konzole koristi se funkcija scanf koja se poziva u 
 scanf(format_unosa, pokazivač_na_promenljivu1, pokazivač_na_promenljivu2...);
 ```
 
-Prvi argument funkcije scanf je niz izraza koji počinju znakom % i koji označavaju vrstu podataka koji se čitaju preko konzole, a koriste se iste oznake kao za ispis sa printf. Ostali argumenti predstavljaju pokazivače na promenljive u koje će se smestiti učitane vrednosti. Pokazivače za sada treba shvatiti kao adrese promenljivih, a označavaju se početnim znakom & iza koga sledi ime promenljive. Promenljive koje se ovde nalaze moraju biti prethodno deklarisane u programu. 
+Prvi argument funkcije scanf je niz izraza koji počinju znakom % i koji označavaju vrstu podataka koji se čitaju preko konzole, a koriste se iste oznake kao za ispis sa printf. Ostali argumenti predstavljaju pokazivače na promenljive u koje će se smestiti učitane vrednosti. Pokazivače za sada treba shvatiti kao adrese promenljivih, a označavaju se početnim znakom & iza koga sledi ime promenljive. Promenljive koje se ovde nalaze moraju biti prethodno deklarisane u programu.
 
-Sledi primer poziva funkcije scanf koja sa konzole učitava jedan ceo i jedan realan broj. 
+Sledi primer poziva funkcije scanf koja sa konzole učitava jedan ceo i jedan realan broj.
 
 ```c
 int br;
@@ -142,17 +147,17 @@ float br1;
 char karakter;
 scanf("%d%f%c", &br, &br1,&karakter);
 ```
-U navedenom primeru deklarišu se tri promenljive čije vrednosti će se učitati sa konzole korišćenjem funkcije scanf. 
+U navedenom primeru deklarišu se tri promenljive čije vrednosti će se učitati sa konzole korišćenjem funkcije scanf.
 
 ## Aritmetički operatori
 
-U programskom jeziku C dostupni su standradni binarni aritmetički operatori +, - , * , / i %. Operator / predtsvlja celobrojno deljenje ako se koristi sa tipom podataka int ili klasično deljenje ako se koristi sa tipom podataka float. Operator % daje ostatak pri deljenju i koristi se sa celim brojevima. 
+U programskom jeziku C dostupni su standradni binarni aritmetički operatori +, - , * , / i %. Operator / predtsvlja celobrojno deljenje ako se koristi sa tipom podataka int ili klasično deljenje ako se koristi sa tipom podataka float. Operator % daje ostatak pri deljenju i koristi se sa celim brojevima.
 
-Pored binarnih operatora u programskom jeziku C dostupna su i dva unarna operatora to su uvećanja i umanjenja za 1 (++ i --) 
+Pored binarnih operatora u programskom jeziku C dostupna su i dva unarna operatora to su uvećanja i umanjenja za 1 (++ i --)
 
-Aritmetički opratori imaju prioritet izvršavanja, na primer množenje se izvršava pre sabiranja, slično  kao u matematici, a najveći prioritet imaju unarni operatori. 
+Aritmetički opratori imaju prioritet izvršavanja, na primer množenje se izvršava pre sabiranja, slično  kao u matematici, a najveći prioritet imaju unarni operatori.
 
-Jedna važna napomena odnosi se na operacije uvećanja i umanjenja za 1. Oznaka -- i ++, može se navesti pre (prefiksno navođenje) ili posle (sufiksno navođenje) oznake promenljive i ima različito značenje. Ukoliko se navede prefiksno, operacija se odmah izvršava i vrednost promenljive se menja u momentu poziva operacije, a ako se navede sufiksno u izrazu u kom se poziva operacija koristi se stara vrednost promenljive ali će se njena vrednost promeniti u sledećem pozivu. 
+Jedna važna napomena odnosi se na operacije uvećanja i umanjenja za 1. Oznaka -- i ++, može se navesti pre (prefiksno navođenje) ili posle (sufiksno navođenje) oznake promenljive i ima različito značenje. Ukoliko se navede prefiksno, operacija se odmah izvršava i vrednost promenljive se menja u momentu poziva operacije, a ako se navede sufiksno u izrazu u kom se poziva operacija koristi se stara vrednost promenljive ali će se njena vrednost promeniti u sledećem pozivu.
 
 ## Ugrađene funkcije kao operatori
 
@@ -167,12 +172,10 @@ Još neke od korisnih funkcija iz biblioteke math.h su:
 * abs(n) - vraća apsolutnu vrednost promenljive n,
 * sqrt(n) - vraća kvadratni koren promenljive n,
 * pow(x,n) - vraća n-ti stepen broja x
-* rand() - vraća slučajno generisani broj. 
+* rand() - vraća slučajno generisani broj.
 
 ## Operatori dodele vrednosti
 
-Operatori dodele vrednosti postavljaju vrednost promenljive. Osnovni operator dodele je znak =, ali se on može kombinovati sa ostalim aritmetičkim operacijama kako bi se kraće zapisale često korišćene operacije. 
-Tako na primer imamo operator dodele += koji na promenljivu sa leve strane dodaje vrednost sa desne, na primer C += A je isto kao da smo zapisali C = C + A. 
+Operatori dodele vrednosti postavljaju vrednost promenljive. Osnovni operator dodele je znak =, ali se on može kombinovati sa ostalim aritmetičkim operacijama kako bi se kraće zapisale često korišćene operacije.
+Tako na primer imamo operator dodele += koji na promenljivu sa leve strane dodaje vrednost sa desne, na primer C += A je isto kao da smo zapisali C = C + A.
 Pored sabiranja, operatori dodele se mogu kombinovati i sa drugim aritmetičkim operacijama i tako dobijamo sledeće operatore dodele vrednosti  -=, %=, /=, \*= i slično.  
-
-
