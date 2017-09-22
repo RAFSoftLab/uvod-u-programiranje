@@ -1,0 +1,3 @@
+/*
+    Rešenje zadatka.
+*/
