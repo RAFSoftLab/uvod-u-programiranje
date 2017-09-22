@@ -1,20 +1,12 @@
-# Naziv zadatka
+---
 title: Tablica množenja
-
-# Vremensko ogranicenje u sekundama
 timelimit: 1.0
-
-# Memorijsko ogranicenje u MB
 memlimit: 64
-
-# Ime i prezime autora zadatka
-setter: Nemanja Šekularac
-
-# Ime i prezime autora editorijala
-editorial: 
-
-# Lista ljudi koji su doprineli zadatku (opciono)
-contributors: []
-
-# Izvor zadatka (opciono)
-origin:
+owner: RAF
+origin: RAF
+tags: []
+solutions:
+    c: Rešenje (C)
+status: KANDIDAT
+status-od: 2017-10-01
+---

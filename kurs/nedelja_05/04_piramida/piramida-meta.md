@@ -1,20 +1,12 @@
-# Naziv zadatka
-title: Piramida 
-
-# Vremensko ogranicenje u sekundama
+---
+title: Piramida
 timelimit: 1.0
-
-# Memorijsko ogranicenje u MB
 memlimit: 64
-
-# Ime i prezime autora zadatka
-setter: Nemanja Šekularac
-
-# Ime i prezime autora editorijala
-editorial: 
-
-# Lista ljudi koji su doprineli zadatku (opciono)
-contributors: []
-
-# Izvor zadatka (opciono)
-origin: Zbirka zadataka C/C++ (S. Matković, M. Čabarkapa)
+owner: RAF
+origin: RAF
+tags: []
+solutions:
+    c: Rešenje (C)
+status: KANDIDAT
+status-od: 2017-10-01
+---
