@@ -1,26 +1,12 @@
-# Naziv zadatka
-title: Svaka rec velikim slovom
-
-# Vremensko ogranicenje u sekundama
+---
+title: Svaka reč velikim slovom
 timelimit: 1.0
-
-# Memorijsko ogranicenje u MB
 memlimit: 64
-
-# Autor zadatka (opciono)
-setter: RAF
-
-# Autor editorijala (opciono)
-editorial: RAF
-
-# Lista ljudi koji su doprineli zadatku (opciono)
-contributors: [Stefan Burgic]
-
-# Izvor zadatka (opciono)
+owner: RAF
 origin: RAF
-
-
-7923
-
-7986
-6+10*8+
+tags: []
+solutions:
+    c: Rešenje (C)
+status: KANDIDAT
+status-od: 2017-10-01
+---
