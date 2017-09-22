@@ -1,20 +1,3 @@
-# Naziv zadatka
-title: Prevođenje dužine date u stopama u centrimetre
+## Analiza
 
-# Vremensko ogranicenje u sekundama, recimo 1.0
-timelimit: 1.0
-
-# Memorijsko ogranicenje u MB, recimo 64
-memlimit: 64
-
-# Autor zadatka (opciono)
-setter: RAF
-
-# Autor editorijala (opciono)
-editorial: RAF
-
-# Lista ljudi koji su doprineli zadatku (opciono)
-contributors: []
-
-# Izvor zadatka (opciono)
-origin: RAF
+Brojevi se učitavaju sa standradnog ulaza funkcijom scanf i smeštaju u promenljive tipa float. Zatim se funkcijom printf ispisuje na sistemki izlaz rezultat aritmetičkih operacija.

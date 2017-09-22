@@ -1,4 +1,12 @@
-## Analiza
-
-Brojevi se učitavaju sa standradnog ulaza funkcijom scanf i smeštaju u promenljive tipa float. Zatim se funkcijom printf ispisuje na sistemki izlaz rezultat aritmetičkih operacija. 
-
+---
+title: Prevođenje dužine date u stopama u centrimetre
+timelimit: 1.0
+memlimit: 64
+owner: RAF
+origin: RAF
+tags: []
+solutions:
+    c: Rešenje (C)
+status: KANDIDAT
+status-od: 2017-10-01
+---
