@@ -7,9 +7,9 @@ Fajl je obavezan i sadrzi meta podatke o zadatku. Potrebno je iskopirati sadrzaj
 Fajl je obavezan i sadrzi tekst zadatka. Treba ispostovati strukturu podnaslova i ako neki podnaslovi nisu potrebni obrisati ih.
 
 ## `naziv-sol.md`
-Fajl je obavezan. Fajl sadrzi kratak opis resenja zadatka.
+Fajl nije obavezan. Fajl sadrzi kratak opis resenja zadatka.
 
-## `naziv-checker.cpp`
+## `naziv-check.cpp`
 Fajl nije obavezan. Osnovna provera tacnosti poredi izlazni fajl korisnika sa ocekivanim fajlom ignorisuci whitespace karaktere. Ako je to dovoljno, ovaj fajl treba obrisati. Inace, treba implementirati logiku koja validira resenje (primer su zadaci kod kojih postoji vise validnih resenja).
 
 ## `naziv.c`
