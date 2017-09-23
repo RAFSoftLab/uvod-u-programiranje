@@ -1,6 +1,6 @@
 # Uvod u programiranje
 
-Sadrzaj kursa nalazi se u folderu `kurs`. Lekcije koje nisu objavljene na portalu nalaze se u folderu `izrada` unutar `kurs` foldera. Unutar `kurs` foldera nalaze se i meta fajlovi `index.md` i `index-item.md`.
+Sadrzaj kursa nalazi se u folderu `kurs`. Slike se nalaze u folderu `media` i linkuju se relativno u odnosu na taj folder. Ostali sadrzaj nalazi se u folderu `text`. Lekcije koje nisu objavljene na portalu nalaze se u folderu `izrada` unutar `text` foldera. Unutar `text` foldera nalaze se i meta fajlovi `index.md` i `index-item.md`.
 
 ## Lekcije
 Format lekcije je Markdown. Mozete koristiti neki online editor (recimo http://dillinger.io/) ili instalirati odgovarajuci plugin u editoru koji preferirate.
