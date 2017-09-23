@@ -3,7 +3,7 @@ Napisati program koji izračunava n! .
 
 ## Opis ulaza
 
-  - Preko standardnog ulaza korisnik unosi ceo broj N (N>0).
+  - Preko standardnog ulaza korisnik unosi ceo broj N (0<N<10).
 
 ## Opis izlaza
 
