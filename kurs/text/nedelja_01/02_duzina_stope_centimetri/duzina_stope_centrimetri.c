@@ -3,8 +3,6 @@
 int main() {
     float duzina;
     scanf("%f", &duzina);
-    printf("%f",duzina*30.48);
+    printf("%.2f",duzina*30.48);
     return 0;
 }
-
-

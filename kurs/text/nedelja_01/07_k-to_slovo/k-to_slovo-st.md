@@ -1,5 +1,7 @@
 Korisnik unosi jedno slovo i jedan ceo broj k. Ispisati k-to slovo posle unetong slova.
 
+***Broj k je takav da uvek postoji k-to slovo posle unetog slova.***
+
 ## Opis ulaza
 
 Korisnik unosi jedno slovo i jedan ceo broj na standardni ulaz.

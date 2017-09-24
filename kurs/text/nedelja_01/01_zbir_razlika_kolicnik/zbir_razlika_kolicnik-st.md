@@ -1,4 +1,4 @@
-Napisati program koji za dva uneta broja ispisuje njihov zbir, razliku i količnik
+Napisati program koji za dva uneta broja ispisuje njihov zbir, razliku i količnik. Rezlutate ispisati zaokružene na 2 decimale.
 
 ## Opis ulaza
 
@@ -20,5 +20,5 @@ Na standardni izlaz ispisuju su redom zbir, razlika i količnik dva uneta broja
 ### Излаз
 
 ~~~
-68.000000, -22.000000, 0.511111
+68.00 -22.00 0.51
 ~~~

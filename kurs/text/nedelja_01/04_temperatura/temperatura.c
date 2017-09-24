@@ -7,6 +7,6 @@ int main(){
 
     tk = tc + 273.15;
 
-    printf("%.1lf\n", tk);
+    printf("%.1lf", tk);
     return 0;
 }

@@ -1,8 +1,8 @@
-NP koji prevodi dužinu datu u stopama u centimetre (1 stopa = 30.48 cm)
+Napisati program koji prevodi dužinu datu u stopama u centimetre (1 stopa = 30.48 cm). Rezulat ispisati zaokružen na 2 decimale.
 
 ## Opis ulaza
 
-Korisnik unosi dužinu u stopama. 
+Korisnik unosi dužinu u stopama.
 
 ## Opis izlaza
 
@@ -20,6 +20,5 @@ Ipsiuje se dužina u centrimetrima
 ### Излаз
 
 ~~~
-701.040000
+701.04
 ~~~
-
