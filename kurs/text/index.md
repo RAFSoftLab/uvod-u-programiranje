@@ -10,7 +10,9 @@ Pored praćenja nastave, kurs se može koristiti za pripremu kolokvijuma i ispit
 
 Na ovom kursu obrađene su sve relevantne teme iz programiranja kao što su tipovi podataka, promenljive, aritmetički, relacioni, logički  operatori, naredbe grananja i ponavljanja, funkcije, rekurzija, nizovi i matrice, stringovi, funkcije za ulaz i izlaz, rad sa fajlovima, pokazivači i dinamičke struktire podataka liste i binarna stabla. 
 
-Kurs ne treba posmatrati kao priručnik za programski jezik C, već kao kurs koji treba da nas uvede u svet programiranja i upozna sa veštinom programiranja i načinom razmišljanja koji stoji iza programa i algoritama, bez ulaženje u detalje o spicifičnostima programskog jezika ili verzije kompajlera. Za prikaz primera korišćen je programski jezik C, ali se slična logika može koristiti u programiranju sa drugim programskim jezicima.  
+Kurs ne treba posmatrati kao priručnik za programski jezik C, već kao kurs koji treba da nas uvede u svet programiranja, upozna sa veštinom programiranja i načinom razmišljanja koji stoji iza programa i algoritama bez ulaženje u detalje o spicifičnostima programskog jezika ili verzije kompajlera. Za prikaz primera korišćen je programski jezik C, ali se slična logika može koristiti u programiranju sa drugim programskim jezicima.  
+
+Za praćenje kursa nije neophodno nikakvo predznanje, ali je kurs napredan i zahteva visok nivo motivacije i spremnosti za učenje programiranja. 
 
 Kurs je u fazi stalne modifikacije i očekuju se periodična ažuriranja i dopune materijala. 
 
