@@ -1,5 +1,5 @@
 ---
-title: Izvrnuti broj
+title: Izvrnuti četvorocifreni broj
 timelimit: 1.0
 memlimit: 64
 owner: RAF
