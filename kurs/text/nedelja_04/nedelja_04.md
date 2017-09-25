@@ -42,7 +42,7 @@ Ovde imamo primer da u uslovu while naredbe učitavamo karaktere funkcijom getch
 
 Jedna stvar koja ovde može da zbuni je kako će program učitati ceo red karaktera, a zatim ispisati ceo red karaktera, kada se funkcije getchar() i putchar() pozivaju naizmenično. Odgovor leži u takozvanom baferovanju ulaznog skupa karaktera. Kada korisnik unosi karaktere preko konzole funkcija getchar "ne vidi" unete karaktere sve dok se ne unese ENTER. Tek kada se preko konzole unese ENTER, poziva se funkcija getchar() koja učitava redom unete karaktere. 
 
-
+Drugi primer
 
 
 
