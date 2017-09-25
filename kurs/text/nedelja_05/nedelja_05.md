@@ -304,7 +304,7 @@ int main(){
 }
 ```
 
-Ovaj program ima globalnu i lokalnu promanljivu x, prilikom pokretanja programa na konzolu će se ispisati vrednost lokalne promanljive, odnosno x=0. 
+Ovaj program ima globalnu i lokalnu promanljivu x, prilikom pokretanja programa na konzolu će se ispisati vrednost lokalne promenljive, odnosno x=0. 
 
 
 
