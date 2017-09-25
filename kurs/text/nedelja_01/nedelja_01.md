@@ -1,5 +1,5 @@
 ---
-title: 1. nedelja: Tipovi podataka i promenljive
+title: Tipovi podataka i promenljive
 author: RAF
 ---
 
