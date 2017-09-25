@@ -42,9 +42,51 @@ Ovde imamo primer da u uslovu while naredbe učitavamo karaktere funkcijom getch
 
 Jedna stvar koja ovde može da zbuni je kako će program učitati ceo red karaktera, a zatim ispisati ceo red karaktera, kada se funkcije getchar() i putchar() pozivaju naizmenično. Odgovor leži u takozvanom baferovanju ulaznog skupa karaktera. Kada korisnik unosi karaktere preko konzole funkcija getchar "ne vidi" unete karaktere sve dok se ne unese ENTER. Tek kada se preko konzole unese ENTER, poziva se funkcija getchar() koja učitava redom unete karaktere. 
 
-Drugi primer
+U drugom primeru potrebno je napisati program korićenjem while petlje koja iz ulaznog niza karaktera izbacuje sva dupla slova, odnosno ako dva ista slova stoje jedan pored drugog, ispisuje samo jedno, na primer za aabbdd, treba da ispiše adb. Jedno rešenje ovog zadatka je: 
 
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
+int main()
+{
+    char karakter;
+    char prethodniKarakter;
+    prethodniKarakter = getchar();
+    putchar(prethodniKarakter);
+    while((karakter = getchar()) != '\n'){
+        if(prethodniKarakter!=karakter)
+            putchar(karakter);
+        prethodniKarakter = karakter;
+    }
+    return 0;
+}
+```
 
+U rešenju ovog zadatka čitamo ulazni niz karaktera i poredimo dva susedna slova, zbog toga imamo dve promeljive tipa char koje označavaju prethodni karakter i trenutni karakter koji se posmatrama. Prvi karakter ćemo ispisati nakon učitavanja (jer on sigurno nije jednak sa prethodnim, jer ni nema prethodnog), to je pre izvršavanja while naredbe i to će nam biti prvi prethodni karakter. U while naredbi proveravamo da li je trenutni karakter različit od prethodnog i samo ako jeste ispisujemo ga. Uslov za izlazak iz while petlje je učitavanje karaktera za kraj reda. 
+
+Ovaj zadatak se može uraditi i na drugi način korišćenjem naredbe continue.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char karakter;
+    char prethodniKarakter;
+    prethodniKarakter = getchar();
+    putchar(prethodniKarakter);
+    while((karakter = getchar()) != '\n'){
+        if(prethodniKarakter==karakter)
+            continue;
+        putchar(karakter);
+        prethodniKarakter = karakter;
+    }
+    return 0;
+}
+```
+
+U ovom rešenju u while petlji pitamo da li je trenutni karakter jednak sa prethodnim i ako jeste pozivamo naredbu continue koja će preskočiti sve naredbe iza continue, a to znači i naredbu koja ispisuje karakter, što znači da će duplirani karaketer biti preskočen i neće biti ispisan. Naredbom continue vraćamo se ponovo na ispitivanje uslova petlje.  
 
 
