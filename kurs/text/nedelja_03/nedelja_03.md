@@ -1,5 +1,5 @@
 ---
-title: Naredbe ponavljanja
+title: Naredbe ponavljanja (petlje)
 author: RAF
 ---
 
