@@ -1,11 +1,11 @@
 ---
-title: ?
+title: Tipovi podataka i promenljive
 author: RAF
 ---
 
 ## Funkcija main
 
-Funkcija main je posebna funkcija u programskom jeziku C, jer kada neki program pokrenemo izvršavaju se naredbe koje su napisane u ovoj funkciji. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih argumenata (parametara).  
+Da bismo mogli da počnemo sa programiranjem u programskom jeziku ce pre svega se moramo upoznati sa funkcijom main. Funkcija main je posebna funkcija u programskom jeziku C, jer kada neki program pokrenemo izvršavaju se naredbe koje su napisane u ovoj funkciji. To je funkcija bez argumenata i najčešće ima povratnu vrednost tipa int. Sam pojam funkcije će kasnije biti detaljnije objašnjen, za sada treba znati da funkcija ima svoje ime, može imati jednu povratnu vrednost i može imati nula ili više ulaznih argumenata (parametara).  
 
 Sintaksa funkcije main je:
 
@@ -42,7 +42,7 @@ Svi podaci u račanuaru se na najnižem nivou predstavljaju preko bitova, odnosn
 Pored binarnog brojevnog sistema, u računarstvu se koriste još i sledeći brojevni sistemi:
 * decimalni ili dekadni je sistem sa osnovom 10 i to je sistem koji je nama poznat i koji svakodnevno koristimo, za predstavljanje brojeva koristi se 10 cifara, 0,1,2,..9,
 * oktalni sistem je sistem sa osnovom 8, to su cifre 0,1,2,3,4,5,6,7,
-* heksadecimalni sistem je sistem sa osnovom 16 i koristi sledeće vrednosti 0,1,2,3,4,5,6,7,8,9,A, B, C,D,E i F (mogu biti i mala slova).
+* heksadecimalni sistem je sistem sa osnovom 16 i koristi sledeće vrednosti 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E i F (mogu biti i mala slova).
 
 ## Predstavljanje karaktera i ASCII tabela
 
@@ -52,7 +52,7 @@ Osnovna slovna informacija u programima je *karakter*. Karakter se odnosi na slo
 
 Najpoznatiji sistem za predstavlajnje karaktera je *ASCII (American Standard Code for Information Interchange)*. ASCII standard predstavlja pravilo za preslikavanje karaktera na brojeve kojima se ti karakteri predstavljaju u računaru. To mapiranje predstavljano je tabelom koja je dostupna na http://www.asciitable.com/.
 
-ASCII tabela ima 128 karaktera označeni brojevima od 0 do 127. Prvih 30-ak karaktera (od 0 do 31) u ASCII tabeli se ne štampa i predstavlja kontrolne karaktere. Mala slova engleske abecede predstavljena su redom od a do z brojevima 97 do 122 (u decimalnom brojevnom sistemu), velika slova su predstavljena takođe redom od 65 do 90, dok su cifre predstavljene brojevima od 48 do 57. Treba primetiti da je razlika između malog i velikog slova u tabeli ista za sva slova i iznosi 32, ova informacija se može koristiti uprogramima u kojima je potrebno pretvoriti malo slovo u veliko i obrnuto.  
+ASCII tabela ima 128 karaktera označeni brojevima od 0 do 127. Prvih 30-ak karaktera (od 0 do 31) u ASCII tabeli se ne štampa i predstavlja kontrolne karaktere. Mala slova engleske abecede predstavljena su redom od a do z brojevima 97 do 122 (u decimalnom brojevnom sistemu), velika slova su predstavljena takođe redom od 65 do 90, dok su cifre predstavljene brojevima od 48 do 57. Treba primetiti da je razlika između malog i velikog slova u tabeli ista za sva slova i iznosi 32, ova informacija se može koristiti u programima u kojima je potrebno pretvoriti malo slovo u veliko i obrnuto.  
 
 
 ## Tipovi podataka

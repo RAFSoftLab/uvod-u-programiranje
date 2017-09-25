@@ -2,21 +2,18 @@
 title: Uvod u programiranje - Računarski fakultet
 ---
 
-TODO: Duzi info, pojavljuje se kada se otvori kurs, http://petlja.org/BubbleBee/r/kursevi/uvod-u-algoritme.
-Primer:
-**JavaScript за почетнике** је курс програмирања намењен пре свега апсолутним
-почетницима. Лекције су кратке, а појмови објашњени на најједноставнији начин,
-тако да је курс приступачан чак и најмлађима. Не очекује се никакво предзнање -
-само добра воља. Чак није потребна ни нека инсталација нити неки добар
-рачунар - довољно је да одете на неки веб сајт и на њему напишете свој први
-програм. Посебна пажња у курсу је посвећена задацима који се могу наћи у
-другим предметима као што је математика. Пошто је овај курс намењен ученицима
-основних школа, у њему је показано како могу да се решавају свакодневни задаци
-из математика као што је сабирање углова помоћу програма на језику `JavaScript`.
-Курс је још увек у активном развоју. Трудићемо се да све ваше
-**сугестије, коментаре и предлоге** искористимо да направимо нешто што
-одговара вашим потребама.
+Kurs Uvod u programiranje prvenstveno je namenjen studentima akademskih studija Računarskog fakulteta, Univerziteta Union u Beogradu, ali ga mogu koristiti i studenti drugih fakulteta, kao i svi zainteresovani za učenje programiranja i programskog jezika C. 
 
-Кад год приметите нешто што бисмо могли да побољшамо слободно нам се јавите
-на форум [**algora.petlja.org**](http://algora.petlja.org) и ми ћемо
-се потрудити да вам у што краћем року изађемо у сусрет.
+Kurs je osmišljen kao podrška održavanju nastave iz predmeta Uvod u programiranje koji se održava u prvom semestru na akademskim studijama Računarskog fakulteta na smerovima Računarske nauke i Računarsko inženjerstvo. Materijali su organizovani po nedeljama i prate plan predavanja i vežbi. Svaka nedelja sadrži teorijske osnove i objašnjenje pojmova neophodnih za rešavanje zadataka, kao i odgovarajući skup zadataka iz određene oblasti programiranja. Za svaki zadatak dat je detaljan opis ulaza i izlaza, rešenja zadatka, tekstualno objašnjenje rešenja i test primeri. Svi primeri urađeni su u programskom jeziku C. 
+
+Pored praćenja nastave, kurs se može koristiti za pripremu kolokvijuma i ispita na ovom predmetu i u odgovarajućim nedeljama kursa mogu se pronaći rešeni primeri zadataka sa kolokvijuma i ispita sa objašnjenjima.    
+
+Na ovom kursu obrađene su sve relevantne teme iz programiranja kao što su tipovi podataka, promenljive, aritmetički, relacioni, logički  operatori, naredbe grananja i ponavljanja, funkcije, rekurzija, nizovi i matrice, stringovi, funkcije za ulaz i izlaz, rad sa fajlovima, pokazivači i dinamičke struktire podataka uključujući liste i binarna stabla. 
+
+Kurs ne treba posmatrati kao priručnik za programski jezik C, već kao kurs koji treba da nas uvede u svet programiranja, upozna sa veštinom programiranja i načinom razmišljanja koji stoji iza programa i algoritama bez ulaženje u detalje o spicifičnostima programskog jezika ili verzije kompajlera. Osnovni cilj jeste priprema studenta za praćenje kompleksnijih koncepata programiranja i razvoja softvera. Za prikaz primera korišćen je programski jezik C, ali se slična logika može koristiti u programiranju na drugim programskim jezicima.  
+
+Za praćenje kursa nije neophodno nikakvo predznanje, ali je kurs napredan i zahteva visok nivo motivacije i spremnosti za učenje programiranja. 
+
+Kurs je u fazi stalne modifikacije i očekuju se periodična ažuriranja i dopune materijala. 
+
+
