@@ -1,5 +1,5 @@
 
-Napisati program koji pronalazi aritmetičku sredinu svih delioca broja N. Imati u vidu da 1 deli svaki broj, i da je svaki broj deljiv sa samim sobom.
+Napisati program koji pronalazi aritmetičku sredinu svih delilaca broja N. Imati u vidu da 1 deli svaki broj, i da je svaki broj deljiv sa samim sobom.
 
 ## Opis ulaza
 
@@ -7,7 +7,7 @@ Napisati program koji pronalazi aritmetičku sredinu svih delioca broja N. Imati
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje jedan broj zaokrugljen na dve decimale koji predstavlja aritmetičku sredinu svih delioca prirodnog broja N.
+  - Na standardi izlaz ispisati jedan broj zaokrugljen na dve decimale koji predstavlja aritmetičku sredinu svih delilaca prirodnog broja N.
 
 ## Primer 1
 
