@@ -6,7 +6,7 @@ Korisnik unosi dužinu u stopama.
 
 ## Opis izlaza
 
-Ipsiuje se dužina u centrimetrima
+Ispisuje se dužina u centrimetrima.
 
 
 ## Пример 1
