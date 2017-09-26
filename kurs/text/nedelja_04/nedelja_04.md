@@ -6,9 +6,9 @@ author: RAF
 
 ## getchar() i putchar()
 
-Pored funkcija scanf i printf za učitavanje podataka sa konzole, odnosno standardnog ulaza i ispis podataka na konzolu odnosno standardnog izlaz u C-u postoje i druge funkcije koje čitaju i ispisuju na konzolu. 
+Pored funkcija scanf i printf za učitavanje podataka sa konzole, odnosno standardnog ulaza i ispis podataka na konzolu odnosno standardni izlaz u C-u postoje i druge funkcije koje čitaju i ispisuju na konzolu. 
 
-Funkcija getchar čita jedan karakter sa konzole, vraća tip int koji predstavlja ASCII kod karaktera, a nema ulaznih parametara. 
+Funkcija getchar čita jedan karakter sa konzole, nema ulaznih parametara i vraća tip int koji predstavlja ASCII kod karaktera.
 
 ```r
 int getchar(void)
