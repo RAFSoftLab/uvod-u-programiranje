@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    //deklarisanje 2 celbrojne promenljive
+    //deklarisanje 2 celobrojne promenljive
     int a,b;
 
     //unos vrednosti iz konzole i smestanje unete vrednosti u promenljive a i b
