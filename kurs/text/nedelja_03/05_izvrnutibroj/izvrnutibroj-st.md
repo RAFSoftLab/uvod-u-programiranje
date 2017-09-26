@@ -7,7 +7,7 @@ Napisati program koji od unetog broja N ispisuje broj koji ima cifre kao broj N,
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje jedan broj koji ima cifre kao broj N,samo u obrnutom redosledu.
+  - Na standardi izlaz ispisuje se jedan broj koji ima cifre kao broj N, samo u obrnutom redosledu.
 
 ## Primer 1
 
