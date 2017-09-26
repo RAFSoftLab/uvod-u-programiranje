@@ -33,7 +33,7 @@ U ovom objašnjenju uveli smo nekoliko važnih pojmava iz programiranja kao što
 
 ## Predstavljanje podataka u računaru
 
-Osnovna jedinica informacije u računaru je *bit* (skraćenica od engleske reči bynary digit) koji ima dve moguće vrednosti 1 ili 0 (odnosno tačno ili netačno, ili upaljeno i ugašeno). Kombincijom više bitova dobijamo složenije jedinice informacija na računarima, kao što je *bajt* koji sadrži 8 bitova. Veće količine informacija se u računaru predstavljaju preko *kilobajta* (skraćeno KB) koji sadrži 1024 bajtova, *megabajta* (skraćeno MB) koji sadrži 1024 kilobajta, *gigabajta* (1024 megabajtova) i *terabajta* (1024 gigabajta).
+Osnovna jedinica informacije u računaru je *bit* (skraćenica od engleske reči binary digit) koji ima dve moguće vrednosti 1 ili 0 (odnosno tačno ili netačno, ili upaljeno i ugašeno). Kombincijom više bitova dobijamo složenije jedinice informacija na računarima, kao što je *bajt* koji sadrži 8 bitova. Veće količine informacija se u računaru predstavljaju preko *kilobajta* (skraćeno KB) koji sadrži 1024 bajtova, *megabajta* (skraćeno MB) koji sadrži 1024 kilobajta, *gigabajta* (1024 megabajtova) i *terabajta* (1024 gigabajta).
 
 Svi podaci u račanuaru se na najnižem nivou predstavljaju preko bitova, odnosno 0 i 1, ali se oni interpretiraju i u programima koriste u obliku brojeva ili karaktera koji su čoveku prepoznatljivi.
 
