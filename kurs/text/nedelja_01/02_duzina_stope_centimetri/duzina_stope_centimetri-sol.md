@@ -1,3 +1,3 @@
 ## Analiza
 
-Brojevi se učitavaju sa standradnog ulaza funkcijom scanf i smeštaju u promenljive tipa float. Zatim se funkcijom printf ispisuje na sistemki izlaz rezultat aritmetičkih operacija.
+Vrednost dužine u stopama se unosi u promenljivu tipa float. Dužina u centrimetrima se računa po datoj formuli, a zatim ispisuje na standardni izlaz.
