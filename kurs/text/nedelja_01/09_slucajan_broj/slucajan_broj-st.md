@@ -2,7 +2,7 @@ Napisati program koji ispisuje slučajan broj iz intervala od n do m (interval [
 
 ## Opis ulaza
 
-Sa standardnog ulaza unose se dva cela broj n i m.
+Sa standardnog ulaza unose se dva cela broja n i m.
 
 ## Opis izlaza
 
