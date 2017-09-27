@@ -100,7 +100,7 @@ char c, ch;
 float duzina, sirina;
 double d;
 ```
-Prvi red deklariše tri promenljive tipa int pod nazivom i, j i k. Drugi red deklariše dve promenljive tipa karakter sa nazivima c i ch.
+U prvom redu deklarišu se tri promenljive tipa int pod nazivom i, j i k. U drugom redu deklarišu se dve promenljive tipa karakter sa nazivima c i ch.
 
 Prilikom deklaracije promenljiva se može inicijalizovati, što znači može joj se dodeliti početna vrednost. Na primer:
 ```c
