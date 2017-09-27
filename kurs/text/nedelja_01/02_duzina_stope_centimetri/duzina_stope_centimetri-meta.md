@@ -1,5 +1,5 @@
 ---
-title: Prevođenje dužine date u stopama u centrimetre
+title: Prevođenje dužine date u stopama u centimetre
 timelimit: 1.0
 memlimit: 64
 owner: RAF
