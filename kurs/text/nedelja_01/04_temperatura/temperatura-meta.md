@@ -1,5 +1,5 @@
 ---
-title: Konverzija temperature iz Celzijusa u Kelvine
+title: Konverzija temperature iz stepena Celzijusa u Kelvine
 timelimit: 1.0
 memlimit: 64
 owner: RAF

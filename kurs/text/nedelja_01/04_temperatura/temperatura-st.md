@@ -2,7 +2,7 @@ Napisati program koji za unetu realnu vrednost temperature u stepenima Celzijusa
 
 ## Opis ulaza
 
-Korisnik unosi vrednost temperature u Celzijusima na standardni ulaz.
+Korisnik unosi vrednost temperature u stepenima Celzijusa na standardni ulaz.
 
 ## Opis izlaza
 

@@ -1,4 +1,4 @@
-Korisnik unosi jedno slovo i jedan ceo broj k. Ispisati k-to slovo posle unetong slova.
+Korisnik unosi jedno slovo i jedan ceo broj k. Ispisati k-to slovo posle unetog slova.
 
 ***Broj k je takav da uvek postoji k-to slovo posle unetog slova.***
 
