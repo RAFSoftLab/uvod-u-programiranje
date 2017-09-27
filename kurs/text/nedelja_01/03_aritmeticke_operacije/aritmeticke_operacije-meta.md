@@ -1,5 +1,5 @@
 ---
-title: Zbir razlika i količnik dva uneta broja
+title: Aritmetičke operacije
 timelimit: 1.0
 memlimit: 64
 owner: RAF

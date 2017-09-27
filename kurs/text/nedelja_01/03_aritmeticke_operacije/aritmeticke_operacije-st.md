@@ -6,7 +6,7 @@ Korisnik unosi dva cela broja preko standardnog ulaza.
 
 ## Opis izlaza
 
-Na standardni izlaz ispisuju su redom zbir, razlika, celobrojni količnik i ostatak pri celobrojnom deljenju dva uneta broja.
+Na standardni izlaz ispisuju su redom zbir, razlika, proizvod, celobrojni količnik i ostatak pri celobrojnom deljenju dva uneta broja.
 
 ## Primer 1
 
