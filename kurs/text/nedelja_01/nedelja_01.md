@@ -161,9 +161,9 @@ Jedna važna napomena odnosi se na operacije uvećanja i umanjenja za 1. Oznaka 
 
 ## Ugrađene funkcije kao operatori
 
-Pored operatora koje smo do sada videli i koji koriste specijalne simbole, svaki viši programski jezik ima veliki broj već gotovih ugrađenih funkcija koji mogu da odrade veliki broj korisnih operacija. P
+Pored operatora koje smo do sada videli i koji koriste specijalne simbole, svaki viši programski jezik ima veliki broj već gotovih ugrađenih funkcija koji mogu da odrade veliki broj korisnih operacija. 
 
-Jedna od ugrađenih funkcija je funkcija pow(a,n) koja računa stepen n-ti stepen broja a. Funkcija pow , kao i većina drugih funkcija dostupna je u biblioteci math.h i da bi se koristila potrebno je u zaglavlje programa dodati sledeću liniju:
+Jedna od ugrađenih funkcija je funkcija pow(a,n) koja računa n-ti stepen broja a. Funkcija pow, kao i većina drugih funkcija dostupna je u biblioteci math.h i da bi se koristila potrebno je u zaglavlje programa dodati sledeću liniju:
 
 ```c
 #include <math.h>
