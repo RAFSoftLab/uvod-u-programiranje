@@ -20,7 +20,7 @@ Funkcija putchar ispisuje jedan karakter na konzolu, ima jedan ulazni parametar 
 int putchar(int c) 
 ``` 
 
-Obe ove funkcije učitavaju i ispisuju po jedan kaarketer i da bi se pročitalo i ispisalo više karaktera pozivaju se u petlji i ovde će biti primenjeni za ilustraciju rada sa petljama u zadacima koji čitaju i obrađuju ulazni niz karaktera, na primer izbacuju, zamenjuju, filtriraju, dupliraju karaktere prema određenim pravilima, pronalaze neke zakonitosti ili nepravilnosti. 
+Obe ove funkcije učitavaju i ispisuju po jedan karakter i da bi se pročitalo i ispisalo više karaktera pozivaju se u petlji i ovde će biti primenjeni za ilustraciju rada sa petljama u zadacima koji čitaju i obrađuju ulazni niz karaktera, na primer izbacuju, zamenjuju, filtriraju, dupliraju karaktere prema određenim pravilima, pronalaze neke zakonitosti ili nepravilnosti. 
 
 Ako bismo hteli da napišemo program koji na osnovu ulaznog niza karaktera koji se unosi preko konzole, a koji se završava oznakom za novi red pravi izlazni niz karaktera koji sadrži samo brojeve iz ulaznog niza (iz ulaznog teksta izbaciti sve osim brojeva). Jedno rešenje ovog zadatka bi izgledalo ovako: 
 
@@ -38,11 +38,11 @@ int main()
     return 0;
 }
 ``` 
-Ovde imamo primer da u uslovu while naredbe učitavamo karaktere funkcijom getchar() i proverovamo jednakost tog karaktera sa oznakom za kraj reda (\n). Ukoliko uslov nije ispunjen, a to znači da nismo došli do kraja reda, ulazimo u blok naredbi. Blok naredbi sadrži if naredbu koja proverava da li je uneti karakter u rasponu ASCII karatera od '0' do '9', odnosno da li je u pitanju cifra i ako jeste karaketr se ispisuje na konzolu. 
+Ovde imamo primer da u uslovu while naredbe učitavamo karaktere funkcijom getchar() i proverovamo jednakost tog karaktera sa oznakom za kraj reda (\n). Ukoliko uslov nije ispunjen, a to znači da nismo došli do kraja reda, ulazimo u blok naredbi. Blok naredbi sadrži if naredbu koja proverava da li je uneti karakter u rasponu ASCII karatera od '0' do '9', odnosno da li je u pitanju cifra i ako jeste karakter se ispisuje na konzolu. 
 
 Jedna stvar koja ovde može da zbuni je kako će program učitati ceo red karaktera, a zatim ispisati ceo red karaktera, kada se funkcije getchar() i putchar() pozivaju naizmenično. Odgovor leži u takozvanom baferovanju ulaznog skupa karaktera. Kada korisnik unosi karaktere preko konzole funkcija getchar "ne vidi" unete karaktere sve dok se ne unese ENTER. Tek kada se preko konzole unese ENTER, poziva se funkcija getchar() koja učitava redom unete karaktere. 
 
-U drugom primeru potrebno je napisati program korićenjem while petlje koja iz ulaznog niza karaktera izbacuje sva dupla slova, odnosno ako dva ista slova stoje jedan pored drugog, ispisuje samo jedno, na primer za aabbdd, treba da ispiše adb. Jedno rešenje ovog zadatka je: 
+U drugom primeru potrebno je napisati program korićenjem while petlje koji iz ulaznog niza karaktera izbacuje sva dupla slova, odnosno ako dva ista slova stoje jedan pored drugog, ispisuje samo jedno, na primer za aabbdd, treba da ispiše adb. Jedno rešenje ovog zadatka je: 
 
 ```c
 #include <stdio.h>
