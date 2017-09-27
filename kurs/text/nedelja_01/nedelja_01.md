@@ -83,7 +83,7 @@ Pored tipa float realni brojevi se u C-u mogu predstaviti tipovima double i long
 
 ## Promenljive
 
-Tipovi podataka su vrsta podataka koji se mogu koristiti u programima i mogu se odnositi na konstantne vrednosti. Na primer podatak 'a' je podatak tipa char koji je konstanta i njegova vrednost se ne može menjati. Sa druge strane, ako želimo da koristimo podatke koji se mogu menjati u programima, na primer mogu se učitati od korisnika preko konzole ili im se u toku rada programa menja vrednost koristimo *promenljive*.
+Tipovi podataka su vrsta podataka koji se mogu koristiti u programima i mogu se odnositi na konstantne vrednosti. Na primer podatak 'a' je podatak tipa char koji je konstanta i njegova vrednost se ne može menjati. Sa druge strane, ako želimo da koristimo podatke koji se mogu menjati u programima, na primer mogu se učitati preko konzole ili im se u toku rada programa menja vrednost koristimo *promenljive*.
 
 Promenljive predstavljaju podatke kojima se upravlja u programima. Promenljive mogu menjati vrednost u toku izvršavanja programa, otuda potiče reč promenljiva ili na engleskom variable. U najprostijem smislu to su imenovani delovi memorije kojima se pristupa u programu. Svaka promenljiva u C-u mora imati ime i definisan tip kojim je određena veličina u memoriji rezervisana za promenljivu kao i skup operacija koje se mogu vršiti nad promenljivom.  
 
