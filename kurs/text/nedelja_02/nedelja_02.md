@@ -210,9 +210,9 @@ Na primer, ako posmatramo sledeći niz naredbi
 
 ```c
 int a = 5;
-a = (a>0) ? 10 : -10;
+int c = (a>0) ? 10 : -10;
 ```
-Nakon izvršavanja ovog niza naredbi vrednost promenljive a će biti 10, jer je vrednost izraza a>0 tačno i ternarni uslovni operator vraća vrednost prvog izraza iza upitnika, koji iznosi 10.
+Nakon izvršavanja ovog niza naredbi vrednost promenljive c će biti 10, jer je vrednost izraza a>0 tačno i ternarni uslovni operator vraća vrednost prvog izraza iza upitnika, koji iznosi 10.
 
 Na mestu izraza Izraz2 i Izraz3 mogu se navesti i naredbe, na primer
 
