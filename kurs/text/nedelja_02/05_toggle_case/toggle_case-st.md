@@ -1,4 +1,4 @@
-Napisati program koji za jedno učitano slovo ispisuje mali ili veliki pandan tog slova, u zavisnosti da li je uneto slovo malo ili veliko.
+Napisati program koji za jedno učitano slovo ispisuje mali ili veliki pandan tog slova, u zavisnosti da li je uneto slovo veliko ili malo.
 
 ## Opis ulaza
 
