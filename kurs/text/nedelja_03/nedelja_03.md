@@ -77,7 +77,7 @@ Primer kojim ćemo ilustrovati while naredbu je primer izračunavanja faktorijel
 
 ```{r, eval = FALSE}
 0! = 1
-n! = n\*(n-1)\*(n-2)\*...\*1
+n! = n*(n-1)*(n-2)*...*1
 ```
 
 Implementacija ovog programa korišćenjem while naredbe:
