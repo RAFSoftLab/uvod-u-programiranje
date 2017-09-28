@@ -3,7 +3,7 @@ Napisati program kojim se ispisuje uneti tekst tako da svaka reč počinje velik
 
 ## Opis ulaza
 
-  - Preko standardnog ulaza korisnik unosi tekst.(tekst se sastoji od malih i velikih slova engleskog alfabeta i razmaka).
+  - Preko standardnog ulaza korisnik unosi tekst (tekst se sastoji od malih i velikih slova engleskog alfabeta i razmaka).
 
 ## Opis izlaza
 
