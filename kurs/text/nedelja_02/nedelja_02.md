@@ -41,22 +41,10 @@ Pošto je vrednost promenljive i koja je prvi operand u logičkoj operaciji && j
 ## Operatori nad bitovima
 
 Programski jezik C podržava operacije koje se izvršavaju direktno nad bitovima.Kao operatori ovakvih operacija najčešće se koriste celobrojni tipovi podataka koji se zapisuju u heksadecimalnom ili oktalnom formatu, a operacije se izvršavaju direktno nad bitovima kojima se predstavljaju ovi brojevi.
-
-Istinitosna tablica za operacije nad bitovima
-
-|p|q|p & q|p\|q|p ^ q|
-|---|---|:---:|:---:|:---:|
-|0|0| 0|0|0|
-|0|1| 0|1|1|
-|1|1| 1|1|0|
-|1|0| 0|1|1|
-
 Operacije nad bitovima se mogu podeliti u dve grupe, to su logičke operacije i operacije pomeranja bitova. Sve operacije sa objašnjenjem date su u tabeli na primeru dve celobrojne vrednsoti A = 60, B = 13, njihova binarna reprezentacija je
 
 A = 0011 1100,
-
 B = 0000 1101.
-
 
 |Operator|Opis|Primer A = 0011 1100, B = 0000 1101|
 |--------|----|-----------------------------------|
@@ -66,6 +54,15 @@ B = 0000 1101.
 |~|promena vrednosti bit-a|(~A ) je 1100 0011|
 |<<|šiftovanje bitova u levo, iza znaka se zadaje broj za koliko se bitovi pomeraju u levo, za upraznjena mesta upisuje se 0|A << 2 je 1111 0000|
 |>>|šiftovanje bitova u desno, iza znaka se zadaje broj za koliko se bitovi pomeraju u desno,  za upraznjena mesta upisuje se 0|A >> 2 je 0000 1111|
+
+Istinitosna tablica za logučke operacije nad bitovima
+
+|p|q|p & q|p\|q|p ^ q|
+|---|---|:---:|:---:|:---:|
+|0|0| 0|0|0|
+|0|1| 0|1|1|
+|1|1| 1|1|0|
+|1|0| 0|1|1|
 
 ## Prioritet izvršavanja operacija
 
