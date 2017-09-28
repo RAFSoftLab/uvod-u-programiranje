@@ -215,7 +215,7 @@ Na primer, ako posmatramo sledeći niz naredbi
 int a = 5;
 a = (a>0) ? 10 : -10;
 ```
-Nakon izvršavanja ovog niza naredbi vrednost promenljive a će biti 10, jer je vrednost izraza a>0 tačno i ternarni uslovni operator vraća vrednost prvog izraza, koji iznosi 10.
+Nakon izvršavanja ovog niza naredbi vrednost promenljive a će biti 10, jer je vrednost izraza a>0 tačno i ternarni uslovni operator vraća vrednost prvog izraza iza upitnika, koji iznosi 10.
 
 Na mestu izraza Izraz2 i Izraz3 mogu se navesti i naredbe, na primer
 
@@ -224,14 +224,14 @@ int a = -5;
 (a>0) ? printf("%d\n", a) :  printf("%d\n", 0-a);
 ```
 
-Ovaj deo koda će na konzolu ispisati broj 5.
+Ovaj deo koda će na sistemski izlaz ispisati broj 5.
 Moguće je i ovako nešto:
 
 ```c
 (a>0) ? a++ : a-- ;
 ```
 
-Ovde možemo videti da je uslovni operator sa upitnikom ustvari skraćeni zapis if-else naredbe. Ograničenje je da se za Izraz2 i Izraz3 može navesti samo jedna naredba, ali ne i blok naredbi.
+Ovde možemo videti da je uslovni operator sa upitnikom ustvari skraćeni zapis if-else naredbe. Ograničenje je da se za Izraz2 i Izraz3 može navesti samo jedna naredba, za razliku od if-else koji može imati blok naredbi.
 
 Mogu postojati i ugnježdeni uslovni operatori, na primer:
 
@@ -258,7 +258,7 @@ Pri čemu izraz mora biti nekog celobrojnog tipa (ovo važi za programski jezik 
 
 Naredba switch se izvršava tako što se izračuna vrednost izraza i pronalazi se case grana čija je vrednost konstante jednaka vrednosti izračunatog izraza. Ukoliko se pronađe takva case grana izvršavaju se svi blokovi naredbi u svim case granama počevši od case grane čija konstanta se poklapa sa izrazom, pa do kraja switch naredbe. Ukoliko se vrednost izraza ne poklapa ni sa jednom case granom, izvršava se blok označen sa default, ukoliko postoji.
 
-Najčešće nam je potreban slučaj da se izvrši samo jedna case grana i tada koristimo naredbu break. Ukoliko se naredba break navede na kraju bloka naredbi u case grane, preskače se izvršavanje svih ostalih case i default grane.
+Najčešće nam je potreban slučaj da se izvrši samo jedna case grana i tada koristimo naredbu break. Ukoliko se naredba break navede na kraju bloka naredbi u case grani, preskače se izvršavanje svih ostalih case grana i default grane.
 
 Rešenja zadatka sa danima u nedelji:  
 
@@ -283,7 +283,7 @@ int main()
 }
 ```
 
-Ukoliko nam je potrebno da za više različitih konstanti navedemo isti niz naredbi, možemo grupisati case grane. Na primer, ako umesto naziva dana u nedelji zadatak formulišemo da se ispiše da li je radni dan ili vikend, korišćenjem switch naredbe taj zadatak možemo rešiti an sledeći način:
+Ukoliko nam je potrebno da za više različitih konstanti navedemo isti niz naredbi, možemo grupisati case grane. Na primer, ako umesto naziva dana u nedelji zadatak formulišemo da se ispiše da li je radni dan ili vikend, korišćenjem switch naredbe taj zadatak možemo rešiti na sledeći način:
 
 ```c
 switch(i){
