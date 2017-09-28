@@ -1,4 +1,4 @@
-Napisati program koji za učitane vrednosti kateta, dva pravougla trougla, ispisuje koji trougao ima veću površinu.
+Napisati program koji za učitane vrednosti kateta dva pravougla trougla, ispisuje koji trougao ima veću površinu.
 
 ## Opis ulaza
 

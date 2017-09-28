@@ -1,4 +1,4 @@
-Napisati program koji za unetu godinu proverava da li je prestupna. Godina je prestupna kada je deljiva sa 400 ili kada je deliva sa 4 i ne sa 100.
+Napisati program koji za unetu godinu proverava da li je prestupna. Godina je prestupna kada je deljiva sa 400 ili kada je deliva sa 4 a nije deljiva sa 100.
 
 ## Opis ulaza
 
