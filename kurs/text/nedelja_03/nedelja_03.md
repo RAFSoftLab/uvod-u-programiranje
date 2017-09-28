@@ -249,6 +249,6 @@ int main()
    return 0;
 }
 ```
-Naziv funkcije je maksimumDvaBroja i funkcija vraća podatak koji je tipa int, a prima dva parametra, broj1 i broj2, takođe tipa int. Ovi parametri se sa zadatim imenima koriste u telu funkcije, a u funkciji se mogu definisati i lokalne promenljive, kao što je u ovom slučaju promenljiva rezultat. Promenljiva rezultat je vrednost koja se prosleđuje kao rezultat izvršavanja funkcije pozivom naredbe return.
+Naziv funkcije je maksimumDvaBroja i funkcija vraća podatak koji je tipa int, a prima dva parametra, broj1 i broj2, takođe tipa int. Ovi parametri se sa zadatim imenima koriste u telu funkcije, a u funkciji se mogu definisati i lokalne promenljive, kao što je u ovom slučaju promenljiva rezultat. Promenljiva rezultat je vrednost koja se prosleđuje kao rezultat izvršavanja funkcije pozivom naredbe return. Ako funkcija nema povratnu vrednost, onda se naredba return može pozvati bez parametara za izlazak iz funkcije. 
 
 Kada se funkcija poziva u funkciji main, potrebno je proslediti konkretne vrednosti za sve ulazne parametre funkcije, a tip prosleđenih vrednosti mora se poklapati sa tipovima ulaznih parametara u definiciji funkcije. Pošto funkcija vraća vrednost tipa int, prilikom poziva funkcije povratnu vrednost smo dodelili promenljivoj rez.  
