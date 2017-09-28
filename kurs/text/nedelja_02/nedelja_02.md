@@ -85,13 +85,13 @@ Programske konstrukcije i aritmetički izrazi mogu sadržati više operatora i p
 
 Prioritet izvršavanja objasnićemo na sledećem primeru. Posmatrajmo izraz
 ```c
-a += b \* ++c - 5
+a += b * ++c - 5
 ```
 Kako unarna operacija ++ ima najveći prioritet prvo će se vrednost promenljive c povećati za jedan, zatim će se izvršiti operacija množenja (\*), jer ima veći prioritet u odnosu na oduzimanje. Pošto operator oduzimanja ima veći prioritet nego operator dodele vrednosti += , prvo će se izvršiti oduzimanje, pa će se tek onda promenljivoj a dodati vrednost dobijenog izraza.
 Prioritet izvršavanja operacija se može izmeniti korišćenjem zagrada ( i ).
 Tako u prethodnom primeru možemo da promenimo da se oduzimanje vrši pre množenja dodavanjem zagrada na sledeći način:
 ```c
-a += b \* (++c - 5)
+a += b * (++c - 5)
 ```
 ## Naredbe grananja
 
