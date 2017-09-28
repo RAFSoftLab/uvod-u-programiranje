@@ -129,9 +129,9 @@ Ako posmatramo implementaciju funkcije jeProstBroj (u prvoj verziji) vidimo da s
 
 Na osnovu opsega vidlijivosti promenljive možemo podeliti u tri grupe:
 
-•	promenljive definisane u bloku
-•	interne ili lokalne promenljive
-•	eksterne ili globalne promenljive.
+* promenljive definisane u bloku
+* interne ili lokalne promenljive
+* eksterne ili globalne promenljive.
 
 Prvu vrstu promenljivih čine promenljive definisane u jednom bloku naredbi koji je označen vitičastim zagradama i može se odnositi na neku od naredbi grananje (if, switch) ili naredbi ponavljanja, a može biti i samostalni blok označen vitičastim zagradama (ovde jedino ne ubrajamo blok naredbi koji predstavlja implementaciju funkcije).  Ova vrsta promenljivih vidljiva je samo u bloku u kom je definisana, kao i u svim unutrašnjim blokovima. Ovo je primer programa koji sadrži definiciju promenljive x u jednom bloku. Promenljiva je vidljiva u bloku u kom je definisana i u unutrašnjem bloku. 
 
