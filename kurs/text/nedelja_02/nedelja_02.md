@@ -142,11 +142,11 @@ if(uslov){
 }
 ```
 
-Else grana ne mora da postoji, i u tom slučaju se deo koda u else grani neće izvršiti.
+Else grana ne mora da postoji.
 
 Ukoliko u bloku naredbi imamo samo jednu naredbu i nemamo definiciju promenljivih ne moraju se pisati vitičaste zagrade.
 
-Uslov u if naredbi je neka logička vrednost. Kako je ranije naglašeno, programski jezik C nema klasičan logički tip podataka, pa je uslov u C-u brojčana vrednost i tumači se kao tačno za sve vrednosti različite od nule, odnosno netačno za vrednosti jednake nuli.
+Uslov u if naredbi je neka logička vrednost. Kako je ranije naglašeno, programski jezik C nema klasičan logički tip podataka, što znači da je uslov u if naredbi brojčana vrednost i tumači se kao tačno za sve vrednosti različite od nule, odnosno netačno za vrednosti jednake nuli.
 
 Blokovi naredbi u if i else grani mogu sadržati i druge if naredbe, tako možemo imati sledeću strukturu programa:
 
@@ -162,8 +162,8 @@ if(uslov1){
 }
 ```
 
-Kod ovakvih slučajevima potrebno je voditi računa da se else grana pravilno pridruži odgovarajućoj if grani, a pravilo koje tom prilikom važi je da se svako else pridružuje najbližem if-u u prethodnom delu programa za koje nije navedeno drugo else. Radi lakšeg razumevanja programa koristi se uvlačenje, onako kako je to navedeno u primerima.
-Ukoliko imamo više uslova od kojih nam zavisi tok izvršavanja programa koristimo izraz else if kome se takođe može zadati uslov. Sintaksa je sledeća:
+Kod ovakvih slučajeva potrebno je voditi računa da se else grana pravilno pridruži odgovarajućoj if grani, a pravilo koje tom prilikom važi je da se svako else pridružuje najbližem if-u u prethodnom delu programa za koje nije navedeno drugo else. Radi lakšeg razumevanja programa koristi se uvlačenje, onako kako je to navedeno u primerima.
+Ukoliko imamo više uslova od kojih nam zavisi tok izvršavanja programa koristimo izraz else if kome se, kao i if naredbi zadaje uslov. Sintaksa je sledeća:
 
 ```{r, eval = FALSE}
 if(uslov1){
@@ -176,7 +176,6 @@ if(uslov1){
   blok naredbi 4
 }
 ```
-
 Nema ograničenja na broj else if grana. Ni u slučaju postojanje else if grane nije obavezno navođenje else grane.
 
 Kako bismo proširili program za pronalaženje većeg od dva broja, sa još jednim uslovom da proverimo da li su dva broja jednaka?
