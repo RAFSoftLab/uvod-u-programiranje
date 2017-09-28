@@ -110,7 +110,7 @@ Sintaksa naredbe do..while je:
 
 ```{r, eval = FALSE}
 do{
-	blok naredbi;
+    blok naredbi;
 }while(uslov)
 ```
 Dijagram toka koji ilustruje izvršavanje naredbe do...while:
@@ -119,7 +119,7 @@ Dijagram toka koji ilustruje izvršavanje naredbe do...while:
 
 Naredba se izvršava tako što se prvo izvrši blok naredbi, nakon čega se proverava ispunjenost uslova. Ukoliko je ispunjen uslov, ponovo se izvršava blok naredbi, ukoliko uslov nije ispunjen izlazi se iz petlje i nastavlja se sa izvršavanjem naredbi koje su navedene posle do..while naredbe. Osnovna razlika između naredbi while i do..while je što će se kod naredbe do..while blok naredbi sigurno izvršiti barem jednom.   
 
-Posmatrajmo sada zadatak da od korisnika želimo da učitamo broj koji je deljiv sa tri i dok korisnik ne unese takav broj ponovo ispisujemo isti zahtev. Ovakav zadatak je najbolje implementirati korišćenjem do..while naredbe:
+Posmatrajmo sada zadatak da treba da učitati broj koji je deljiv sa tri i dok korisnik ne unese takav broj ponovo ispisujemo isti zahtev. Ovakav zadatak je najbolje implementirati korišćenjem do..while naredbe:
 
 ```c
 #include <stdio.h>
