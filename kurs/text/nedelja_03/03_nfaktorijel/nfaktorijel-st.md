@@ -37,8 +37,8 @@ Napisati program koji izračunava n! .
 720
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik želi da izračuna 4!
 
-Pošto je 1*2*3*4=24, na standradnom izlazu potrebno je ispisati broj 24.
+Pošto je 1*2*3*4=24, na standardnom izlazu potrebno je ispisati broj 24.

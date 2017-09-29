@@ -37,6 +37,6 @@ fdjhgv664359dbd2222vvvk01
 664359
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi tekst 'ab123cd456ef78'. U ovom tekstu, nalaze se brojevi 123,456 i 78. Najveći od ovih brojeva je 456, pa je potrebno njega ispisati na standardnom izlazu.

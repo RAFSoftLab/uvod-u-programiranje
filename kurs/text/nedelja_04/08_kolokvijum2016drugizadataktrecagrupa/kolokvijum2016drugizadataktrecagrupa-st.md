@@ -6,7 +6,7 @@ Koristeći naredbu while i funkciju getchar() za čitanje karaktera obraditi ula
 
 ## Opis izlaza
 
-  - Na standardi izlaz ispisuje se odgovarajuci tekst.
+  - Na standardi izlaz ispisuje se odgovarajući tekst.
 ## Primer 1
 
 ### Ulaz
@@ -35,6 +35,6 @@ Bb ccCcC DdDDDDdddDD ef
 B2C5D11E1F1
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi tekst: 'AAababbBBCc'. S obzirom da se i velika i mala slova gledaju identično, jasno se vidi da je redosled uzastopnih slova sledeći: 3 puta slovo A, 1 slovo B, jednom slovo A, četiri puta slovo B, dva puta slovo C. Shodno tome potrebno je ispisati sledeći tekst na standardnom izlazu: A3B1A1B4C2.

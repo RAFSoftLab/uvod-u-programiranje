@@ -36,7 +36,7 @@ ab12cd321ef72
 486
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi tekst: 'ab12cd321ef72'
 Brojevi u ovom tekstu su redom 12,321,72. Brojevi u ogledalu su redom 21,123,27. Zbir ova tri broja je 171, pa je 171 potrebno ispisati na standardnom izlazu.

@@ -39,9 +39,9 @@ FfGg  Ops
 IiJj  Rsv
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi tekst sa tastature: "AbcD xyz." Svaki karakter koji je slovo engleskog alfabeta se ispisuje za tri slova unapred, pa je potrebno ispisati "DefG abc."
 
 ## Napomena
-Sledbenik slova z je slovo a. 
+Sledbenik slova z je slovo a.
