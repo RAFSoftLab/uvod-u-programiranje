@@ -11,11 +11,19 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    int n,m,k,num;
-    n = argv[1];
-    m = argv[2];
-    k = argv[3];
-    num = argv[4];
+    // Example, but you don't have to use streams!
+    ifstream outFile(argv[1]);  // User output
+    // ifstream solFile(argv[2]);  // Expected output
+    ifstream inFile(argv[3]);  // Input
+
+    int n,m,num,k;
+    inFile >> n >> m >> k;
+    outFile >> num;
+
+    // Check solution
+    outFile.close();
+    // solFile.close();
+    inFile.close();
 
     if(num >= n && num <= m && num%k == 0){
         return 1;  // For correct
