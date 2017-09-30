@@ -169,7 +169,7 @@ int main(){
 
 Ovaj programski kod će izazvati grešku prilikom kompajliranja, a poruka će glasiti:
 
-```{r, eval=FALSE}
+```
 error: 'x' undeclared (first use in this function)
 ```
 Ova poruka znači da kompajler na tom mestu ne vidi promenljivu x, odnosno ne vidi da je ona definisana.  

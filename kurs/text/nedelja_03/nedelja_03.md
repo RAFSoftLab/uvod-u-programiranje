@@ -20,7 +20,7 @@ Svaka od ovih naredbi omogućava nam da implementiramo ponavljanje bloka naredbi
 
 Sintaksa for naredbe je
 
-```{r, eval = FALSE}
+```
 for(inicijalizacija; uslov; inkrementacija){
 	blok naredbi
 }
@@ -61,7 +61,7 @@ Nakon što korisnik unese broj n ulazi se u for petlju koja u delu za inicijaliz
 
 Sintaksa naredbe while je:
 
-```{r, eval = FALSE}
+```
 while (uslov){
 	blok naredbi;
 }
@@ -75,7 +75,7 @@ Prvo se proverava ispunjenje zadatog uslova, ukoliko je uslov ispunjen, izvršav
 
 Primer kojim ćemo ilustrovati while naredbu je primer izračunavanja faktorijela za neki broj koji unosi korisnik. Faktorijel nekog broja se računa na sledeći način:
 
-```{r, eval = FALSE}
+```
 0! = 1
 n! = n*(n-1)*(n-2)*...*1
 ```
@@ -108,7 +108,7 @@ Nakon definisanja promenljivih, učitavanja broja n i inicijalizacije promenljiv
 
 Sintaksa naredbe do..while je:
 
-```{r, eval = FALSE}
+```
 do{
     blok naredbi;
 }while(uslov)
@@ -212,7 +212,7 @@ Postoje veliki broj već gotovih funkcija koje uvozimo iz različitih biblioteka
 
 Deklaracija funkcije ima sledeći oblik
 
-```{r, eval = FALSE}
+```
 tip_povratne_vrednosti  ime_funkcije(lista parametara){
 	blok naredbi
 }
