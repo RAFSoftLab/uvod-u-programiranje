@@ -21,7 +21,7 @@ Relacioni operatori u programskom jeziku C dati su u tabeli.
 
 ## Logički operatori
 
-Logički operatori kao operande uzimaju logičke promenljive, a to su tačno (true) i netačno (false) odnosno u C-u je to celobrojni tip pri čemu se vrednost 0 tumači kao netačno, a sve različito od nula kao tačno. Postoje tri relaciona operatora, to su i, ili i negacija.
+Logički operatori kao operande uzimaju logičke promenljive, a to su tačno (true) i netačno (false) odnosno u C-u je to celobrojni tip pri čemu se vrednost 0 tumači kao netačno, a sve različito od nula kao tačno. Postoje tri logička operatora, to su i, ili i negacija.
 
 <table>
     <tr><th>Operator</th><th>Opis</th><th>Primer, A=1, B=0</th></tr>
