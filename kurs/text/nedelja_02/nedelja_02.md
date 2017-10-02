@@ -7,7 +7,7 @@ author: RAF
 
 Rezultat izvršavanja relacionih operatora je vrednost tačno ili netačno koje se u jeziku C predstavljaju celobrojnim vrednostima 0 za netačno i broj različit od nule za tačno. Relacioni operatori koriste se za poređenje vrednosti operanada, na primer da li su jednake ili različite, da li jedan operand ima veću vrednost od druge i slično.
 
-Relacioni operatori u programskom jeziku se dati su u tabeli.
+Relacioni operatori u programskom jeziku C dati su u tabeli.
 
 <table>
     <tr><th>Operator</th><th>Opis</th><th>Primer A = 10, B=6</th></tr>
@@ -21,7 +21,7 @@ Relacioni operatori u programskom jeziku se dati su u tabeli.
 
 ## Logički operatori
 
-Logički operatori kao operande uzimaju logičke promenljive, a to su tačno (true) i netačno (false) odnosno u C-u je to celobrojni tip pri čemu se vrednost 0 tumači kao netačno, a sve različito od nula kao tačno. Postoje tri relaciona operatora, to su i, ili i negacija.
+Logički operatori kao operande uzimaju logičke promenljive, a to su tačno (true) i netačno (false) odnosno u C-u je to celobrojni tip pri čemu se vrednost 0 tumači kao netačno, a sve različito od nula kao tačno. Postoje tri logička operatora, to su i, ili i negacija.
 
 <table>
     <tr><th>Operator</th><th>Opis</th><th>Primer, A=1, B=0</th></tr>
@@ -104,7 +104,7 @@ Jedan program predstavlja skup naredbi. Svaka naredba se u programskom jeziku C 
 
 Pretpostavimo da treba napraviti program koji učitava dva broja i ispisuje koji je veći. Tekstualni opis rešenja bi bio:
 
-```{r, eval = FALSE}
+```
 učitamo brojeve a i b
 ako je a>b ispišemo a
 inače ispišemo b.
@@ -137,7 +137,7 @@ int main()
 Sintaksa `if` naredbe je sledeća
 
 
-```{r, eval = FALSE}
+```
 if(uslov){
   blok naredbi koje će se izvršiti ako je uslov tačan (if grana)
 }else{
@@ -153,7 +153,7 @@ Uslov u `if` naredbi je neka logička vrednost. Kako je ranije naglašeno, progr
 
 Blokovi naredbi u `if` i `else` granama mogu sadržati i druge `if` naredbe, tako da možemo imati sledeću strukturu programa:
 
-```{r, eval = FALSE}
+```
 if(uslov1){
    if(uslov2){
 	naredba1;
@@ -165,10 +165,10 @@ if(uslov1){
 }
 ```
 
-Kod ovakvih slučajeva potrebno je voditi računa da se else grana pravilno pridruži odgovarajućoj if grani, a pravilo koje tom prilikom važi je da se svako `else` pridružuje najbližem `if`-u u prethodnom delu programa za koje nije navedeno drugo `else`. Radi lakšeg razumevanja programa koristi se uvlačenje, onako kako je to navedeno u primerima.
+Kod ovakvih slučajeva potrebno je voditi računa da se else grana pravilno pridruži odgovarajućoj if grani, a pravilo koje tom prilikom važi je da se svako `else` pridružuje najbližem `if`-u u prethodnom delu programa za koje nije navedeno drugo `else`. Radi lakšeg razumevanja programa koristi se uvlačenje, onako kako je to urađeno u primerima.
 Ukoliko imamo više uslova od kojih nam zavisi tok izvršavanja programa koristimo izraz `else if` kome se, kao i `if` naredbi, zadaje uslov. Sintaksa je sledeća:
 
-```{r, eval = FALSE}
+```
 if(uslov1){
    blok naredbi 1
 }else if(uslov2){
@@ -206,7 +206,7 @@ int main()
 
 Još jedan način grananja u C-u je korišćenjem ternarnog uslovnog operatora koji ima sledeću sintaksu:
 
-```{r, eval = FALSE}
+```
 Izraz1 ? Izraz2 : Izraz3;
 ```
 
@@ -247,7 +247,7 @@ Mogu postojati i ugnježdeni uslovni operatori, na primer:
 Ako bismo dobili zadatak da napišemo program da za uneti redni broj dana u nedelji ispišemo njegov naziv i ako bismo pokušali da ga implementiramo korišćenjem if-else naredbe, morali bismo da koristimo više else-if grana. Kod ovakvih slučajeva, kada imamo uslov koji podrazumava neke višestruke vrednosti, koristi se naredba `switch`. Naredba switch ima sledeću sintaksu:
 
 
-```{r, eval = FALSE}
+```
 switch(izraz) {
 	case konstanta1 : blok naredbi 1
 	case konstanta2 : blok naredbi 2

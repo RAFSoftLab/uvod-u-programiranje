@@ -37,6 +37,6 @@ Napisati program koji od unetog broja N ispisuje broj koji ima cifre kao broj N,
 31
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi broj 1234. Na standardnom izlazu potrebno je ispisati broj koji ima cifre u obrnutom redosledu, pa je to broj 4321.  

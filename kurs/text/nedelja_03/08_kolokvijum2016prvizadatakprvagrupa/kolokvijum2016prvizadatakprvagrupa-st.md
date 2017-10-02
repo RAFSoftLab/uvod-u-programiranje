@@ -59,6 +59,6 @@ Napisati funkciju pom(int arg) koja vraća najveću razliku između susednih cif
 200
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi A=20 i B=30. Brojevi 20, 21 22, 23, 24 zadovoljavaju uslov da je najveća razlika između susednih cifara manja od 3.

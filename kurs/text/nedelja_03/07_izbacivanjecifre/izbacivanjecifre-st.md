@@ -37,6 +37,6 @@ Napisati program kojim se izbacuje svako pojavljivanje cifre CF iz datog broja N
 785421
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik želi da izbaci svo pojavljivanje cifre 4 iz broja 12344567. Na standardnom izlazu potrebno je ispisati broj 123567.

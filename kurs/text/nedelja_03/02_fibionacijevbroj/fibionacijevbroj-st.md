@@ -41,8 +41,8 @@ Fibonačijev niz: 1,1,2,3,5,8,13...
 21
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
-Prva linija standardnog ulaza označava da korisnik zeli da dobije četvrti po redu Fibonačijev broj.  
+Prva linija standardnog ulaza označava da korisnik želi da dobije četvrti po redu Fibonačijev broj.  
 
 Pošto je četvrti Fibonačijev broj 3, na standardnom izlazu potrebno je ispisati 3.

@@ -8,23 +8,21 @@
     ulaz: AAababbBBCc
     izlaz: A3B1A1B4C2
 */
+
 int main() {
-    char c, last;
-    c = getchar();
-    last = c;
+    char c, last = ' ';
     int broj = 0;
-    while (c != '\n') {
+    while ((c = getchar()) != '\n') {
         if ( (c >= 'a') && (c <= 'z') ) c=c-'a'+'A';
-        if (c == last) broj++;
-        else {
-            putchar(last);
-            printf("%d", broj);
-            broj = 1;
+        if (c == last) {
+            broj++;
+        } else {
+            if (broj > 0) printf("%d", broj);
             last = c;
+            putchar(last);
+            broj = 1;
         }
-        c = getchar();
     }
-    putchar(last);
-    printf("%d", broj);
+    if (broj>0) printf("%d", broj);
     return 0;
 }

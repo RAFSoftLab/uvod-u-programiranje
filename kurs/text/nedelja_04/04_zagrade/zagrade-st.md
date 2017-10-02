@@ -37,7 +37,7 @@ dskjd (ds ) vv(d)
 dskjd  vv
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi tekst 'ab(cde)ef(g)' . Ukoliko se izbace zagrade, i karakteri koji se između njih nalaze, dobija se tekst: abef, pa je to ono sto treba ispisati na standardnom izlazu.
 

@@ -37,6 +37,6 @@ Napisati program koji određuje ostatak pri deljenju broja A sa brojem B bez kor
 3
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi brojeve 21 i 4. Na standardnom izlazu potrebno je ispisati ostatak pri deljenju broja 21 sa brojem 4, koji iznosi 1.

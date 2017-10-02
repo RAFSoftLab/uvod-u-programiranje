@@ -10,13 +10,13 @@ Pored funkcija scanf i printf za učitavanje podataka sa konzole, odnosno standa
 
 Funkcija getchar čita jedan karakter sa konzole, nema ulaznih parametara i vraća tip int koji predstavlja ASCII kod karaktera.
 
-```r
+```c
 int getchar(void)
 ``` 
 
 Funkcija putchar ispisuje jedan karakter na konzolu, ima jedan ulazni parametar tipa int koji je ASCII kod karaketra i ima isti taj karaketer (ASCII kod) kao povratnu vrednost. 
 
-```r
+```c
 int putchar(int c) 
 ``` 
 

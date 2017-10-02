@@ -37,6 +37,6 @@ Napisati program koji pronalazi aritmetičku sredinu svih delilaca broja N. Imat
 4.50
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik želi da izračuna aritmetičku sredinu svih delioca broja 8. Broj 8 je deljiv sa 1,2,4,8. Pa je aritmetička sredina njegovih delioca 3.75.

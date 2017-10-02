@@ -37,6 +37,6 @@ Napisati funkciju pom(int arg, int k) koja vraća broj dobijen kada se iz argume
 24
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi A=761 B=128 i C=10. Kada se iz broja A izbace sve cifre koje su manje od 5 dobija se broj A1=76, analogno B1=8 i C1=0 (jer su obe cifre manje od 5). Zbir A1+B1+C1=84, pa je potrebno ispisati na standardnom izlazu 84.

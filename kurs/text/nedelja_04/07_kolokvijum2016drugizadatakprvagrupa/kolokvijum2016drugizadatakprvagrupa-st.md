@@ -1,5 +1,5 @@
 
-Koristeći naredbu while i funkciju getchar() za čitanje karaktera obraditi ulaznu sekvencu karaktera koja se sastoji od brojeva i znakova + i -, tako da se izračuna i ispise rezultat aritmetičkih operacija sabiranja i oduzimanja koje se izvršavaju redom.
+Koristeći naredbu while i funkciju getchar() za čitanje karaktera obraditi ulaznu sekvencu karaktera koja se sastoji od brojeva i znakova + i -, tako da se izračuna i ispiše rezultat aritmetičkih operacija sabiranja i oduzimanja koje se izvršavaju redom.
 
 ## Opis ulaza
 
@@ -37,6 +37,6 @@ Koristeći naredbu while i funkciju getchar() za čitanje karaktera obraditi ula
 18
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik želi da izračuna vrednost izraza:  '10+13-12+25-5+100'. Brojevi u ovom izrazu su redom 10,13,12,25,5,100. Nakon izvršavanja redom operacija dobija se rezultat 131 koji je potrebno ispisati na standardnom izlazu.

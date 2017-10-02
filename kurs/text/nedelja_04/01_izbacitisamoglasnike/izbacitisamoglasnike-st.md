@@ -37,6 +37,6 @@ DrUgi tEsT prImeR
 Drg tsT prmR
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
 Prva linija standardnog ulaza označava da korisnik unosi tekst "Ovo je prvI zAdatAk". Samoglasnici u ovom tekstu su redom: O,o,e,I,A,a,A. Ova slova će biti izbačena iz unetog teksta, pa na standardnom izlazu treba ispisati "v j prv zdtk".

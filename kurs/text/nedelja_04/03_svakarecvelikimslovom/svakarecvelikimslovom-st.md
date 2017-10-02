@@ -37,8 +37,8 @@ Pera studira RAF
 Pera Studira RAF
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
-Prva linija standardnog ulaza označava da korisnik unosi tekst: "pera je odlican student". Reči u ovom tekstu su redom: pera, je, odlican, student. Svaka od ovih reci mora početi velikim slovom, pa je na standardnom izlazu potrebno ispisati "Pera Je Odlican Student".
+Prva linija standardnog ulaza označava da korisnik unosi tekst: "pera je odlican student". Reči u ovom tekstu su redom: pera, je, odlican, student. Svaka od ovih reči mora početi velikim slovom, pa je na standardnom izlazu potrebno ispisati "Pera Je Odlican Student".
 ## Napomena
 Tekst moze početi razmakom.

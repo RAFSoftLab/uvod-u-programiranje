@@ -50,7 +50,7 @@ Napisati program koji pronalazi najveći od unetih n celih brojeva.
 18
 ~~~
 
-## Objasnjenje primera 1
+## Objašnjenje primera 1
 
-Prva linija standardnog ulaza označava da korisnik zeli da unese 5 brojeva. Potrebno je naći maksimum(najveći od njih).
-Posto je najveći uneti broj 7, potrebno je ispisati na standardnom izlazu broj 7.
+Prva linija standardnog ulaza označava da korisnik želi da unese 5 brojeva. Potrebno je naći maksimum(najveći od njih).
+Pošto je najveći uneti broj 7, potrebno je ispisati na standardnom izlazu broj 7.
