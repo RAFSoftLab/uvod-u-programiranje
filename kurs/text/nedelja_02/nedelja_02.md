@@ -165,7 +165,7 @@ if(uslov1){
 }
 ```
 
-Kod ovakvih slučajeva potrebno je voditi računa da se else grana pravilno pridruži odgovarajućoj if grani, a pravilo koje tom prilikom važi je da se svako `else` pridružuje najbližem `if`-u u prethodnom delu programa za koje nije navedeno drugo `else`. Radi lakšeg razumevanja programa koristi se uvlačenje, onako kako je to navedeno u primerima.
+Kod ovakvih slučajeva potrebno je voditi računa da se else grana pravilno pridruži odgovarajućoj if grani, a pravilo koje tom prilikom važi je da se svako `else` pridružuje najbližem `if`-u u prethodnom delu programa za koje nije navedeno drugo `else`. Radi lakšeg razumevanja programa koristi se uvlačenje, onako kako je to urađeno u primerima.
 Ukoliko imamo više uslova od kojih nam zavisi tok izvršavanja programa koristimo izraz `else if` kome se, kao i `if` naredbi, zadaje uslov. Sintaksa je sledeća:
 
 ```
