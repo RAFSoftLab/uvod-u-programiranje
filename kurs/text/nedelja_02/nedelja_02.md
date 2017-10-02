@@ -7,7 +7,7 @@ author: RAF
 
 Rezultat izvršavanja relacionih operatora je vrednost tačno ili netačno koje se u jeziku C predstavljaju celobrojnim vrednostima 0 za netačno i broj različit od nule za tačno. Relacioni operatori koriste se za poređenje vrednosti operanada, na primer da li su jednake ili različite, da li jedan operand ima veću vrednost od druge i slično.
 
-Relacioni operatori u programskom jeziku se dati su u tabeli.
+Relacioni operatori u programskom jeziku C dati su u tabeli.
 
 <table>
     <tr><th>Operator</th><th>Opis</th><th>Primer A = 10, B=6</th></tr>
