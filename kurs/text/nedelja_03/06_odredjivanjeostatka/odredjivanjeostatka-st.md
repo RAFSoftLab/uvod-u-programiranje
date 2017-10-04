@@ -3,7 +3,7 @@ Napisati program koji određuje ostatak pri deljenju broja A sa brojem B bez kor
 
 ## Opis ulaza
 
-  - Preko standardnog ulaza korisnik unosi dva cela broja A i B (A>=0, B>A)
+  - Preko standardnog ulaza korisnik unosi dva cela broja A i B (A>=0, B>=0)
 
 ## Opis izlaza
 
