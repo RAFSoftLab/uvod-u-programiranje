@@ -189,7 +189,7 @@ int main(){
 }
 ```
 
-Ovde je promenljiva x, definisana jednom u spoljašnem bloku kao tip int, a zatim redefinisana u unutrašnjem kao tip float (može biti i isti tip kao u spoljašnjem bloku). Na ovaj način imamo situaciju da je promenljiva x iz spoljašnjeg bloka “sakrivena” u unutrašnjem bloku i umesto nje se koristi druga promeljiva sa istim imenom. 
+Ovde je promenljiva x definisana jednom u spoljašnem bloku kao tip int, a zatim redefinisana u unutrašnjem kao tip float (može biti i isti tip kao u spoljašnjem bloku). Na ovaj način imamo situaciju da je promenljiva x iz spoljašnjeg bloka “sakrivena” u unutrašnjem bloku i umesto nje se koristi druga promeljiva sa istim imenom. 
 
 Interne ili lokalne promenljive su promenljive definisane u telu funkcije. Opseg vidljivosti ovih promenljivih ograničen je na funkciju u kojoj su definisane. Promenljivoj koja je difinisana u jednoj funkciji ne može se pristupiti iz druge funkcije. U sledećem primeru prikazan je program u kom se u funkciji main poziva funkcija prikazi. 
 
