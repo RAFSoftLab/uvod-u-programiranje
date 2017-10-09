@@ -102,6 +102,62 @@ int suma(int n){
 
 ## Uzajamna rekurzija
 
+Pored klasične rekurzije o kojoj je do sada bilo reči postoji i takozvana uzajamna ili indirektna rekurzija koja se odnosi na situaciju kada dve funkcije jedna drugu pozivaju rekurzivno. Na ovaj način fukcija ne poziva samu sebe direktno, nego posredno preko druge funkcije. Ova situacija se može opisati sledećim programskim fragmentom:
+
+
+```
+void funkcijaA(){	
+      ...
+      funkcijaB();
+      ...
+}
+
+void funkcijaB(){
+    ...
+      funkcijaA();
+      ....
+}
+```
+
+Sledeći primer programa ilustruje uzajamnu rekurziju na primeru računanja da li je uneti broj paran ili neparan (ovo se može implementirati jednostavnije korišćenjem operatora za ostatak pri deljenju, ovde je cilj ilustracija koncepta uzajamne rekurzije). Implementirane su dve funkcije paran i neparan koje jedna drugu međusobno pozivaju. Logika koja je ovde implementirana je broj n je paran ako je n-1 neparan. I ovde imamo trivijalni slučaj za n=0.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int neparan(int broj);
+int paran(int broj);
+
+int main ()
+{
+
+int broj;
+printf("Unesite broj: \n");
+scanf("%d", &broj);
+
+if(neparan(broj))
+   printf("%d je neparan\n",broj);
+else
+   printf("%d je paran\n",broj);
+return 0;
+}
+
+int neparan(int broj){
+if (broj==0)
+   return 0;
+else
+   return paran(broj-1);
+}
+
+int paran(int broj){
+if(broj==0)
+   return 1;
+else
+   return neparan(broj-1);
+}
+```
+
+
 
 
 ## Interesantni primeri primene rekurzije
