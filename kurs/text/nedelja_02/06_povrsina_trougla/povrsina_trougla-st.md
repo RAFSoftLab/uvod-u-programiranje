@@ -27,7 +27,7 @@ Na standardni izlaz se ispisuje 1 ukoliko je povšina prvog trougla veća. Ukoli
 ### Ulaz
 
 ~~~
-4 6 8 2
+4 6 8 3
 ~~~
 
 ### Izlaz
