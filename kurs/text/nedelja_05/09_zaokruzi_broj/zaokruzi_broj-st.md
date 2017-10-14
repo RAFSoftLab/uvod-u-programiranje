@@ -1,4 +1,4 @@
-Napisati funkciju koja za zadati realni broj N vraća zaokruzeni broj na X (X <= 6) decimala. Zatim napisati program koji testira tu funkciju.
+Napisati funkciju koja za zadati realni broj **N** vraća zaokruzeni broj na X (X <= 6) decimala. Zatim napisati program koji testira tu funkciju.
 
 ## Опис улаза
 

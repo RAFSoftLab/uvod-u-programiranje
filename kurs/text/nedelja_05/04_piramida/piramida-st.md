@@ -1,4 +1,4 @@
-Napisati program koji za unet prirodni broj N iscrtava piramidu visine N na standardni izlaz.
+Napisati program koji za unet prirodni broj **N** iscrtava piramidu visine N na standardni izlaz.
 
 ## Опис улаза
 

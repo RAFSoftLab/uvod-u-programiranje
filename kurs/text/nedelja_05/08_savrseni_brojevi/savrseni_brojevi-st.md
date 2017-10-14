@@ -1,4 +1,4 @@
-Napisati program kojim se određuju i ispisuju svi savršeni brojevi od 2 do $N$. Broj je **savršen** ako je jednak sumi svojih delitelja isključujući njega samog. `28 je savršen broj, jer je: 28 = 1 + 2 + 4 + 7 + 14`
+Napisati program kojim se određuju i ispisuju svi savršeni brojevi od 2 do **N**. Broj je **savršen** ako je jednak sumi svojih delitelja isključujući njega samog. `28 je savršen broj, jer je: 28 = 1 + 2 + 4 + 7 + 14`
 
 ## Опис улаза
 
@@ -33,5 +33,5 @@ Redom ispisani savršeni brojevi, razmaknuti jednim razmakom.
 ### Излаз
 
 ~~~
-6 28 496 
+6 28 496
 ~~~
