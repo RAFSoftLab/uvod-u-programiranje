@@ -41,4 +41,4 @@ Napisati program koji izračunava n! .
 
 Prva linija standardnog ulaza označava da korisnik želi da izračuna 4!
 
-Pošto je 1*2*3*4=24, na standardnom izlazu potrebno je ispisati broj 24.
+Pošto je 1 x 2 x 3 x 4 = 24, na standardnom izlazu potrebno je ispisati broj 24.
