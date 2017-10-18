@@ -149,7 +149,7 @@ return 0;
 }
 ```
 
-U sledećem primeru promenljivoj x  pristupa joj se izvan bloka u kom je definisana. 
+U sledećem primeru promenljivoj x se pristupa izvan bloka u kom je definisana. 
 
 ```c
 include<stdio.h>
