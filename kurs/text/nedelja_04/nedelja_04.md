@@ -63,7 +63,7 @@ int main()
 }
 ```
 
-U rešenju ovog zadatka čitamo ulazni niz karaktera i poredimo dva susedna slova, zbog toga imamo dve promeljive tipa char koje označavaju prethodni karakter i trenutni karakter koji se posmatrama. Prvi karakter ćemo ispisati nakon učitavanja (jer on sigurno nije jednak sa prethodnim, jer ni nema prethodnog), to je pre izvršavanja while naredbe i to će nam biti prvi prethodni karakter. U while naredbi proveravamo da li je trenutni karakter različit od prethodnog i samo ako jeste ispisujemo ga. Uslov za izlazak iz while petlje je učitavanje karaktera za kraj reda. 
+U rešenju ovog zadatka čitamo ulazni niz karaktera i poredimo dva susedna slova, zbog toga imamo dve promenljive tipa char koje označavaju prethodni karakter i trenutni karakter koji se posmatrama. Prvi karakter ćemo ispisati nakon učitavanja (jer on sigurno nije jednak sa prethodnim, jer ni nema prethodnog), to je pre izvršavanja while naredbe i to će nam biti prvi prethodni karakter. U while naredbi proveravamo da li je trenutni karakter različit od prethodnog i samo ako jeste ispisujemo ga. Uslov za izlazak iz while petlje je učitavanje karaktera za kraj reda. 
 
 Ovaj zadatak se može uraditi i na drugi način korišćenjem naredbe continue.
 
