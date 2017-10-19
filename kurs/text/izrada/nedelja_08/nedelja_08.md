@@ -30,9 +30,9 @@ Dvodimenzionalni nizovi se mogu inicijalizovati na sličan način kao jednodimen
 
 ```
 int a[3][4] = {
-    {0, 1, 2, 3} ,    /*  inicijalizcija vrste sa indeksom 0 */
-    {4, 5, 6, 7} ,    /*  inicijalizcija vrste sa indeksom 1 */
-    {8, 9, 10, 11}   /*  inicijalizcija vrste sa indeksom 2 */
+    {0, 1, 2, 3} ,    /*  inicijalizacija vrste sa indeksom 0 */
+    {4, 5, 6, 7} ,    /*  inicijalizacija vrste sa indeksom 1 */
+    {8, 9, 10, 11}   /*  inicijalizacija vrste sa indeksom 2 */
 };
 ```
 
