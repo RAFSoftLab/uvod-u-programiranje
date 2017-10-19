@@ -133,6 +133,6 @@ strcat(str1, str2), str1 = Zdravosvima
 strlen(str1) :  11
 ```
 
-Duzina stringa koja se dobija operacijom strlen jednaka je stvarnom broju karaktera koje ima string, bez null karaktera.
+
 
 
