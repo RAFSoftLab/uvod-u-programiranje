@@ -5,11 +5,11 @@ author: RAF
 
 ## Pojam rekurzije
 
-Pojam rekurzije potiče iz matematike i ima veliku primenu u programiranju. U matematičkom smislu rekurzija predstavlja definisanje problema uz pomoć samog tog problema. U matematici postoji veliki broj primera rekurzija, a najpoznatiji su Fibonačijevi brojevi koji se definišu na sledeći način:
+Pojam rekurzije potiče iz matematike i ima veliku primenu u programiranju. U matematičkom smislu rekurzija predstavlja definisanje problema uz pomoć samog tog problema. U matematici postoji veliki broj primera rekurzije, a najpoznatiji su Fibonačijevi brojevi koji se definišu na sledeći način:
 
 F(n) = F(n-1)+F(n-2). 
 
-Ovaj izraz znači da se n-ti fibonačijev broj izračunava kao zbir n-1-og i n-2-gog fibonačijevog broja, koji se opet izračunavaju na isti način kao n-ti broj.
+Ovaj izraz znači da se n-ti fibonačijev broj izračunava kao zbir n-1-og i n-2-og fibonačijevog broja, koji se opet izračunavaju na isti način kao n-ti broj.
 
 Drugi način definisanja rekurzije kaže da rekurzija predstavlja način definisanja problema preko pojednostavljene verzije istog tog problema. Jedan primer kojim se ovo može opisati je rešavanje problema pronalaska puta do kuće (problem ćemo označiti izrazom “pronađi put do kuće”). Rekurzijom bi se ovaj problem mogao opsati u tri koraka, na sledeći način:
 
@@ -31,13 +31,13 @@ Kako bismo opisali algoritam za izračunavanje faktorijela nekog broja rekurzijo
 
 Odgovor:
 1.	trivijalni slučaj je n=0, i u ovom slučaju izlazimo iz rekurzije
-2.	trenutni rezultat pomnožimo sa n i smanjimo n za 1 (ovim smo se približili trivijalnom slučaju)
+2.	trenutni rezultat pomnožimo sa n i smanjimo n za 1 (ovim smo se približili trivijalnom slučaju, jer smanjivanjem broja n idemo ka nuli)
 3.	rekurzivni poziv za novo n. 
 
 
 ## Implementacija rekurzije
 
-Rekurzija se implementira preko funkcija i predstavlja pojavu u kojoj funkcija poziva samu sebe. Korišćenjem rekurzije moguće je simulirati rad petlje, odnosno ponavljanja bloka naredbi. Rekurzija se često koristi u rešavanju raznih matematičkih problema, kao što su izračunavanje faktorijela nekog broja, fibonačijevih brojeva i sl, ali se često koristi i u programerskim zadacima kao što su sortiranje nizova, pretraživanje složenih struktura podataka i rešavanje složenih programerskih problema (na primer raspored kraljica na šahovkoj tabli).
+Rekurzija se implementira preko funkcija i predstavlja pojavu u kojoj funkcija poziva samu sebe. Korišćenjem rekurzije moguće je simulirati rad petlje, odnosno ponavljanja bloka naredbi. Rekurzija se često koristi u rešavanju raznih matematičkih problema, kao što su izračunavanje faktorijela nekog broja, fibonačijevih brojeva i sl, ali se koristi i u programerskim zadacima kao što su sortiranje nizova, pretraživanje složenih struktura podataka i rešavanje složenih programerskih problema (na primer raspored kraljica na šahovkoj tabli).
 
 ```
 void recursion() { 
@@ -51,7 +51,7 @@ int main() {
 }
 ```
 
-U implementaciji rekurzije moramo biti oprezni da ne izazovemo beskunačnu petlju. Na primer ako bismo hteli da implementiramo program koji računa zbir prvih n prirodnih brojeva, ovaj problem bismo mogli da definišemo rekurzivno na sledeći način, suma prvih n brojeva je jednaka sumi prvih n-1 brojeva plus broj n. Ako ovu logiku implementiramo direktno dobijamo program koji je dat na sledećem listingu. Međutim, ovaj program će ući u beskonačnu petlju, jer funkcija suma stalno poziva sama sebe.   
+U implementaciji rekurzije moramo biti oprezni da ne izazovemo beskunačnu petlju. Na primer, ako bismo hteli da implementiramo program koji računa zbir prvih n prirodnih brojeva, ovaj problem bismo mogli da definišemo rekurzivno na sledeći način, suma prvih n brojeva je jednaka sumi prvih n-1 brojeva plus broj n. Ako ovu logiku implementiramo direktno dobijamo program koji je dat na sledećem listingu. Međutim, ovaj program će ući u beskonačnu petlju, jer funkcija suma stalno poziva sama sebe.   
 
 ```c
 #include <stdio.h>
@@ -74,7 +74,7 @@ int suma(int n){
 }
 ```
 
-Da bi se izbegla beskonačna petlja u rekurzivnom pozivu, mora se uvesti trivijalni slučaj, odnosno slučaj koji predstavlja izlaz iz rekurzije. U primeru sabiranje prvih n prirodnih brojeva, za slučaj n=1 zbir prvih n prirodnih brojeva ne zahteva sabiranje već odmah možemo vratiti rezultat. Ovde smo u funkciji suma dodali slučaj za n=1 koji ne ulazi u rekurziju već samo vraća vrednost funkcije. Na ovaj način petlja poziva funkcije suma se zaustavlja u momentu kada n dobije vrednost 1. 
+Da bi se izbegla beskonačna petlja u rekurzivnom pozivu, mora se uvesti trivijalni slučaj, odnosno slučaj koji predstavlja izlaz iz rekurzije. U primeru sabiranja prvih n prirodnih brojeva, za slučaj n=1 zbir prvih n prirodnih brojeva ne zahteva sabiranje već odmah možemo vratiti rezultat. Ovde smo u funkciji suma dodali slučaj za n=1 koji ne ulazi u rekurziju već samo vraća vrednost funkcije i to nam je trivijalni slučaj. Na ovaj način petlja poziva funkcije suma se zaustavlja u momentu kada n dobije vrednost 1. 
 
 ```c
 #include <stdio.h>
@@ -119,7 +119,7 @@ void funkcijaB(){
 }
 ```
 
-Sledeći primer programa ilustruje uzajamnu rekurziju na primeru računanja da li je uneti broj paran ili neparan (ovo se može implementirati jednostavnije korišćenjem operatora za ostatak pri deljenju, ovde je cilj ilustracija koncepta uzajamne rekurzije). Implementirane su dve funkcije paran i neparan koje jedna drugu međusobno pozivaju. Logika koja je ovde implementirana je broj n je paran ako je n-1 neparan. I ovde imamo trivijalni slučaj za n=0.
+Sledeći primer programa ilustruje uzajamnu rekurziju na primeru računanja da li je uneti broj paran ili neparan (ovo se može implementirati jednostavnije korišćenjem operatora za ostatak pri deljenju, ovde je cilj ilustracija koncepta uzajamne rekurzije). Implementirane su dve funkcije paran i neparan koje jedna drugu međusobno pozivaju. Logika koja je ovde implementirana je broj je paran ako je broj-1 neparan. I ovde imamo trivijalni slučaj za broj=0, koja će u funkciji paran vratiti 1, odnosno tačno jer je 0 paran broj, a u funkciji neparan će vratiti 0 odnosno netačno.
 
 ```c
 #include <stdio.h>
@@ -156,12 +156,6 @@ else
    return neparan(broj-1);
 }
 ```
-
-
-
-
-## Interesantni primeri primene rekurzije
-
 
 
 
