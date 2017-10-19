@@ -78,6 +78,10 @@ int main(){
     return 0;
 }
 ```
+## Stringovi kao parametri funkcija
+
+
+
 
 ## Ugrađene funkcije za rad sa stringovima
 
