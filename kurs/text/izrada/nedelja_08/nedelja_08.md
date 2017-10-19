@@ -364,8 +364,8 @@ Umesto korišćanja tipa podataka niz, za deklarisanja funkcije koja prima niz k
 int funkcija(int *niz);
 ```
 
-Funkcija prosek iz prethodnog primra se moze deklarisati i na sledeći način
+Funkcija prosek iz prethodnog primera se moze deklarisati i na sledeći način
 ```
 float prosek(float *niz, int duzina)
 ```
-Ovako deklarisana funkcija poziva se na isto način kao funkcija deklarisana sa nizom kao ulaznim parametrom, što znači da joj se u pozivu može proslediti niz ili pokazivač. 
+Ovako deklarisana funkcija poziva se na isti način kao funkcija deklarisana sa nizom kao ulaznim parametrom, što znači da joj se u pozivu može proslediti niz ili pokazivač. 
