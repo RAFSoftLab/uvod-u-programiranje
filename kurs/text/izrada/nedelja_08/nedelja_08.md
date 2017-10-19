@@ -42,7 +42,7 @@ Slično kao kod jednodimenzionlnih nizova navode se elementi nizova u vitičasti
 
 ## Pokazivači
 
-Koncept pokazivača je nešto po čemu je prepoznatljiv programski jezik C. Sam koncept pokazivača prisutan je u mnogim programskim jezicima negde eksplicitno kao u C-u, a negde implicitno, kao što je to programski jezik Java u kojoj su pokazivači "skriveni" i ne koriste se direktno u programima. 
+Koncept pokazivača je nešto po čemu je prepoznatljiv programski jezik C. Sam koncept pokazivača prisutan je u mnogim programskim jezicima, negde eksplicitno kao u C-u, a negde implicitno, kao što je to programski jezik Java u kojoj su pokazivači "skriveni" i ne koriste se direktno u programima. 
 
 Neke stvari se u C-u mogu implementirati lakše korišćenjem pokazivača, a neke stvari se mogu implementirati samo korišćenjem pokazivača. Svaki dobar programer bi trebalo da savlada koncept pokazivača.
 
@@ -262,11 +262,110 @@ int main () {
    return 0;
 }
 ```
+## Pokazivači kao parametri funkcije
 
+Funkcije se mogu deklarisati tako da njihovi ulazni parametri ili povratne vrednosti budu pokazivači. 
 
+Primer deklaracije funkcije koja prima tip podataka pokazivača kao ulazni parametar je
 
+```
+int funkcija(int *param1, char *param2)
+```
 
+Ova funkcija ima dva ulazna parametra to su param1 koji je pokazivač na int i param2 pokazivač na char.
 
+U sledećem primeru programa data je funkcije koja koristi pokazivače kao ulazne parametre, to je funkcija zameni_brojeve koja vrši zamenu vrednosti brojeva (prvom broju dodeljuje vrednost drugog, a drugom broju vrednost prvog). 
 
+```c
+#include <stdio.h>
 
+int zameni_brojeve(int *broj1, int *broj2);
 
+int main(){
+    int a = 4, b = 7;
+    printf("Pre zamene: a=%d, b=%d\n", a, b);
+    zameni_brojeve(&a, &b);  // prosleđujemo adrese promenljivih
+    printf("Posle zamene: a=%d, b=%d", a, b);
+    return 0;
+}
+
+int zameni_brojeve(int *broj1, int *broj2){
+    int pom;
+    pom = *broj1;
+    *broj1 = *broj2;
+    *broj2 = pom;
+    return 0;
+}
+```
+Funkcija koristi pomoćnu promenljivu pom, u koju se privremeno smešta vrednost jednog broja. Funkcija je deklarisana da prima dve adresa int promenljivih, zato joj se kao parametri u pozivu prosleđuju adrese promenljivih a i b, odnosno &a i &b. 
+
+Kada se u funkciji promene vrednosti promenljivih čije adrese su prosleđene kao parametri, menjaju se direktno vrednosti na memorijskim lokacijama i ove vrednosti ostaju sačuvane i posle izvršavanja funkcije. Ovaj princeip se u C-u zove prosleđivanje po referenci jer se ne prosleđuju promenljive već adrese tih promenljivih odnosno referenca na njih. Prosleđivanje po referenci se može implementarati jedino korišćenjem pokazivača i ne predstavlja pravi pojam prosleđivanja po referenci već njegovu simulaciju pomoću pokazivača (neki programski jezici imaju pojam prosleđivanje po referenci, u C-u se ovaj koncept simulira korišćenjem pokazivača).
+
+Da li se funkcija zamene vrednosti brojeva može implementirati bez pokazivača? Odgovor je ne, osim ako se koriste neke složenije strukture podataka koje sadrže dva elementa koje će se vratiti kao rezultat izvršavanja funkcije.  
+
+Pokazivač može da bude i povratna vrednost iz funkcije, što se deklariše na sledeći način:
+
+```
+int * funkcija();
+```
+
+Ovako deklarisana funkcija vraća pokazivač na int. Kod implementacije ove funkcije, moze nastati problem ako vraćamo pokazivač na neku lokalnu promenljivu koju smo napravili u funkciji.
+
+Postoje i pokazivači na funkcije, a jedan primer deklaracije je
+```
+void (*funkcija) (int)
+```
+Ovde je deklarisan pokazivac na funkciju funkcija koja nema povratnih vrednosti i ima jedan ulazni parametar tipa int. 
+
+## Nizovi kao parametri funkcija
+
+Nizovi se mogu presleđivati kao parametri funkcija. Primer funkcije koja prima niz kao ulazni parametar je
+
+```
+int funkcija(int niz[]) 
+```
+
+Vrlo često se kao parametar funkcije pored niza prosleđuje i dužina niza koja će se koristiti u funkciji kao ograničenje brojača indeksa za pristup elementima niza. 
+
+Na sledećem listingu prikazan je primer funkcije koja kao parametar prima niz, a prosleđuje se i veličina niza kao poseban parametar. Funkcija računa prosečnu vrednost svih elemenata niza. 
+
+```c
+#include <stdio.h>
+
+float prosek(float niz[], int duzina);
+
+int main(){
+    float niz1[] = {1.0, 7.0, 5.0, 20.0, 6.0};
+    float p = prosek(niz1, 5);
+    printf("prosek = %.1f\n", p);
+    return 0;
+}
+
+float prosek(float niz[], int duzina){
+    float suma = 0.0;
+    int i;
+    for(i=0; i<duzina; i++){
+        suma+=niz[i];
+    }
+    return suma/duzina;
+}
+```
+Prilikom definisanja funkcije koja prima niz kao parametar moguće je navesti i veličinu niza, na primer:
+
+```
+int funkcija(int niz[3])
+```
+
+Ovako se definiše funkcija koja kao parametar prima niz od tri elementa. Međutim, ovoj funkciji se kao parametar može proslediti niz sa proizvoljnim brojem elemenata. 
+
+Umesto korišćanja tipa podataka niz, za deklarisanja funkcije koja prima niz kao parametar može se staviti parametra tipa pokazivač, jer su nizovi predstavljeni u C-u kao pokazivači na prvi element niza. 
+
+```
+int funkcija(int *niz);
+```
+
+Funkcija prosek iz prethodnog primra se moze deklarisati i na sledeći način
+```
+float prosek(float *niz, int duzina)
+```
+Ovako deklarisana funkcija poziva se na isto način kao funkcija deklarisana sa nizom kao ulaznim parametrom, što znači da joj se u pozivu može proslediti niz ili pokazivač. 
