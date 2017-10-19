@@ -3,11 +3,11 @@ title: Nizovi
 author: RAF
 ---
 
-## Pojam niza
+## Tip podataka niz
 
 Nizovi su specijalni tipovi podataka koji predstavljaju kolekciju promenljivih istog tipa. Ta kolekcija je najčešće fiksne, unapred definisane veličine.
 
-Umesto da definišemo više promanljivih na primer broj0, broj1, broj2, broj3,..broj99, možemo definisati niz pod imenom nizBrojeva veličine 100 čiji su elementi brojevi. U tom slučaju elementima niza pristupamo sa nizBrojeva[0], nizBrojeva[1],... nizBrojeva[99]. Brojevi u uglastoj zagradi nazivaju se indeksi. Prvi element niza ima indeks 0. Elementi niza mogu se u programu koristiti kao i bilo koja druga promenljiva. Može im se dodeliti ili ispisati vrednost, mogu se koristiti kao operandi u operacijama, mogu se prosleđivati kao argumenti funkcija. 
+Umesto da definišemo više promenljivih na primer broj0, broj1, broj2, broj3,..broj99, možemo definisati niz pod imenom nizBrojeva veličine 100 čiji su elementi brojevi. U tom slučaju elementima niza pristupamo sa nizBrojeva[0], nizBrojeva[1],... nizBrojeva[99]. Brojevi u uglastoj zagradi nazivaju se indeksi. Prvi element niza ima indeks 0. Elementi niza mogu se u programu koristiti kao i bilo koja druga promenljiva. Može im se dodeliti ili ispisati vrednost, mogu se koristiti kao operandi u operacijama, mogu se prosleđivati kao argumenti funkcija. 
 
 Niz je u memoriji predstavljen kao sekvenca susednih memorijskih lokacija. 
 
