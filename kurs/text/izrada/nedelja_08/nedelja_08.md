@@ -3,7 +3,7 @@ title: Matrice, pokazivači
 author: RAF
 ---
 
-## Multidimanzionalni nizovi
+## Multidimenzionalni nizovi
 
 Multidimenzionalni nizovi su nizovi većih dimenzija, što znači da imamo nizove čiji su elementi nizovi, koji opet kao elemente mogu imati nizove. 
 
