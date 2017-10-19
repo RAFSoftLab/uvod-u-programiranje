@@ -94,6 +94,7 @@ U C-u postoji veliki broj ugrađenih funkcija za rad sa stringovima koje se uvoz
 <tr><td>strlwr(s1)</td><td>sva slova u stringu s1 pretvara u mala slova</td></tr>
 <tr><td>strupr(s1)</td><td>sva slova u stringu s1 pretvara u velika slova</td></tr>
 </ul>
+</table>
 
 Sledi program koji ilustruje korišćenje nekih od funkcija iz tabele.
 
