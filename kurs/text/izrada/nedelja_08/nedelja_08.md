@@ -10,7 +10,7 @@ Multidimenzionalni nizovi su nizovi većih dimenzija, što znači da imamo nizov
 Multidimenzionalni nizovi deklarišu se na sledeći način:
 
 ```
-tip naziv[velicina1][velicina2][velicina3]..[velicina4]; 
+tip naziv[velicina1][velicina2][velicina3]..[velicinaN]; 
 ```
 
 ## Matrice
