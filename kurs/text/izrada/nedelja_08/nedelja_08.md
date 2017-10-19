@@ -94,6 +94,7 @@ Treba razlikovati dve stvari, ako deklarišemo pokazivač sa int &ast;ip, imamo 
 
 Bez obzira na koji tip podataka pokazuje, vrednost svake promenljive koja je pokazivač je u stvari broj koji predstavlja memorijsku adresu. 
 
+
 ## Korišćenje pokazivača u programima
 
 Primer programa koji koristi pokazivače prikazan je na sledećem listingu. U njemu se vrši dodela vrednosti pokazivača. Vrednost koja se može dodeliti pokazivaču je adresa promenljive. 
@@ -117,6 +118,153 @@ int main () {
 Kada pokrenemo ovaj program videćemo da &var (adresa promenljive var) i ip (pokazivač na promenljivu var) imaju istu vrednost. Sa  &ast;ip pristupamo samoj promenljivoj, osnosno vrednost &ast;ip će biti vrednost promenljive na koju pokazuje ip.  
 
 Kada promenimo vrednost za  &ast;ip, ustvari menjamo vrednost promenljive var na koju pokazuje ip.
+
+Vrednost se pokazivaču može dodeliti i u samoj deklaraciji sa int &ast;ip = &var. Ova naredba dodeljuje vrednost promenljivoj ip, i radi istu stvar kao kad napišemo
+
+```
+int *ip;
+ip = &var;
+```
+
+Postoji jedna posebna vrednost za pokazivač, a to je NULL. Pokazivaču se može dodeliti vrednost NULL što označava da pokazivač ne pokazuje ni na šta. Vrednost NULL pokazivača je adresa sa brojem 0. Memorijska lokacije sa oznakom 0 je rezervisana za operativni sistem i ne sme joj se pristupati u programima, ona ovde samo predstavlja konstantu koja se dodeljuje NULL pokazivaču i označava da pokazivač ne pokazije ni na šta. 
+
+```
+int *pok = NULL;
+```
+Da bismo proverili da pokazivač ima vrednost NULL možemo koristiti if naredbu:
+
+if(pok) - tačno ako pok nije NULL
+if(!pok) - tačno ako pok jeste NULL.
+
+## Nizovi su pokazivači
+
+Nizovima se u C-u može upravljati preko pokazivača. Naziv niza je pokazivač na prvi element niza. Drugim rečima, ako deklarišemo niz:
+
+```
+int niz[10]
+```
+
+promenljivu sa nazivom niz mozemo dodeliti pokazivaču na sledeći način:
+```
+int *p;
+int niz[10];
+p = niz;
+```
+Promenljive deklarisane kao nizovi su istog tipa kao promenljve deklarisane kao pokazivači (tip elemenata niza treba da je isti kao tip na koji pokazuje pokazivač). Gornjim programskim fragmentom p dobija vrednost pokazivača na prvi element niza. Elementima niza možemo pristupati sa &ast;p, &ast;(p+1), &ast;(p+2),... Ovo je ilustrovano na programu koji je prikazan na sledećem listingu 
+
+```c
+#include <stdio.h>
+
+int main () {
+   double bilans[5] = {1000.0, 2.0, 3.4, 17.0, 50.0};
+   double *p;
+   int i;
+   p = bilans;
+   printf( "Ispis vrednsoti niza preko pokazivaca p\n");
+   for ( i = 0; i < 5; i++ ) {
+      printf("*(p + %d) : %.1f\n",  i, *(p + i) );
+   }
+   printf( "Ispis vrednosti elemenata niza preko promenljive bilans\n");
+   for ( i = 0; i < 5; i++ ) {
+      printf("*(bilans + %d) : %.1f\n",  i, *(bilans + i) );
+   }
+   return 0;
+}
+```
+U programu je kreirana promenljiva bilans koja je tipa niz, zatim je pokazivaču p dodeljena vrednost promenljive bilans, odnosno sada imamo dve promenljive, to su bilans i p koje pokazuju na prvi element niza. U dve for petlje ilustrovan je prikaz elemenata niza preko ove dve promenljive. Ono što je ovde bitno primetiti je da je pokazivač p deklarisan kao double, što odgovora tipu elemanata niza.
+
+## Aritmetičke operacije sa pokazivačima
+
+Pokazivač je u C-u adresa promenljive odnosno broj i nad njim se mogu vršiti aritmetičke operacije isto kao i sa drugim brojevnim tipovima. Četri aritmetičke operacije se mogu koristiti sa pokazivačima: ++, -- , +, -. 
+
+Izvršavanje aritmetičkih operaja nad pokazivačima ilustrovaćemo na jednom primeru inkrementacije (povećanja za 1). Pretpostavimo da smo deklarisali pokazivač na int na sledeći način: 
+
+```
+int *pok
+```
+
+Zatim pretpostavimo da je vrednost pokazivača pok jednaka 1000 (u decimalnom brojevnom sistemu) i da su brojevi tipa int na našoj platformi predstavljeni sa 4 bajta (32 bita), pozivom aritmetičke operacije ++ dobija se sledeća memorijska lokacija, odnosno preskače se cela veličina int-a. Naredba pok++ će promeniti vrednost promenljive pok na 1000+4 = 1004. 
+
+Ako bi pok pokazivao na karakter, koji je veličine jednog bajta, operacija pok++ bi promenila vrednost pok-a na 1001. 
+
+Korišćenjem aritmetičke operacije za inkrementaciju nad pokazivačima može se implementirati pristup elementima niza kako je to prikazano na sledećem lisitingu. 
+
+```c
+#include <stdio.h>
+int main(){
+   int MAX = 3;
+   int  var[] = {10, 100, 200};
+   int  i, *ptr;
+   ptr = var;
+   for ( i = 0; i < MAX; i++) {
+      printf("Adresa elementa var[%d] = %x\n", i, ptr);
+      printf("Vrednost elementa var[%d] = %d\n", i, *ptr);
+      /* pomeranje na sledecu memorijsku lokaciju odnosno sledeci element niza*/
+      ptr++;
+   }
+   return 0;
+}
+```
+Ako bismo hteli da ispišemo elemente niza od poslednjeg ka prvom, koristili bi dekrementaciju (--). Operacije dekrementacije (smanjivanje za 1) funkcioniše analagno inkrementaciji, odnosno, vrednost pokazivača se smanjuje za veličinu promenljive na koju pokazuje. Ovde bismo za početnu vrednost pokazivača ptr dodelili adresu poslednjeg elementa niza, odnosno:
+
+```
+ptr = &var[MAX-1];
+```
+Prilikom dodele prvog elementa niza nismo koriristili adresu već promenljivu var koja ja tipa niz, što je u C-u isto što i tip pokazivača na prvi element niza. 
+
+## Poređenje pokazivača
+
+Pokazivači se mogu porediti korišćenjem relacionih operatora ==, <, >. Na sledećem listingu prikazan je program koji ispisuje elemente niza u while petlji čiji je uslov rezultat relacionog operatora nad pokazivačima. U uslovu while petlje se pitamo da li je pokazivač ptr, koji će redom pokazivati na elemente niza, manji ili jednak od adrese poslednjeg elementa niza. Brojač i ovde koristimo samo zbog ispisa rednog broja elementa niza. 
+
+```c
+#include <stdio.h>
+
+int main (){
+   int MAX = 3;
+   int  var[] = {10, 100, 200};
+   int  i, *ptr;
+   ptr = var;
+   i = 0;
+   while ( ptr <= &var[MAX - 1] ) {
+      printf("Adresa elementa var[%d] = %x\n", i, ptr );
+      printf("Vrednost elementa [%d] = %d\n", i, *ptr );
+      ptr++;
+      i++;
+   }
+   return 0;
+}
+```
+## Pokazivač na pokazivač
+
+Moguća je konstrukcija da pokazivač pokazuje na promenljivu koja je opet pokazivač. Na ovaj način može se napraviti lanac pokazivača.
+
+Kada deklarišemo pokazivač koji pokazuje na pokazivač prvi pokazivač sadrži adresu drugog pokazivača, a drugi pokazivač adresu promenljive koja sadrži konkretnu vrednost. 
+
+Deklaracija pokazivača na pokazivač postiže se duplom oznakom za pokazivač (*):
+```
+int **pok;
+```
+Kada se pristupa konkretnoj vrednosti promenljive preko dva povezana pokazivača koristi se isti znak (&ast;&ast;), kao što je to prikazano u programu na sledećem listingu.
+
+```c
+#include <stdio.h>
+
+int main () {
+   int  var;
+   int  *ptr;
+   int  **pptr;  // pokazivac na pokazivac
+   var = 3000;
+   ptr = &var;
+   pptr = &ptr;  // adresa promenljive koja je pokazivac
+   printf("var = %d\n", var );
+   printf("*ptr = %d\n", *ptr );
+   printf("**pptr = %d\n", **pptr);
+   return 0;
+}
+```
+
+
+
 
 
 
