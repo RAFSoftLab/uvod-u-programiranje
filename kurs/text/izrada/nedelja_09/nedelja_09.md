@@ -14,8 +14,10 @@ char str[7];
 ```
 a može im se dodeliti vrednost na dva načina:
 
-char str[7] = {'Z', 'd', 'r', 'a', 'v', 'o', '\0'};  -  poslednji element mora biti null karakter
-char str[7] = "Zdravo"; - string je niz karaktera u dvostrukim navodnicima, kod ovog slučaja kompajler će napraviti niz od 7 karaktera,   od kojih će prvih 6 biti popunjeno vidljivim karakterima koji su dodeljeni stringu, a na poslednje mesto će se postaviti null karakter.  
+<ul>
+<li>char str[7] = {'Z', 'd', 'r', 'a', 'v', 'o', '\0'};  -  poslednji element mora biti null karakter</li>
+<li>char str[7] = "Zdravo"; - string je niz karaktera u dvostrukim navodnicima, kod ovog slučaja kompajler će napraviti niz od 7 karaktera,   od kojih će prvih 6 biti popunjeno vidljivim karakterima koji su dodeljeni stringu, a na poslednje mesto će se postaviti null karakter.</li>  
+</ul>
 
 Ovde možemo primetiti da je veličina niza jednaka duzini stringa plus jedan. 
 
@@ -37,9 +39,9 @@ A string se može umetnuti u ispis nekog drugog stringa korišćenjem znaka %s
 ```
 printf("Pozdrav: %s", str);
 ```
-Učitavanje stringa preko sistemskog ulaza može se izvršiti funkcijom scanf("%s", str), međutim, ova funkcija čita samo jednu reč, odnosno čita string samo do unetog praznog karaktera (space). Ovo naravno nije dovoljno i potrebno je realizovati funkcionalnost čitanja celog stringa, najčešće do kraja reda (\n) ili oznake EOF (end of file). 
+Učitavanje stringa preko sistemskog ulaza može se izvršiti funkcijom scanf("%s", str), međutim ova funkcija čita samo jednu reč, odnosno čita string samo do unetog praznog karaktera (space). Ovo naravno nije dovoljno i potrebno je realizovati funkcionalnost čitanja celog stringa, najčešće do kraja reda (\n) ili oznake EOF (end of file). 
 
-Ova funkcionalnost bi se mogla implementirati korišćenjem funkcije getchar za čitanje jednog po jednog karaktera i smetanje u niz. Program koji ovo implementira prikazan je na sledećem listingu. 
+Ova funkcionalnost bi se mogla implementirati korišćenjem funkcije getchar za čitanje jednog po jednog karaktera i smeštanje u niz. Program koji ovo implementira prikazan je na sledećem listingu. 
 ```c
 #include <stdio.h>
 int main(){
@@ -80,8 +82,66 @@ int main(){
 ```
 ## Stringovi kao parametri funkcija
 
+Pošto su stringovi u C-u realizovani kao nizovi karaktera, korišćenje stringova u funkcijama vrši se na isti način kao korišćenje nizova. 
 
+Deklaracija funkcije koja uzima string kao ulazni parametar vrši se na isti način kao kod nizova. Parametri se mogu deklarisati kao nizovi
 
+```
+int funkcija(char str[]);
+```
+
+ili kao pokazivači 
+
+```
+int funkcija(char* str);
+```
+
+Na sledećem listingu prikazana je funkcija toUpper koja kao parametar prima string a vrši pretvaranje svih malih slova iz ulaznog stringa u velika. 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void toUpper(char str[]); // sva slova u stringu pretvara u velika
+
+int main(){
+    printf("Unesite string: \n");
+    char unos[200];
+    gets(unos);
+    toUpper(unos);
+    printf("Uneti string posle poziva funkcije toUpper: %s\n", unos);
+    return 0;
+}
+
+void toUpper(char str[]){
+    int i = 0;
+    while(str[i]!='\0'){
+       if('a'<=str[i] && str[i]<='z'){
+            str[i] = str[i]-32;
+       }
+       i++;
+    }
+}
+
+```
+
+Funkcija se u jednoj while petlji kreće po elementima niza, odnosno karakterima u stringu i kada naiđe na malo slovo pretvara ga u veliko tako što oduzima 32 koliko je rastojanje između malih i velikih slova u ASCII tabeli. U uslovu while petlje koristi se karakter '\0' koji označava kraj stringa, odnosno while petlja se izvršava dok ne dođemo do null karaktera koji označava kraj stringa. 
+
+U main funkciji se poziva funkcija toUpper i ispisuje se rezultat. Treba primetiti da se string koji je prosleđen kao parametar ne vraća kao rezultat funkcije, nego se menja sam parametar. Razlog je što su strigovi kao i nizovi realizovani kao pokazivači i promenom vrednosti elemenata niza ili stringa u funkciji menja se direktno vrednost na određenoj memorijskoj lokaciji i te promene ostaju sačuvane i posle izvršavanja funkcije (prosleđivanje po referenci). 
+
+Kako bi se funkcija toUpper mogla implementirai korišćenjem pokazivača? 
+
+```c
+void toUpperPok(char *str){
+    while(*str!='\0'){
+       if('a'<=*str && *str<='z'){
+            *str = *str-32;
+       }
+       str++;
+    }
+}
+```
+U ovoj funkciji parametar je pokazivač. U funkciji nam nije potreban brojač, jer umesto pristupa nizu preko indeksa koristimo aritmetičku operaciju inkrementacije nad pokazivačem. Odnosno, u svakoj iteraciji while petlje pomeramo pokaziva str na sledeći element stringa. Uslov za izlazak iz while petlje je da smo došli do poslednjeg elementa u stringu, a to je karakter '\0'. 
 
 ## Ugrađene funkcije za rad sa stringovima
 
