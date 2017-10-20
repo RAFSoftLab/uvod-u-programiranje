@@ -124,12 +124,11 @@ void toUpper(char str[]){
 }
 
 ```
-
 Funkcija se u jednoj while petlji kreće po elementima niza, odnosno karakterima u stringu i kada naiđe na malo slovo pretvara ga u veliko tako što oduzima 32 koliko je rastojanje između malih i velikih slova u ASCII tabeli. U uslovu while petlje koristi se karakter '\0' koji označava kraj stringa, odnosno while petlja se izvršava dok ne dođemo do null karaktera koji označava kraj stringa. 
 
 U main funkciji se poziva funkcija toUpper i ispisuje se rezultat. Treba primetiti da se string koji je prosleđen kao parametar ne vraća kao rezultat funkcije, nego se menja sam parametar. Razlog je što su strigovi kao i nizovi realizovani kao pokazivači i promenom vrednosti elemenata niza ili stringa u funkciji menja se direktno vrednost na određenoj memorijskoj lokaciji i te promene ostaju sačuvane i posle izvršavanja funkcije (prosleđivanje po referenci). 
 
-Kako bi se funkcija toUpper mogla implementirai korišćenjem pokazivača? 
+Kako bi se funkcija toUpper implementirala korišćenjem pokazivača? 
 
 ```c
 void toUpperPok(char *str){
@@ -141,14 +140,14 @@ void toUpperPok(char *str){
     }
 }
 ```
-U ovoj funkciji parametar je pokazivač. U funkciji nam nije potreban brojač, jer umesto pristupa nizu preko indeksa koristimo aritmetičku operaciju inkrementacije nad pokazivačem. Odnosno, u svakoj iteraciji while petlje pomeramo pokaziva str na sledeći element stringa. Uslov za izlazak iz while petlje je da smo došli do poslednjeg elementa u stringu, a to je karakter '\0'. 
+U ovoj funkciji parametar je pokazivač. U funkciji nam nije potreban brojač, jer umesto pristupa nizu preko indeksa koristimo aritmetičku operaciju inkrementacije nad pokazivačem. Odnosno, u svakoj iteraciji while petlje pomeramo pokazivač str na sledeći element stringa. Uslov za izlazak iz while petlje je da smo došli do poslednjeg elementa u stringu, a to je karakter '\0'. 
 
 ## Ugrađene funkcije za rad sa stringovima
 
 U C-u postoji veliki broj ugrađenih funkcija za rad sa stringovima koje se uvoze iz biblioteke string.h, neke od korisnih funkcija prikazane su u sledećoj tabeli. 
 
 <table>
-<thead><td>Funkcija</td><td>Značenje</td></thead>
+<tr><th>Funkcija</th><th>Značenje</th></tr>
 <tr><td>strcpy(s1, s2)</td><td>kopira string s2 u string s1</td></tr>
 <tr><td>strcat(s1, s2)</td><td>konkatenacija stringova, string s2 se dodaje na kraj stringa s1</td><tr>
 <tr><td>strlen(s1)</td><td>vraća dužinu stringa s1, vraća se broj karaktera u stringu bez null karaktera</td></tr>
@@ -166,7 +165,6 @@ Sledi program koji ilustruje korišćenje nekih od funkcija iz tabele.
 #include <string.h>
 
 int main(){
-
    char str1[] = "Zdravo";
    char str2[] = "svima";
    char str3[12];
@@ -189,7 +187,7 @@ int main(){
 
 U ovom primeru vrši se kopiranje stringova, konkatenacija stringova i ispis dužine stringa. 
 
-Stringovi str1 i str2 su inicijalizovani prikom deklaracije, a string str3 je samo deklarisan, ali mu se naredbom strcpy(str3, str1) dodeljuje vrednost stringa str1. Zatim se vrši konkatenacija stringova str1 i str2, tako da se string str2 dodaje na str1 i na kraju se pronalazi dužina stringa str1. Kada se ovaj program pokrene na sistemski izlaz se ispisuje:
+Stringovi str1 i str2 su inicijalizovani prilikom deklaracije, a string str3 je samo deklarisan, ali mu se naredbom strcpy(str3, str1) dodeljuje vrednost stringa str1. Zatim se vrši konkatenacija stringova str1 i str2, tako da se string str2 dodaje na str1 i na kraju se pronalazi dužina stringa str1. Kada se ovaj program pokrene na sistemski izlaz se ispisuje:
 
 ```
 strcpy(str3, str1), str3 = Zdravo
