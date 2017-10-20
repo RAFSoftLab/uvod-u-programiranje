@@ -32,7 +32,7 @@ Ova deklaracija će rezervisati 10 X 8 = 80 bajtova memorije (veličina tipa dou
 
 ## Inicijalizacija niza
 
-Inicijalizacija niza predstavlja dodelu vrednosti elementima niza. Inicijalizacija se može vršiti na dva načina, dodela vrednosti svim elementima niza odjednom, i dodela vrednosti jednom po jednom elementu. 
+Inicijalizacija niza predstavlja dodelu vrednosti elementima niza. Inicijalizacija se može vršiti na dva načina, dodela vrednosti svim elementima niza odjednom i dodela vrednosti jednom po jednom elementu. 
 
 Svim elementima niza vrednost se dodeljuje navođenjem vrednosti u vitičastim zagradama razdvojenih zarezom, kao na primer
 ```
