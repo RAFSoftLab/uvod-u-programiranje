@@ -23,9 +23,9 @@ tip dvodimenzionalniNiz [m][n];
 
 Ovakav dvodimenzionalni niz se može predstaviti i kao tabela koja ima m vrsta i n kolona. 
 
-![alt text](media/nedelja_08/matrice.png)
+Ako bismo imali matricu a[3][4], njene vrednosti bi se tabelarno mogle predstaviti na sledeći način:
 
-Ako bismo imali niz a[2][3], njegove vrednosti bi se tabelarno mogle predstaviti na sledeći način:
+![alt text](media/nedelja_08/matrice.png)
 
 Ovde vidimo da se elementi jednodimenzionalnog niza identifikuju sa a[i][j] gde su i i j pozitivni celi brojevi i predstavljaju indekse nizova. 
 Dvodimenzionalni nizovi se mogu inicijalizovati na sličan način kao jednodimenzionalni, dodelom vrednosti svim elementima niza na sledeći način:
@@ -38,7 +38,7 @@ int a[3][4] = {
 };
 ```
 
-Slično kao kod jednodimenzionlnih nizova navode se elementi nizova u vitičastim zagradama, ali pošto su elementi niza opet nizovi umesto jednostavnih vrednosti imamo opet elemente u vitičastim zagradama. 
+Slično kao kod jednodimenzionlnih nizova navode se elementi nizova u vitičastim zagradama, ali pošto su elementi niza opet nizovi imamo opet elemente u vitičastim zagradama, kao elemente niza. 
 
 ## Pokazivači
 
@@ -66,11 +66,11 @@ Jedan od mogućih izlaza ovog programa je:
 Adresa promenljive p1 je 28ff3c
 Adresa promenljive p2 je 28ff20
 ```
-Oznaka &p1 predstavlja memorijsku adresu promenljive p1. Kad se program pokrene za svaku promenljivu se rezerviše određeno mesto u memoriji koje ima svoju adresu. Ta adresa je broj koji se može ispisati u bilo kom formatu. Ovde imamo ispis brojeva u heksadecimalnom formatu koji predstavljaju adrese promenljivih u memoriji. Druga oznaka za prikaz adrese je %p koja prikazuje kompletan heksadecimalni broj, sa početnim nulama koje su izostavljene sa oznakom %x. Veličina promenljive pokazivač je 4 bajta.
+Oznaka &p1 predstavlja memorijsku adresu promenljive p1. Kad se program pokrene za svaku promenljivu se rezerviše određeno mesto u memoriji koje ima svoju adresu. Ta adresa je broj koji se može ispisati u bilo kom formatu. Ovde imamo ispis brojeva u heksadecimalnom formatu koji predstavljaju adrese promenljivih u memoriji. Druga oznaka za prikaz adrese je %p koja prikazuje kompletan heksadecimalni broj, sa početnim nulama koje su izostavljene sa oznakom %x. 
 
 ## Promenljiva pokazivač
 
-Pokazivač se može definisati kao promenljiva čija vrednost je adresa neke druge promenljive, tj. direktna adresa u memoriji. Otuda i naziv pokazivači, jer oni ne predstavljaju prave vrednosti već pokazuju na neke vrednosti u memoriji.  
+Pokazivač se može definisati kao promenljiva čija vrednost je adresa neke druge promenljive, tj. direktna adresa u memoriji. Otuda i naziv pokazivači, jer oni ne predstavljaju prave vrednosti već pokazuju na neke vrednosti u memoriji. Veličina promenljive pokazivač je 4 bajta. 
 
 Pokazivači predstavljaju posebnu vrstu promenljive i deklarišu se na sledeći način:
 
@@ -81,15 +81,15 @@ Tip se odnosi na promenljivu na koju pokazuje pokazivač. Znak * (asterisk) ozna
 
 Primeri deklaracije pokazivača:
 ```
-int    *ip;         /* pokazivač na int */
-double *dp;    /* pokazivač na double */
-char   *ch;     /* pokazivač na karakter */
+int    *ip;         /* pokazivač na int      */
+double *dp;         /* pokazivač na double   */
+char   *ch;         /* pokazivač na karakter */
 ```
 
-Treba razlikovati dve stvari, ako deklarišemo pokazivač sa int &ast;ip, imamo u programima imamo dva podatka:
+Treba razlikovati dve stvari, ako deklarišemo pokazivač sa int &ast;ip imamo dva podatka:
 <ul>
 <li>ip je memorijska adresa promenljive koja je tipa int,</li>
-<li> &ast;ip predstavlja u stvari samu promenljivu koja se može koristiti u izrazima kao bilo koja promenljiva tipa int.</li>
+<li> &ast;ip predstavlja samu promenljivu tipa int na koju pokazuje ip i može se koristiti u izrazima kao bilo koja promenljiva tipa int.</li>
 </ul>
 
 Bez obzira na koji tip podataka pokazuje, vrednost svake promenljive koja je pokazivač je u stvari broj koji predstavlja memorijsku adresu. 
@@ -117,7 +117,7 @@ int main () {
 
 Kada pokrenemo ovaj program videćemo da &var (adresa promenljive var) i ip (pokazivač na promenljivu var) imaju istu vrednost. Sa  &ast;ip pristupamo samoj promenljivoj, osnosno vrednost &ast;ip će biti vrednost promenljive na koju pokazuje ip.  
 
-Kada promenimo vrednost za  &ast;ip, ustvari menjamo vrednost promenljive var na koju pokazuje ip.
+Kada promenimo vrednost za &ast;ip, istovremeno menjamo vrednost promenljive var na koju pokazuje ip, jer se radi o istim memorijskim lokacijama.  
 
 Vrednost se pokazivaču može dodeliti i u samoj deklaraciji sa int &ast;ip = &var. Ova naredba dodeljuje vrednost promenljivoj ip, i radi istu stvar kao kad napišemo
 
@@ -133,8 +133,10 @@ int *pok = NULL;
 ```
 Da bismo proverili da pokazivač ima vrednost NULL možemo koristiti if naredbu:
 
-if(pok) - tačno ako pok nije NULL
-if(!pok) - tačno ako pok jeste NULL.
+<ul>
+<li>if(pok) - tačno ako pok nije NULL</li>
+<li>if(!pok) - tačno ako pok jeste NULL.</li>
+</ul>
 
 ## Nizovi su pokazivači
 
@@ -150,7 +152,7 @@ int *p;
 int niz[10];
 p = niz;
 ```
-Promenljive deklarisane kao nizovi su istog tipa kao promenljve deklarisane kao pokazivači (tip elemenata niza treba da je isti kao tip na koji pokazuje pokazivač). Gornjim programskim fragmentom p dobija vrednost pokazivača na prvi element niza. Elementima niza možemo pristupati sa &ast;p, &ast;(p+1), &ast;(p+2),... Ovo je ilustrovano na programu koji je prikazan na sledećem listingu 
+Promenljive deklarisane kao nizovi su istog tipa kao promenljve deklarisane kao pokazivači (tip elemenata niza treba da je isti kao tip na koji pokazuje pokazivač). Gornjim programskim fragmentom p dobija vrednost pokazivača na prvi element niza. Elementima niza možemo pristupati sa &ast;p, &ast;(p+1), &ast;(p+2),... Ovo je ilustrovano u programu koji je prikazan na sledećem listingu 
 
 ```c
 #include <stdio.h>
@@ -175,7 +177,7 @@ U programu je kreirana promenljiva bilans koja je tipa niz, zatim je pokazivaču
 
 ## Aritmetičke operacije sa pokazivačima
 
-Pokazivač je u C-u adresa promenljive odnosno broj i nad njim se mogu vršiti aritmetičke operacije isto kao i sa drugim brojevnim tipovima. Četri aritmetičke operacije se mogu koristiti sa pokazivačima: ++, -- , +, -. 
+Pokazivač je u C-u adresa promenljive odnosno broj i nad njim se mogu vršiti neke aritmetičke operacije slično kao i sa drugim brojevnim tipovima. Četri aritmetičke operacije se mogu koristiti sa pokazivačima: ++, -- , +, -. 
 
 Izvršavanje aritmetičkih operaja nad pokazivačima ilustrovaćemo na jednom primeru inkrementacije (povećanja za 1). Pretpostavimo da smo deklarisali pokazivač na int na sledeći način: 
 
@@ -205,7 +207,7 @@ int main(){
    return 0;
 }
 ```
-Ako bismo hteli da ispišemo elemente niza od poslednjeg ka prvom, koristili bi dekrementaciju (--). Operacije dekrementacije (smanjivanje za 1) funkcioniše analagno inkrementaciji, odnosno, vrednost pokazivača se smanjuje za veličinu promenljive na koju pokazuje. Ovde bismo za početnu vrednost pokazivača ptr dodelili adresu poslednjeg elementa niza, odnosno:
+Ako bismo hteli da ispišemo elemente niza od poslednjeg ka prvom, koristili bi dekrementaciju (--). Operacije dekrementacije (smanjivanje za 1) funkcioniše analagno inkrementaciji, odnosno, vrednost pokazivača se smanjuje za veličinu tipa promenljive na koju pokazuje. Ovde bismo za početnu vrednost pokazivača ptr dodelili adresu poslednjeg elementa niza, odnosno:
 
 ```
 ptr = &var[MAX-1];
@@ -240,7 +242,7 @@ Moguća je konstrukcija da pokazivač pokazuje na promenljivu koja je opet pokaz
 
 Kada deklarišemo pokazivač koji pokazuje na pokazivač prvi pokazivač sadrži adresu drugog pokazivača, a drugi pokazivač adresu promenljive koja sadrži konkretnu vrednost. 
 
-Deklaracija pokazivača na pokazivač postiže se duplom oznakom za pokazivač (*):
+Deklaracija pokazivača na pokazivač postiže se duplom oznakom za pokazivač (&ast;):
 ```
 int **pok;
 ```
@@ -264,12 +266,12 @@ int main () {
 ```
 ## Pokazivači kao parametri funkcije
 
-Funkcije se mogu deklarisati tako da njihovi ulazni parametri ili povratne vrednosti budu pokazivači. 
+Funkcije mogu imati pokazivače kao ulazne parametre ili povratne vrednosti. 
 
-Primer deklaracije funkcije koja prima tip podataka pokazivača kao ulazni parametar je
+Primer definicije funkcije koja prima tip podataka pokazivača kao ulazni parametar je
 
 ```
-int funkcija(int *param1, char *param2)
+int funkcija(int *param1, char *param2);
 ```
 
 Ova funkcija ima dva ulazna parametra to su param1 koji je pokazivač na int i param2 pokazivač na char.
@@ -297,19 +299,19 @@ int zameni_brojeve(int *broj1, int *broj2){
     return 0;
 }
 ```
-Funkcija koristi pomoćnu promenljivu pom, u koju se privremeno smešta vrednost jednog broja. Funkcija je deklarisana da prima dve adresa int promenljivih, zato joj se kao parametri u pozivu prosleđuju adrese promenljivih a i b, odnosno &a i &b. 
+Funkcija koristi pomoćnu promenljivu pom, u koju se privremeno smešta vrednost jednog broja. Funkcija prima dve adrese int promenljivih, zato joj se kao parametri u pozivu prosleđuju adrese promenljivih a i b, odnosno &a i &b. 
 
-Kada se u funkciji promene vrednosti promenljivih čije adrese su prosleđene kao parametri, menjaju se direktno vrednosti na memorijskim lokacijama i ove vrednosti ostaju sačuvane i posle izvršavanja funkcije. Ovaj princeip se u C-u zove prosleđivanje po referenci jer se ne prosleđuju promenljive već adrese tih promenljivih odnosno referenca na njih. Prosleđivanje po referenci se može implementarati jedino korišćenjem pokazivača i ne predstavlja pravi pojam prosleđivanja po referenci već njegovu simulaciju pomoću pokazivača (neki programski jezici imaju pojam prosleđivanje po referenci, u C-u se ovaj koncept simulira korišćenjem pokazivača).
+Kada se u funkciji promene vrednosti promenljivih čije adrese su prosleđene kao parametri, menjaju se direktno vrednosti na memorijskim lokacijama i ove vrednosti ostaju sačuvane i posle izvršavanja funkcije. Ovaj princip se u C-u zove prosleđivanje po referenci jer se ne prosleđuju promenljive već adrese tih promenljivih odnosno referenca na njih. Prosleđivanje po referenci se može implementarati jedino korišćenjem pokazivača i ne predstavlja pravi pojam prosleđivanja po referenci već njegovu simulaciju pomoću pokazivača (neki programski jezici imaju pojam prosleđivanje po referenci, u C-u se ovaj koncept simulira korišćenjem pokazivača).
 
 Da li se funkcija zamene vrednosti brojeva može implementirati bez pokazivača? Odgovor je ne, osim ako se koriste neke složenije strukture podataka koje sadrže dva elementa koje će se vratiti kao rezultat izvršavanja funkcije.  
 
-Pokazivač može da bude i povratna vrednost iz funkcije, što se deklariše na sledeći način:
+Pokazivač može da bude i povratna vrednost iz funkcije, što se defini[e na sledeći način:
 
 ```
 int * funkcija();
 ```
 
-Ovako deklarisana funkcija vraća pokazivač na int. Kod implementacije ove funkcije, moze nastati problem ako vraćamo pokazivač na neku lokalnu promenljivu koju smo napravili u funkciji.
+Ovako deklarisana funkcija vraća pokazivač na int. Kod implementacije ove funkcije, može nastati problem ako vraćamo pokazivač na neku lokalnu promenljivu koju smo napravili u funkciji.
 
 Postoje i pokazivači na funkcije, a jedan primer deklaracije je
 ```
@@ -353,19 +355,19 @@ float prosek(float niz[], int duzina){
 Prilikom definisanja funkcije koja prima niz kao parametar moguće je navesti i veličinu niza, na primer:
 
 ```
-int funkcija(int niz[3])
+int funkcija(int niz[3]);
 ```
 
 Ovako se definiše funkcija koja kao parametar prima niz od tri elementa. Međutim, ovoj funkciji se kao parametar može proslediti niz sa proizvoljnim brojem elemenata. 
 
-Umesto korišćanja tipa podataka niz, za deklarisanja funkcije koja prima niz kao parametar može se staviti parametra tipa pokazivač, jer su nizovi predstavljeni u C-u kao pokazivači na prvi element niza. 
+Umesto korišćanja tipa podataka niz, za deklarisanja funkcije koja prima niz kao parametar može se staviti parametar tipa pokazivač, jer su nizovi isto što i pokazivači na prvi element niza. 
 
 ```
 int funkcija(int *niz);
 ```
 
-Funkcija prosek iz prethodnog primera se moze deklarisati i na sledeći način
+Funkcija prosek iz prethodnog primera se moze definisati i na sledeći način
 ```
-float prosek(float *niz, int duzina)
+float prosek(float *niz, int duzina);
 ```
-Ovako deklarisana funkcija poziva se na isti način kao funkcija deklarisana sa nizom kao ulaznim parametrom, što znači da joj se u pozivu može proslediti niz ili pokazivač. 
+Ovako definisana funkcija poziva se na isti način kao funkcija definisana sa nizom kao ulaznim parametrom, što znači da joj se u pozivu može proslediti niz ili pokazivač. 
