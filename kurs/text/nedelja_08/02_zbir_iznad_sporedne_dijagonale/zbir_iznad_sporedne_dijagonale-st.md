@@ -1,6 +1,6 @@
 Napisati program koji računa i ispisuje zbir brojeva iznad sporedne dijagonale date matrice.
 
-Glavna dijagonala matrice je skup elemenata koji leže na zamišljenoj dijagonali između gornjeg desnog i donjeg levog ugla matrice.
+Sporedna dijagonala matrice je skup elemenata koji leže na zamišljenoj dijagonali između gornjeg desnog i donjeg levog ugla matrice.
 
 ## Опис улаза
 

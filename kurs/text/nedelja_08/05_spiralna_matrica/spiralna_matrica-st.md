@@ -1,10 +1,4 @@
-Napisati program koji formira spiralnu kvadratnu matricu za zadatu veličinu matricu.
-
-Primer spiralne matrice demenzija 3 x 3:
-
-1 2 3
-8 9 4
-7 6 5
+Napisati program koji formira spiralnu kvadratnu matricu za zadatu veličinu matrice.
 
 ## Опис улаза
 
@@ -14,7 +8,15 @@ Primer spiralne matrice demenzija 3 x 3:
 
 ### Улаз
 
+3
+
 ### Излаз
+
+~~~
+1 2 3
+8 9 4
+7 6 5
+~~~
 
 ## Пример 2
 

@@ -1,4 +1,4 @@
-Napisati program koji nalazi i ispisuje minimalni emelent u datoj matrici.
+Napisati program koji nalazi i ispisuje minimalni element u datoj matrici.
 
 ## Опис улаза
 
