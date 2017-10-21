@@ -2,18 +2,18 @@ Napisati program koji formira spiralnu kvadratnu matricu za zadatu veličinu mat
 
 ## Опис улаза
 
-Na standardni ulaz unosi se jedan prirodan broj, koji predstavlja dimenziju kvadratne matrice.
+Na standardni ulaz unose se dimenzije matrice N i M.
 
 ## Опис излаза
 
-Na standardni izlaz ispisati spiralnu matricu.
+Na standardni izlaz ispisati spiralnu matricu sa N kolona i M vrsta.
 
 ## Пример 1
 
 ### Улаз
 
 ~~~
-3
+3 3
 ~~~
 
 ### Излаз
@@ -29,14 +29,16 @@ Na standardni izlaz ispisati spiralnu matricu.
 ### Улаз
 
 ~~~
-2
+4 6
 ~~~
 
 ### Излаз
 
 ~~~
-1 2
-4 3
+1 2 3 4 5 6
+16 17 18 19 20 7
+15 24 23 22 21 8
+14 13 12 11 10 9
 ~~~
 
 ## Објашњење примера

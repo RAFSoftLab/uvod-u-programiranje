@@ -8,20 +8,20 @@ Dimenzije matrica su prirodni brojevi, dok su elementi matrica celi brojevi.
 
 ## Опис излаза
 
-Na standardni izlaz ispisati "DA" ako se prva matrica nalazi unutar druge, a "NE" ako se ne nalazi (reči ispisati bez navodnika i bez prelaska u novi red).
+Na standardni izlaz ispisati "DA" ako se druga matrica nalazi unutar prve, a "NE" u suprotnom (reči ispisati bez navodnika i bez prelaska u novi red).
 
 ## Пример 1
 
 ### Улаз
 
 ~~~
-2 3
-1 2 3
-4 5 6
-5 5
+3 5
 1 1 2 3 3
 4 4 5 6 6
 7 7 8 9 9
+2 3
+1 2 3
+4 5 6
 ~~~
 
 ### Излаз
@@ -35,12 +35,12 @@ DA
 ### Улаз
 
 ~~~
-2 2
-1 1
-1 1
 2 3
 1 1 2
 2 1 1
+2 2
+1 1
+1 1
 ~~~
 
 ### Излаз
