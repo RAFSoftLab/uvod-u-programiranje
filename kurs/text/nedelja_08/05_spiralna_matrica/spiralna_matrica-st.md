@@ -12,7 +12,9 @@ Na standardni izlaz ispisati spiralnu matricu.
 
 ### Улаз
 
+~~~
 3
+~~~
 
 ### Излаз
 
@@ -26,7 +28,9 @@ Na standardni izlaz ispisati spiralnu matricu.
 
 ### Улаз
 
+~~~
 2
+~~~
 
 ### Излаз
 

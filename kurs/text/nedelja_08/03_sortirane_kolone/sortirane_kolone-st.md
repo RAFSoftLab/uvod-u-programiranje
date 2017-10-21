@@ -12,8 +12,8 @@ Na standardni izlaz ispisati matricu sa sortiranim kolonama.
 
 ### Улаз
 
-4 2
 ~~~
+4 2
 1 4
 7 8
 4 4
@@ -33,8 +33,8 @@ Na standardni izlaz ispisati matricu sa sortiranim kolonama.
 
 ### Улаз
 
-4 5
 ~~~
+4 5
 1 7 2 6 2
 6 3 7 2 7
 2 6 8 9 0

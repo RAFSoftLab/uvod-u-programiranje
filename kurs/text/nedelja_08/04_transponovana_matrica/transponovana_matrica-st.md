@@ -14,8 +14,8 @@ Na standardni izlaz ispisati transponovanu matricu.
 
 ### Улаз
 
-3 6
 ~~~
+3 6
 1 2 3 4 5 6
 2 3 4 5 6 7
 0 9 8 7 6 5
@@ -36,8 +36,8 @@ Na standardni izlaz ispisati transponovanu matricu.
 
 ### Улаз
 
-1 1
 ~~~
+1 1
 1
 ~~~
 

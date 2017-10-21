@@ -14,22 +14,24 @@ Na standardni izlaz ispisati zbir elemenata matrice koji se nalaze iznad sporedn
 
 ### Улаз
 
-2
 ~~~
+2
 1 4
 9 7
 ~~~
 
 ### Излаз
 
+~~~
 1
+~~~
 
 ## Пример 2
 
 ### Улаз
 
-4
 ~~~
+4
 1 1 1 4 5
 7 3 -7 5 6
 1 -3 9 6 -7
@@ -39,4 +41,6 @@ Na standardni izlaz ispisati zbir elemenata matrice koji se nalaze iznad sporedn
 
 ### Излаз
 
+~~~
 14
+~~~

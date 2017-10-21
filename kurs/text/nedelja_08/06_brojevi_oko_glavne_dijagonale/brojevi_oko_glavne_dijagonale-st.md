@@ -14,7 +14,9 @@ Na standardni izlaz ispisati matricu formiranu po zadatim pravilima.
 
 ### Улаз
 
+~~~
 2
+~~~
 
 ### Излаз
 
@@ -27,7 +29,9 @@ Na standardni izlaz ispisati matricu formiranu po zadatim pravilima.
 
 ### Улаз
 
+~~~
 5
+~~~
 
 ### Излаз
 
