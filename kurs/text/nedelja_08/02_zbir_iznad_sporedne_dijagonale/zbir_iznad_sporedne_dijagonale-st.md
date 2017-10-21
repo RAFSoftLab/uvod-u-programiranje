@@ -31,7 +31,7 @@ Na standardni izlaz ispisati zbir elemenata matrice koji se nalaze iznad sporedn
 ### Улаз
 
 ~~~
-4
+5
 1 1 1 4 5
 7 3 -7 5 6
 1 -3 9 6 -7
