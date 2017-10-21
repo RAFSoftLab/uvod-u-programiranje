@@ -26,8 +26,15 @@ Na standardni izlaz ispisati spiralnu matricu.
 
 ### Улаз
 
+2
+
 ### Излаз
+
+~~~
+1 2
+4 3
+~~~
 
 ## Објашњење примера
 
-## Ограничења
+Brojevi u spiralonoj matrici ređaju se od 1 naviše u smeru kazaljke na satu.

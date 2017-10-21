@@ -14,14 +14,43 @@ Na standardni izlaz ispisati "DA" ako se prva matrica nalazi unutar druge, a "NE
 
 ### Улаз
 
+2 3
+~~~
+1 2 3
+4 5 6
+~~~
+
+5 5
+~~~
+1 1 2 3 3
+4 4 5 6 6
+7 7 8 9 9
+~~~
+
 ### Излаз
+
+DA
 
 ## Пример 2
 
 ### Улаз
 
+2 2
+~~~
+1 1
+1 1
+~~~
+
+3 3
+~~~
+1 1 2
+2 1 1
+~~~
+
 ### Излаз
 
-## Објашњење примера
+NE
 
-## Ограничења
+## Објашњење примера 1
+
+Prva matrica se nalazi u drugoj i to u preseku 1. i 2. vrste i 2, 3. i 4. kolone.

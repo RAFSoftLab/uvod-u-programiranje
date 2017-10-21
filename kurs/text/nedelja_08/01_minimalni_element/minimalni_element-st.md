@@ -12,15 +12,28 @@ Na standardni izlaz ispisati najmanji element koji se pojavljuje u zadatoj matri
 
 ### Улаз
 
+3 4
+~~~
+5 4 6 6
+9 3 7 7
+8 7 8 1
+~~~
+
 ### Излаз
+
+1
 
 ## Пример 2
 
 ### Улаз
 
+1 1
+~~~
+-8
+~~~
+
 ### Излаз
 
-## Објашњење примера
+-8
 
-## Ограничења
 
