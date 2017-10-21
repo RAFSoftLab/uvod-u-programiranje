@@ -4,7 +4,11 @@ Glavna dijagonala matrice je skup elemenata koji leže na zamišljenoj dijagonal
 
 ## Опис улаза
 
+Na standardni ulaz unosi se jedan prirodan broj, koji predstavlja dimenziju kvadratne matrice.
+
 ## Опис излаза
+
+Na standardni izlaz ispisati matricu formiranu po zadatim pravilima.
 
 ## Пример 1
 

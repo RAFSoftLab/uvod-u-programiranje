@@ -2,7 +2,11 @@ Napisati program koji formira spiralnu kvadratnu matricu za zadatu veličinu mat
 
 ## Опис улаза
 
+Na standardni ulaz unosi se jedan prirodan broj, koji predstavlja dimenziju kvadratne matrice.
+
 ## Опис излаза
+
+Na standardni izlaz ispisati spiralnu matricu.
 
 ## Пример 1
 
