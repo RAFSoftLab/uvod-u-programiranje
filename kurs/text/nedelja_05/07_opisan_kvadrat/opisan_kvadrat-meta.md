@@ -1,5 +1,5 @@
 ---
-title: Opisan
+title: Opisan kvadrat
 timelimit: 1.0
 memlimit: 64
 owner: RAF
