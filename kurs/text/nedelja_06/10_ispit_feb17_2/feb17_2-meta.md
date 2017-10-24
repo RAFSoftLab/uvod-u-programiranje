@@ -1,7 +1,7 @@
 ---
-title: Ispit Februar 2017 - Rekurzija G2  # Naziv zadatka
-timelimit: 2  # Vremensko ogranicenje u sekundama, recimo 1.0
-memlimit: 2  # Memorijsko ogranicenje u MB, recimo 64
+title: Ispit Februar 2017 - Rekurzija G2
+timelimit: 2
+memlimit: 2
 owner: RAF
 origin: RAF
 tags: []

@@ -1,7 +1,7 @@
 ---
-title: Rekurzivno: Matrica zvezdica n*m  # Naziv zadatka
-timelimit: 2  # Vremensko ogranicenje u sekundama, recimo 1.0
-memlimit: 2  # Memorijsko ogranicenje u MB, recimo 64
+title: Rekurzivno: Matrica zvezdica n*m
+timelimit: 2
+memlimit: 2
 owner: RAF
 origin: RAF
 tags: []
