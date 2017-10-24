@@ -1,5 +1,5 @@
 ---
-title: Rekurzivno: Dekadni u binarni sistem
+title: Rekurzivno - Dekadni u binarni sistem
 timelimit: 2
 memlimit: 2
 owner: RAF

@@ -1,5 +1,5 @@
 ---
-title: Rekurzivno: Matrica zvezdica n*m
+title: Rekurzivno - Matrica zvezdica n*m
 timelimit: 2
 memlimit: 2
 owner: RAF

@@ -1,5 +1,5 @@
 ---
-title: Rekurzivno: Zbir cifara
+title: Rekurzivno - Zbir cifara
 timelimit: 2
 memlimit: 2
 owner: RAF

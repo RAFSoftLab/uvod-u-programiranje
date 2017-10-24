@@ -1,5 +1,5 @@
 ---
-title: Rekurzivno i iterativno: Korenovanje - 2
+title: Rekurzivno i iterativno - Korenovanje - 2
 timelimit: 2
 memlimit: 2
 owner: RAF
