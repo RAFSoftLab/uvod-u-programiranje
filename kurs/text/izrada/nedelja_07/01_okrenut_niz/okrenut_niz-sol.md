@@ -1,0 +1,2 @@
+## Analiza
+Korišćenjem svojstva nizova, da bilo kom elementu možemo direktno pristupiti i da se susednom elementu u nizu može pristupiti ako povećamo/smanjimo trenutni indeks. Započećemo od poslednjeg elementa, odnosno od *A[n-1]* elementa i smanjivanjem indeksa se vraćamo do početka niza i ispisivaćemo trenutni element.
