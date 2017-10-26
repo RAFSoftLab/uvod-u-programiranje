@@ -1,4 +1,4 @@
-## Analiza
+## Анализа
 Prateći formulu koja je data u zadatku:
 *B[i]* = *A[i]*, ako je *i + 1* < *K*
 *B[i]* = (*A[i]* + *A[i+1]* + ... + *A[i - K + 1]*) / *K*

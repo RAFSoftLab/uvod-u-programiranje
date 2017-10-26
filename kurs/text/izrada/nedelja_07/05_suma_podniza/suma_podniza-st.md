@@ -4,47 +4,47 @@ Napisati program koji iz datog niza *A*, dužine *N*, ponalazi podniz uzastopnih
 **Podniz niza *A* čine uzastopni elementi niza *A*
 Bar jedan element niza *A* će biti pozitivan**
 
-## Opis ulaza
+## Опис улаза
 
 Preko standardnog ulaza korisnik unosi:
 - Prva linija sadrži celobrojni tip *N* (broj elemenata u nizu)
 - Druga linija sadrži *N* razmakom odvojena broja koji opisuju niz *A*
 
-## Opis izlaza
+## Опис излаза
 
 Na standardni izlaz ispisati sumu najveceg podniza
 
-## Primer 1
+## Пример 1
 
-### Ulaz
+### Улаз
 
 ~~~
 3
 7 6 5
 ~~~
 
-### Izlaz
+### Излаз
 
 ~~~
 18
 ~~~
 
-## Primer 2
+## Пример 2
 
-### Ulaz
+### Улаз
 
 ~~~
 5
 1 -5 3 12 -1
 ~~~
 
-### Izlaz
+### Излаз
 
 ~~~
 15
 ~~~
 
-## Objasnjenje primera
+## Објашњење примера
 **Primer 2**
 Prva linija standardnog ulaza označava broj elemenata u nizu *A* (*N* = 5)
 Nakon unosa, *A* = {1, -5, 3, 12, -1}

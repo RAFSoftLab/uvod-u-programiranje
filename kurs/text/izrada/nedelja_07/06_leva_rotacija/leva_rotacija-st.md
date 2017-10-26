@@ -7,33 +7,33 @@ Preko standardnog ulaza korisnik unosi:
 - Prva linija sadrzi celobrojni tip *N* (broj elemenata u nizu) i *K* (broj izvršavanja levih operacija)
 - Druga linija sadrži *N* razmakom odvojena broja koji opisuju niz *A*
 
-## Opis izlaza
+## Опис излаза
 
 Na standardni izlaz ispisati modifikovan niz.
 
-## Primer 1
+## Пример 1
 
-### Ulaz
+### Улаз
 
 ~~~
 5 3
 1 2 3 4 5
 ~~~
 
-### Izlaz
+### Излаз
 
 ~~~
 4 5 1 2 3
 ~~~
 
 
-## Objasnjenje primera
+## Објашњење примера
 Prva linija standardnog ulaza označava broj elemenata u nizu *A* (*N* = 5) i broj levih rotacija (*K* = 3)
 Nakon unosa, *A* = {1, 2, 3, 4, 5}
 Niz ce se menjati na sledeci nacin:
 {1, 2, 3, 4, 5} -> {2, 3, 4, 5, 1} -> {3, 4, 5, 1, 2} -> {4, 5, 1, 2, 3}
 
-## Ograničenja
+## Ограничења
 0 < *N* <= 20
 0 < *K* <= *N*
 0 < *A[i]* <= 1000

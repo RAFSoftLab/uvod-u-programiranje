@@ -4,47 +4,47 @@ Napisati program koji za dati niz *A*, dužine *N* i *K* veličina "prozora" pra
 
 **NAPOMENA**
 **Svi elementi niza *B* su celobrojni tipovi**
-## Opis ulaza
+## Опис улаза
 
 Preko standardnog upisa:
 - Prva linija sadrži celobrojni tip *N* (broj elemenata u nizu) i *K* (velicina prozora)
 - Druga linija sadrži *N* razmakom odvojena broja koji opisuju niz *A*
 
-## Opis izlaza
+## Опис излаза
 
 Na standardni izlas se ispisuje niz *B*
 
-## Primer 1
+## Пример 1
 
-### Ulaz
+### Улаз
 
 ~~~
 7 3
 5 6 3 5 8 2 1 
 ~~~
 
-### Izlaz
+### Излаз
 
 ~~~
 5 6 4 4 5 5 3
 ~~~
 
-## Primer 2
+## Пример 2
 
-### Ulaz
+### Улаз
 
 ~~~
 3 1
 1 2 3 
 ~~~
 
-### Izlaz
+### Излаз
 
 ~~~
 1 2 3
 ~~~
 
-## Objasnjenje primera
+## Објашњење примера
 Prva linija standardnog ulaza označava broj elemenata u nizu (*N* = 7) i velicinu prozora (*K* = 3)
 Nakon unosa niz *A* = {5, 6, 3, 5, 8, 2, 1}
 
@@ -57,7 +57,7 @@ Prateci formulu dobijamo da je:
 *B[5]* = (5 + 8 + 2) / 3 = 5
 *B[6]* = (8 + 2 + 1) / 3 = 3
 *B* = {5, 6, 4, 4, 5, 5, 3}
-## Ograničenja
+## Ограничења
 0 < *N* <= 20
 0 < *K* <= *N*
 0 < *A[i]* <= 1000
