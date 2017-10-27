@@ -15,7 +15,7 @@ Na standardni izlaz se ispisuju nizovi *B* i *C*
 ### Улаз
 
 ~~~
-5
+4
 1 4 3 1
 ~~~
 
