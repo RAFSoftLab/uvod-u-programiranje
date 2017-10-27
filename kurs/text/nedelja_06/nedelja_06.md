@@ -24,7 +24,7 @@ Tačka pod brojem 3 u ovom opisu problema predstavlja poziv istog problema iz de
 Opisani postupak se može uopštiti, čime dobijamo generalni algoritam koji rešava probleme rekurzijom, i on se sastoji od sledeća tri koraka:
 
 <ol>
-<li>trivajlni slučaj (kojim se prekida proces)</li>
+<li>trivajlni slučaj (kojim se prekida proces izračunavanja)</li>
 <li>izvršavanje jedne akcije koja nas vodi ka trivijalnom slučaju</li>
 <li>rekurzivni poziv</li>
 </ol>
