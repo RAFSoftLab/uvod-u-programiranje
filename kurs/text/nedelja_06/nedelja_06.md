@@ -14,9 +14,9 @@ Ovaj izraz znači da se n-ti fibonačijev broj izračunava kao zbir n-1-og i n-2
 Drugi način definisanja rekurzije kaže da rekurzija predstavlja način definisanja problema preko pojednostavljene verzije istog tog problema. Jedan primer kojim se ovo može opisati je rešavanje problema pronalaska puta do kuće (problem ćemo označiti izrazom “pronađi put do kuće”). Rekurzijom bi se ovaj problem mogao opsati u tri koraka, na sledeći način:
 
 <ol>
-<li>ako si kod kuće, ostani u mestu</li>
-<li>inače, napravi jedan korak prema kući</li>
-<li>pronađi put do kuće</li>
+<li>ako si kod kuće, ostani u mestu,</li>
+<li>inače, napravi jedan korak prema kući,</li>
+<li>pronađi put do kuće.</li>
 </ol>
 
 Tačka pod brojem 3 u ovom opisu problema predstavlja poziv istog problema iz definicije, ali posle učinjene jedne jednostavne akcije, a to je jedan korak prema kući, problem je pojednostavljen. 
@@ -24,19 +24,19 @@ Tačka pod brojem 3 u ovom opisu problema predstavlja poziv istog problema iz de
 Opisani postupak se može uopštiti, čime dobijamo generalni algoritam koji rešava probleme rekurzijom, i on se sastoji od sledeća tri koraka:
 
 <ol>
-<li>trivajlni slučaj (kojim se prekida proces izračunavanja)</li>
-<li>izvršavanje jedne akcije koja nas vodi ka trivijalnom slučaju</li>
-<li>rekurzivni poziv</li>
+<li>trivajlni slučaj (kojim se prekida proces izračunavanja),</li>
+<li>izvršavanje jedne akcije koja nas vodi ka trivijalnom slučaju,</li>
+<li>rekurzivni poziv.</li>
 </ol>
 Ovako opisani postupak rešavanja problema ima algoritamski oblik i za većinu problema se može implementirati. 
 
-Kako bismo opisali algoritam za izračunavanje faktorijela nekog broja rekurzijom (faktorijel je n! = n*(n-1)*..*1, i važi 0! = 1).
+Kako bismo opisali algoritam za izračunavanje faktorijela nekog broja rekurzijom (faktorijel je n! = n*(n-1)*..*1, i važi 0! = 1)?
 
 Odgovor:
 <ol>
-<li>trivijalni slučaj je n=0, i u ovom slučaju izlazimo iz rekurzije</li>
-<li>trenutni rezultat pomnožimo sa n i smanjimo n za 1 (ovim smo se približili trivijalnom slučaju, jer smanjivanjem broja n idemo ka nuli)</li>
-<li>rekurzivni poziv za novo n</li> 
+<li>trivijalni slučaj je n=0, i u ovom slučaju izlazimo iz rekurzije,</li>
+<li>trenutni rezultat pomnožimo sa n i smanjimo n za 1 (ovim smo se približili trivijalnom slučaju, jer smanjivanjem broja n idemo ka nuli),</li>
+<li>rekurzivni poziv za novo n.</li> 
 </ol>
 
 
