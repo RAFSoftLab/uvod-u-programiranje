@@ -23,7 +23,7 @@ Ovo je primer deklaracije jednodimenzionalnog niza, mogu se deklarisati i nizovi
 
 Veličina niza se izražava pozitivnim celim brojem, i ne može bit nula. Tip predstavlja tip podataka elemanata niza i može biti bilo koji tip koji postoji u programskom jeziku C. Veličina niza označava koliko će se memorijskog prostora rezervisati za promenljivu i on je jednak proizvodu veličine niza i memorije potrebne za skladištenje tipa koji predstavlja tip elementa niza.
 
-Primer inicijalizacije niza veličine 10 čiji elementi su tipa double:
+Primer deklaracije niza veličine 10 čiji elementi su tipa double:
 
 ```
 double niz[10]. 
