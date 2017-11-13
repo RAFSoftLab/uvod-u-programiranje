@@ -1,25 +1,43 @@
-Napisati program kojim se određuju i ispisuju svi savršeni brojevi od 2 do **N**. Broj je **savršen** ako je jednak sumi svojih delitelja isključujući njega samog. `28 je savršen broj, jer je: 28 = 1 + 2 + 4 + 7 + 14`
+Potrebno je da za uneto `N` ispisati kvadratnu figuru koja po svojim rubovima ima zvezdice, a ostalo je popunjeno prazninama.
+Primer za uneto `n = 5`:
+
+~~~
+*****
+*   *
+*   *
+*   *
+*****
+~~~
 
 ## Опис улаза
 
-Korisnik unosi prirodan broj N, kao granica do koje se ispisuju savršeni brojevi.
+Korisnik unosi dimenzije kvadrata **n x n**, preko standardnog ulaza.
 
 ## Опис излаза
 
-Redom ispisani savršeni brojevi, razmaknuti jednim razmakom.
+Ispisuje se oiviceni kvadrat zvezdicama.
 
 ## Пример 1
 
 ### Улаз
 
 ~~~
-100
+10
 ~~~
 
 ### Излаз
 
 ~~~
-6 28
+**********
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+**********
 ~~~
 
 ## Пример 2
@@ -27,11 +45,14 @@ Redom ispisani savršeni brojevi, razmaknuti jednim razmakom.
 ### Улаз
 
 ~~~
-1500
+4
 ~~~
 
 ### Излаз
 
 ~~~
-6 28 496
+****
+*  *
+*  *
+****
 ~~~

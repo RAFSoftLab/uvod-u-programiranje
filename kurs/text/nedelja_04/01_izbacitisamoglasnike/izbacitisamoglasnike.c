@@ -3,14 +3,11 @@
 */
 #include <stdio.h>
 
-int main() {
-    char c, x;
-    c = getchar();
-    while (c != "\n") {
-      if ( (c >= 'A') && (c <= 'Z'))  x = c + 'a'-'A';
-      else                            x = c;
-      if ( (x != 'a') && (x != 'e') && (x != 'i') && (x != 'o') && (x != 'u') ) putchar(c);
-      c=getchar();
+int main()
+{
+    char c;
+    while ((c=getchar())!=EOF) {
+        if (c!='a' && c!='e' && c!='i' && c!='a' && c!='o' && c!='u' && c!='a' && c!='A' && c!='E' && c!='I' && c!='O' && c!='U') putchar(c);
     }
     return 0;
 }

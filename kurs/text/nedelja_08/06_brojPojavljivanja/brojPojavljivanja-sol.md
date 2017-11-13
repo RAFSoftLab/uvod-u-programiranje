@@ -1,0 +1,4 @@
+## Analiza
+Potrebno je ucitati string s, pomoću funkcije gets(). Takodje ćemo isto uraditi i za string t. Napravićemo funkciju brojPojavljivanja koja kao parametre prima pokazivače na niz karaktera(početna slova u stringovima s i t). Označićemo sa n dužinu stringa s.
+U for petlji idemo kroz sve karaktere u stringu s. Za svaki karakter ćemo proveriti da li od njega pocinje string t. Funkcija strstr se koristi da bismo pronašli da li se određen x string sadrži u stringu y, ukoliko se sadrži vraća pokazivač na karakter u stringu y koji je početna pozicija poklapanja. Prima kao parametre dva pokazivača. Ukoliko su strstr(s+i,t)== s+i to znači da se string t nalazi u stringu s, i to od i-tog karaktera, tada ćemo uvećati brojač za jedan. Na kraju for petlje vraćamo broj pojavljivanja stringa t u stringu s.
+U mainu ćemo učitati dva stringa s i t, pozvati funkciu brojPojavljivanja za njih, koja će nam vratiti broj pojavljivanja, koji treba ispisati.
