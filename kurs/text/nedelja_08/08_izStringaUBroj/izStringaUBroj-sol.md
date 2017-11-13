@@ -1,0 +1,3 @@
+##Analiza
+
+Potrebno je ucitati string s, pomoću funkcije gets(). Napravićemo pomoćne funkcije cifra_stotina,cifra_desetica i cifra_jedinica koje će primati u sebe kao parametar int vrednost, i vraćati redom cifru stotine, desetice i jedinice u tom broju vrednost, ali kao karakter. Pomoću while ciklusa ćemo proći kroz svaki karakter u stringu s. Svaki karakter u stringu s ćemo pretvoriti u njegov broj. Za taj broj pronalazimo cifre jedinica, desetica i stotina, ali cifre kao karaktere, i tako dobijene karaktere smeštamo u string t. Nakon while-a potrebno je naznačiti da smo stigli do kraja u stringu t, tj. potrebno je staviti t[j]='\0'.
