@@ -1,0 +1,3 @@
+## Analiza
+
+Neka su sa ```i``` numerisane vrste matrice, a sa ```j``` kolone (numeracija se vrši od 0). Takođe, neka je ```n``` broj kolona, odnosno vrsta. Elementi matrice su ispod sporedne dijagonale ako važi ```i + j < n - 1```. Prolaskom kroz matricu proverava se da li je za indekse trenutno posmatranog elementa matrice ispunjen ovaj uslov. U slučaju da jeste zbir elemenata ispod sporedne dijagonale se uvećava za njegovu vrednost.
