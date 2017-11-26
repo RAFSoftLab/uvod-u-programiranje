@@ -115,7 +115,7 @@ int main () {
 }
 ```
 
-Kada pokrenemo ovaj program videćemo da &var (adresa promenljive var) i ip (pokazivač na promenljivu var) imaju istu vrednost. Sa  &ast;ip pristupamo samoj promenljivoj, osnosno vrednost &ast;ip će biti vrednost promenljive na koju pokazuje ip.  
+Kada pokrenemo ovaj program videćemo da &var (adresa promenljive var) i ip (pokazivač na promenljivu var) imaju istu vrednost. Sa  &ast;ip pristupamo samoj promenljivoj, vrednost &ast;ip će biti vrednost promenljive na koju pokazuje ip.  
 
 Kada promenimo vrednost za &ast;ip, istovremeno menjamo vrednost promenljive var na koju pokazuje ip, jer se radi o istim memorijskim lokacijama.  
 
