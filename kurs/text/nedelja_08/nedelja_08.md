@@ -179,7 +179,7 @@ U programu je kreirana promenljiva bilans koja je tipa niz, zatim je pokazivaču
 
 Pokazivač je u C-u adresa promenljive odnosno broj i nad njim se mogu vršiti neke aritmetičke operacije slično kao i sa drugim brojevnim tipovima. Četri aritmetičke operacije se mogu koristiti sa pokazivačima: ++, -- , +, -. 
 
-Izvršavanje aritmetičkih operaja nad pokazivačima ilustrovaćemo na jednom primeru inkrementacije (povećanja za 1). Pretpostavimo da smo deklarisali pokazivač na int na sledeći način: 
+Izvršavanje aritmetičkih operacija nad pokazivačima ilustrovaćemo na jednom primeru inkrementacije (povećanja za 1). Pretpostavimo da smo deklarisali pokazivač na int na sledeći način: 
 
 ```
 int *pok
