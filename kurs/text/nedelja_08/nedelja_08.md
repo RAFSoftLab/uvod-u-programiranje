@@ -86,7 +86,7 @@ double *dp;         /* pokazivač na double   */
 char   *ch;         /* pokazivač na karakter */
 ```
 
-Treba razlikovati dve stvari, ako deklarišemo pokazivač sa int &ast;ip imamo dva podatka:
+Ako deklarišemo pokazivač sa int &ast;ip imamo dva podatka:
 <ul>
 <li>ip je memorijska adresa promenljive koja je tipa int,</li>
 <li> &ast;ip predstavlja samu promenljivu tipa int na koju pokazuje ip i može se koristiti u izrazima kao bilo koja promenljiva tipa int.</li>
