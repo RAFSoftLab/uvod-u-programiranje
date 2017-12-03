@@ -151,7 +151,7 @@ U C-u postoji veliki broj ugrađenih funkcija za rad sa stringovima koje se uvoz
 <tr><td>strcpy(s1, s2)</td><td>kopira string s2 u string s1</td></tr>
 <tr><td>strcat(s1, s2)</td><td>konkatenacija stringova, string s2 se dodaje na kraj stringa s1</td><tr>
 <tr><td>strlen(s1)</td><td>vraća dužinu stringa s1, vraća se broj karaktera u stringu bez null karaktera</td></tr>
-<tr><td>strcmp(s1, s2)</td><td>poređenje stringova, vraća 0 ako su s1 i s2 jednaki, manje od 0 ako je s1<s2 i veće od 0 ako je s1>s2</td></tr>
+<tr><td>strcmp(s1, s2)</td><td>poređenje stringova, vraća 0 ako su s1 i s2 jednaki, manje od 0 ako je s1&lt;s2 i veće od 0 ako je s1&gt;s2</td></tr>
 <tr><td>strchr(s1, ch)</td><td>vraća pokazivač na prvo pojavljivanje karaketar ch u string s1</td></tr>
 <tr><td>strstr(s1, s2)</td><td>vraća pokazivač na prvo pojavljivanje stringa s2 u stringu s1</td></tr>
 <tr><td>strlwr(s1)</td><td>sva slova u stringu s1 pretvara u mala slova</td></tr>
