@@ -144,11 +144,12 @@ Student kreiraj(char ime[50], char prezime[50], int brojPoena){
 
 Mogu se definisati pokazivači na strukture, na isti način kao pokazivači na bilo koji drugi tip promenljive. Na primer, sledećom naredbom definisana je promenljiva student_pok koja predstavlja pokazivač na podatak koji je tipa strukture Student:
 
-Student **student_pok;
-
+```c
+Student *student_pok;
+```
 Pokazivaču na strukturu može se dodeliti vrednost adrese neke promenljive koja je tipa student:
 
-```
+```c
 Student s1;
 student_pok = &s1;
 ```
@@ -189,16 +190,52 @@ int main()
 
 Elementi strukture mogu biti pokazivači, na primer istu strukturu Student možemo deklarisati na sledeći način: 
 
+```c
 typedef struct {
-    char **ime;
-    char **prezime;
+    char *ime;
+    char *prezime;
     int brojPoena;
 } Student;	
+```
 
-Ovde smo stringove definisali preko pokazivača. Ovako definisana struktura omogućava da dodelimo vrednost stringa klasično:
+## Strukture i pokazivači
 
-Student s1;
-s1.ime = "Marko";
+Mogu se definisati nizovi čiji su elementi tipa strukture, na primer: 
+
+```c
+Student studenti[10];
+```
+
+Dodela vrednosti prvom elementu niza vrši se na sledeći način:
+
+```c
+strcpy(studenti[0].ime, "Petar");
+strcpy(studenti[0].prezime, "Petrovic");
+studenti[0].brojPoena = 30;
+```
+Elementima niza možemo dodeliti vrednosti i korišćenjem pokazivača na sledeći način, navedeni primer dodeljuje vrednost drugom elementu niza studenti:
+
+```c
+strcpy((studenti+1)->ime, "Milica");
+strcpy((studenti+1)->prezime, "Pavlovic");
+(studenti+1)->brojPoena = 50;
+```
+## Rad sa fajlovima
+
+Svi podaci sa kojima smo do sada radili u programima su smeštani u operativnu memoriju računara i trajali su najduže koliko i sam program. Kada program završi sa radom, vrednost svih promenljivih se gubi. Ukoliko želimo na nam neki podaci ostanu sačuvani i posle izvršavanja programa moramo ih smestiti na hard disk, a jedan način da to uradimo je da ga snimimo u fajl (datoteku). 
+
+Fajl predstavlja sekvencu bajtova i može biti tekstualni ili binarni. 
+
+Za rad sa fajlovima u C-u koriste se pokazivači. Fajl je predstavljen posebnim pokazivačem na sledeći način:
+
+```c
+FILE * fp;
+```
+Pokazivač se ovde može tumačiti kao memorijska lokacija fajla na disku. 
+
+Funkcije za rad sa fajlovima uvoze se iz standardne IO (input-output) biblioteke i sastoje se od funkcija za otvarenje i zatvaranje fajla, od funkcija za čitanje podataka iz fajla i funkcija za pisanje u fajl. 
+
+
 
 
 
