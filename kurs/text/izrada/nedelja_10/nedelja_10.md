@@ -96,5 +96,109 @@ Jedan od elemenata strukture student je nova struktura adresa. Pristup elementim
 
 ## Strukture i funkcije
 
+Strukture se mogu prosleđivati kao argumenti funkcije i mogu biti povratne vrednosti funkcija. Na sledećem listingu prikazan je primer programa u kome imamo definisan tip strukture pod imenom Student i dve funkcije. Funkcija ispisiStudent kao parametar prima tip Student i ispisuje vrednosti svih elemenata strukture. Funkcija kreiraj vraća povratnu vrednost tipa Student, a kao argumente uzima pojedničane vrednosti elemenata strukture.  
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct{
+    char ime[50];
+    char prezime[50];
+    int brojPoena;
+}Student;
+
+void ispisiStudent(Student s);
+Student kreiraj(char ime[], char prezime[], int brojPoena);
+
+int main()
+{
+    Student s1, s2;
+    strcpy(s1.ime, "Petar");
+    strcpy(s1.prezime, "Peric");
+    s1.brojPoena = 30;
+    printf("Student 1:\n");
+    ispisiStudent(s1);
+    s2 = kreiraj("Bojan","Milosevic",45);
+    printf("Student 2:\n");
+    ispisiStudent(s2);
+    return 0;
+}
+
+void ispisiStudent(Student s){
+    printf("Ime studenta: %s\n",s.ime);
+    printf("Prezime studenta: %s\n", s.prezime);
+    printf("Broj poena %d\n", s.brojPoena);
+}
+
+Student kreiraj(char ime[50], char prezime[50], int brojPoena){
+    Student s;
+    strcpy(s.ime, ime);
+    strcpy(s.prezime, prezime);
+    s.brojPoena = brojPoena;
+    return s;
+}
+```
+## Strukture i pokazivači
+
+Mogu se definisati pokazivači na strukture, na isti način kao pokazivači na bilo koji drugi tip promenljive. Na primer, sledećom naredbom definisana je promenljiva student_pok koja predstavlja pokazivač na podatak koji je tipa strukture Student:
+
+Student **student_pok;
+
+Pokazivaču na strukturu može se dodeliti vrednost adrese neke promenljive koja je tipa student:
+
+```
+Student s1;
+student_pok = &s1;
+```
+
+Elementima strukture se može prisupiti preko pokazivača korišćenjem operatora -> na sledeći način:
+
+```
+student_pok->ime
+```
+
+Drugi način za pristup elementu strukture preko pokazivača je (*student_pok).ime, ali ovaj način se mnogo ređe koristi. 
+
+Na sledećem listingu prikazan je primer programa koji koristi pokazivač na tip strukture Student. 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    char ime[50];
+    char prezime[50];
+    int brojPoena;
+}Student;
+
+int main()
+{
+    Student *student_pok;
+    Student s1;
+    strcpy(s1.ime, "Petar");
+    strcpy(s1.prezime, "Peric");
+    s1.brojPoena = 30;
+    student_pok = &s1;
+    printf("%s %s %d", student_pok->ime, student_pok->prezime, student_pok->brojPoena);
+    return 0;
+}
+```
+
+Elementi strukture mogu biti pokazivači, na primer istu strukturu Student možemo deklarisati na sledeći način: 
+
+typedef struct {
+    char **ime;
+    char **prezime;
+    int brojPoena;
+} Student;	
+
+Ovde smo stringove definisali preko pokazivača. Ovako definisana struktura omogućava da dodelimo vrednost stringa klasično:
+
+Student s1;
+s1.ime = "Marko";
+
 
 
