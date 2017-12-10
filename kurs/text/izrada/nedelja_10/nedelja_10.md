@@ -223,7 +223,7 @@ strcpy((studenti+1)->prezime, "Pavlovic");
 
 Svi podaci sa kojima smo do sada radili u programima su smeštani u operativnu memoriju računara i trajali su najduže koliko i sam program. Kada program završi sa radom, vrednost svih promenljivih se gubi. Ukoliko želimo na nam neki podaci ostanu sačuvani i posle izvršavanja programa moramo ih smestiti na hard disk, a jedan način da to uradimo je da ga snimimo u fajl (datoteku). 
 
-Fajl predstavlja sekvencu bajtova i može biti tekstualni ili binarni. 
+Fajl predstavlja sekvencu bajtova i može biti tekstualni ili binarni. U ovoj lekciji svi primeri će se odnositi na rad sa tekstualnim fajlovima.  
 
 Za rad sa fajlovima u C-u koriste se pokazivači. Fajl je predstavljen posebnim pokazivačem na sledeći način:
 
