@@ -247,17 +247,21 @@ Funkcija za otvaranje fajla vraća NULL pokazivač ako fajl ne može da se otvor
 Apsolutna putanje je cela putanja do fajla, počev od oznake diska na kojoj se nalazi fajl. Za razdvajanje foldera koristi se oznaka '/' ili '\\'. 
 
 Primeri:
-fp = fopen("../temp/proba.txt", "w"); - relativna putanja koja počinje od roditeljskog foldera 
-fp = fopen("./temp/proba.txt", "w"); - relativna putanja koja počinje od tekućeg foldera
-fp = fopen("D:/temp/proba.txt", "w"); - apsolutna  putanja 
+<ul>
+<li>fp = fopen("../temp/proba.txt", "w"); - relativna putanja koja počinje od roditeljskog foldera</li> 
+<li>fp = fopen("./temp/proba.txt", "w"); - relativna putanja koja počinje od tekućeg foldera</li>
+<li>fp = fopen("D:/temp/proba.txt", "w"); - apsolutna  putanja</li> 
+</ul>
 
 Parametar koji predstavlja mod u kom se fajl otvara  može imati neku od sledećih vrednosti:
-r - otvaranje postojećeg fajla za čitanje podataka
-w - otvaranje fajla za pisanje, ako ne postoji fajl kreira se novi, ako postoji , pisanje počinje od početka (briše se postojeći sadržaj)
-a - otvaranje postojećeg fajla za dodavanje sadržaja na postojeći sadržaj
-r+ - otvaranje postojećeg fajla za čitanje i pisanje
-w+ -  otvaranje fajla za čitanje i pisanje, ukoliko fajl postoji, prvo mu se dužina smanjuje na nulu, ako fajl ne postoji, kreira se novi fajl. 
-a+ -  otvaranje fajla za čitanje i pisanje, čitanje se vrši od početka fajla, a pisanje u fajl se nastavlja na postojeći sadržaj, ukoliko fajl ne postoji krera se novi.
+<ul>
+<li>r - otvaranje postojećeg fajla za čitanje podataka,</li>
+<li>w - otvaranje fajla za pisanje, ako ne postoji fajl kreira se novi, ako postoji , pisanje počinje od početka (briše se postojeći sadržaj),</li> 
+<li>a - otvaranje postojećeg fajla za dodavanje sadržaja na postojeći sadržaj,</li> 
+<li>r+ - otvaranje postojećeg fajla za čitanje i pisanje,</li> 
+<li>w+ -  otvaranje fajla za čitanje i pisanje, ukoliko fajl postoji, prvo mu se dužina smanjuje na nulu, ako fajl ne postoji, kreira se novi fajl,</li>  
+<li>a+ -  otvaranje fajla za čitanje i pisanje, čitanje se vrši od početka fajla, a pisanje u fajl se nastavlja na postojeći sadržaj, ukoliko fajl ne postoji krera se novi.</li> 
+</ul>
 
 Po završetku rada sa fajlom potrebno je zatvriti fajl, što se postiže sledećom funkcijom:
 
