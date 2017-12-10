@@ -82,8 +82,7 @@ struct Adresa{
     char broj[10];
     char mesto[100];
 };
-```
-```c
+
 struct Student{
         char ime[50];
         char prezime[50];
@@ -160,7 +159,7 @@ Elementima strukture se može prisupiti preko pokazivača korišćenjem operator
 student_pok->ime
 ```
 
-Drugi način za pristup elementu strukture preko pokazivača je (*student_pok).ime, ali ovaj način se mnogo ređe koristi. 
+Drugi način za pristup elementu strukture preko pokazivača je (&ast;student_pok).ime, ali ovaj način se mnogo ređe koristi. 
 
 Na sledećem listingu prikazan je primer programa koji koristi pokazivač na tip strukture Student. 
 
@@ -234,6 +233,91 @@ FILE * fp;
 Pokazivač se ovde može tumačiti kao memorijska lokacija fajla na disku. 
 
 Funkcije za rad sa fajlovima uvoze se iz standardne IO (input-output) biblioteke i sastoje se od funkcija za otvarenje i zatvaranje fajla, od funkcija za čitanje podataka iz fajla i funkcija za pisanje u fajl. 
+
+## Otvaranje i zatvaranje fajla
+
+Da bi se fajl koristio u programu potrebno ga je prvo otvoriti. Funkcija za otvaranje fajla u C-u je: 
+
+```c
+FILE * fopen(char *fname, char*mode) 
+```
+
+Funkcija za otvaranje fajla vraća NULL pokazivač ako fajl ne može da se otvori. Kao parametri se prosleđuju putanja do fajla i mod u kom se fajl otvara. Putanja do fajla može biti relativna ili apsolutna putanja. Relativna putanja se zadaje  u odnosu na direktorijum u kom se nalazi program koji se izvršava (fajl u kom je kompajliran program). Kod navođenja relativnih putanja koriste se oznake za roditeljski folder (..) i tekući folder (.). 
+
+Apsolutna putanje je cela putanja do fajla, počev od oznake diska na kojoj se nalazi fajl. Za razdvajanje foldera koristi se oznaka '/' ili '\\'. 
+
+Primeri:
+fp = fopen("../temp/proba.txt", "w"); - relativna putanja koja počinje od roditeljskog foldera 
+fp = fopen("./temp/proba.txt", "w"); - relativna putanja koja počinje od tekućeg foldera
+fp = fopen("D:/temp/proba.txt", "w"); - apsolutna  putanja 
+
+Parametar koji predstavlja mod u kom se fajl otvara  može imati neku od sledećih vrednosti:
+r - otvaranje postojećeg fajla za čitanje podataka
+w - otvaranje fajla za pisanje, ako ne postoji fajl kreira se novi, ako postoji , pisanje počinje od početka (briše se postojeći sadržaj)
+a - otvaranje postojećeg fajla za dodavanje sadržaja na postojeći sadržaj
+r+ - otvaranje postojećeg fajla za čitanje i pisanje
+w+ -  otvaranje fajla za čitanje i pisanje, ukoliko fajl postoji, prvo mu se dužina smanjuje na nulu, ako fajl ne postoji, kreira se novi fajl. 
+a+ -  otvaranje fajla za čitanje i pisanje, čitanje se vrši od početka fajla, a pisanje u fajl se nastavlja na postojeći sadržaj, ukoliko fajl ne postoji krera se novi.
+
+Po završetku rada sa fajlom potrebno je zatvriti fajl, što se postiže sledećom funkcijom:
+
+```c
+int fclose(FILE *fp ); 
+```
+Pozivom ove funkcijom se prazni bafer koji je služio za ispis u fajl (sav zaostali sadržaj se upisuje u fajl), oslobađa se operativna memorija koje je korišćena za obradu fajla. Ukoliko funkcija uspešno završi snimanje u fajl vraća se 0, inače se vraća definisana konstanta EOF. 
+
+## Ispis u fajl
+
+Tekst se u fajl  može upisati tako što upišemo pojedinačni karakter ili string. Funkcije kojima se ovo implementira su:
+int fputc(int c, FILE &ast;fp ); - upisuje karakter u fajl,
+int fputs(char &ast;s, FILE &ast;fp ); - upisuje string u fajl,
+int fprintf(FILE &ast;fp, char &ast;format,...) - upisuje formatirani string u fajl (slično kao printf, moguće je ubacivanje vrednosti preko parametara sa znakom %).
+
+Na sledećem listingu dat je primer programa koji otvara fajl mojFajl.txt za pisanje, upisuje u njega string i zatvara fajl. Kod zatvaranja i otvaranja fajla proverava se uspešnost i ispisuje poruka.  
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *fp;
+    fp = fopen("mojFajl.txt", "w");  // relativna putanja do fajla
+    if(fp!=NULL){                     
+        printf("Fajl je uspesno otvoren.\n");
+        fputs("Ispis", fp);
+    }else{
+        printf("Greska.\n");
+    }
+    if(fclose(fp)!=EOF){
+        printf("Fajl je uspesno zatvoren.\n");
+        exit(0);
+    }else
+        exit(1);
+}
+```
+
+## Argumenti komandne linije
+
+Argumenti komandne linije se prosleđuju programu prilikom poziva u konzoli operativnog sistema. Argumentima komandne linije u C-u može se pristupiti preko argumenata funkcije main. Funkcija main se može implementirati sa sledećim zaglavljem:
+
+```c
+int main(int argc, char *argv[])
+```
+Prvi argument sadrži broj argumenata komandne linije, a drugi argument funkcije main je niz koji sadrži vrednosti argumenata komandne linije. 
+Na sledećem listingu dat je program koji ispisuje vrednosti argumenata komandne linija
+
+```c
+int main(int argc, char* argv[]){
+    int i;
+    for(i=0;i<argc;i++){
+        puts(argv[i]);
+    }
+    return 0;
+}
+
+```c
+Prvi argument komandne linije je uvek naziv programa, tako da se prvi argument koji je prosleđen programu čita sa argv[1]. 
 
 
 
