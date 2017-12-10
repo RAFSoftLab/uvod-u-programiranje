@@ -242,7 +242,7 @@ Da bi se fajl koristio u programu potrebno ga je prvo otvoriti. Funkcija za otva
 FILE * fopen(char *fname, char*mode) 
 ```
 
-Funkcija za otvaranje fajla vraća NULL pokazivač ako fajl ne može da se otvori. Kao parametri se prosleđuju putanja do fajla i mod u kom se fajl otvara. Putanja do fajla može biti relativna ili apsolutna putanja. Relativna putanja se zadaje  u odnosu na direktorijum u kom se nalazi program koji se izvršava (fajl u kom je kompajliran program). Kod navođenja relativnih putanja koriste se oznake za roditeljski folder (..) i tekući folder (.). 
+Funkcija za otvaranje fajla vraća NULL pokazivač ako fajl ne može da se otvori. Kao parametri se prosleđuju putanja do fajla i mod u kom se fajl otvara. Putanja do fajla može biti relativna ili apsolutna putanja. Relativna putanja se zadaje  u odnosu na direktorijum u kom se nalazi program koji se izvršava (radni direktorijum u kom se pokreće program). Kod navođenja relativnih putanja koriste se oznake za roditeljski folder (..) i tekući folder (.). 
 
 Apsolutna putanje je cela putanja do fajla, počev od oznake diska na kojoj se nalazi fajl. Za razdvajanje foldera koristi se oznaka '/' ili '\\\\'. 
 
