@@ -248,9 +248,10 @@ Apsolutna putanje je cela putanja do fajla, počev od oznake diska na kojoj se n
 
 Primeri:
 <ul>
-<li>fp = fopen("../temp/proba.txt", "w"); - relativna putanja koja počinje od roditeljskog foldera</li> 
-<li>fp = fopen("./temp/proba.txt", "w"); - relativna putanja koja počinje od tekućeg foldera</li>
-<li>fp = fopen("D:/temp/proba.txt", "w"); - apsolutna  putanja</li> 
+<li>fp = fopen("../temp/proba.txt", "w"); - relativna putanja koja počinje od roditeljskog foldera,</li> 
+<li>fp = fopen("./temp/proba.txt", "w"); - relativna putanja koja počinje od tekućeg foldera,</li>
+<li>fp = fopen("temp/proba.txt", "w"); - relativna putanja koja počinje od tekućeg foldera,</li>
+<li>fp = fopen("D:/temp/proba.txt", "w"); - apsolutna  putanja.</li> 
 </ul>
 
 Parametar koji predstavlja mod u kom se fajl otvara  može imati neku od sledećih vrednosti:
