@@ -316,7 +316,8 @@ int main(int argc, char* argv[]){
     return 0;
 }
 
-```c
+```
+
 Prvi argument komandne linije je uvek naziv programa, tako da se prvi argument koji je prosleđen programu čita sa argv[1]. 
 
 
