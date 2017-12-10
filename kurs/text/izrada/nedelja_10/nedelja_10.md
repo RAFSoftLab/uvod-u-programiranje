@@ -16,7 +16,7 @@ struct [oznaka_strukture]{
 } ;
 ```
 
-Imamo rezervisanu reč struct iza koje se može (a ne mora, uglaste zagrade predstavljaju oznaku da neki deo deklaracije može, ali ne mora da se navede) navesti oznaka strukure, odnono naziv tipa podataka koji označava struktura. Zatim se u vitičastim zagradama navodi niz definicija elemenata strukture, koja se sastoji od tipa i naziva. 
+Imamo rezervisanu reč struct iza koje se može (a ne mora, uglaste zagrade predstavljaju oznaku da neki deo deklaracije može, ali ne mora da se navede) navesti oznaka strukure, odnosno naziv tipa podataka koji označava struktura. Zatim se u vitičastim zagradama navodi niz definicija elemenata strukture, koja se sastoji od tipa i naziva. 
 
 Primer jedne definicije strukture:
 
@@ -30,10 +30,10 @@ struct Student{
 
 Ovde je definisana struktura Student koji sadrži tri podatka, ime, prezime i broj poena. Prva dva podatka su stringovi, a treći je broj. 
 
-Strukture se najčešće definišu na početku, pre funckije main, i koriste se u funkciji main i u drugim funkcijama.  Svaka struktura je poseban tip podataka i mogu se deklarisati promenljive tipa strukture (strukturne promenljive) i u okviru tih promenljivih može se pristupati pojedinačnim elementima strukture, mogu im se dodeljivati, čitati i menjati vrednosti i mogu se koristiti u izrazima. 
+Strukture se najčešće definišu na početku, pre funckije main, i koriste se u funkciji main i u drugim funkcijama. Svaka struktura je poseban tip podataka i mogu se deklarisati promenljive tipa strukture (strukturne promenljive) i u okviru tih promenljivih može se pristupati pojedinačnim elementima strukture, mogu im se dodeljivati, čitati i menjati vrednosti i mogu se koristiti u izrazima. 
 
 Na primer:
-struct Student s1 = {"Pera", "Peric", 30}; - deklariše novu promenljivu tipa student i dodeljuje vrednosti redom za svaki element strukture. 
+struct Student s1 = {"Pera", "Peric", 30}; - deklariše novu promenljivu tipa strukture Student i dodeljuje vrednosti redom za svaki element strukture. 
 
 Pojedinačnim elementima strukture pristupa se korišćenjem tačke, na sledeći način:
 
