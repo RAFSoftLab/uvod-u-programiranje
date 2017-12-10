@@ -301,6 +301,13 @@ int main()
         exit(1);
 }
 ```
+## Čitanje iz fajla
+
+Standardne funkcije za čitanje podataka iz fajla su:
+<br>int fgetc(FILE &ast;fp); - čita jedan karakter iz datog fajla, vraća učitani karakter ili EOF ukoliko je došlo do greške
+<br>char &ast;fgets(char &ast;buf, int n, FILE &ast;fp); - čita do n-1 znakova iz fajla u promenljivu buf kojoj se na kraju dodaje karakter '\0'  kao oznaka za kraj stringa, operacija će učitati n-1 karaktera ili do kraja reda odnosno dok ne naiđe na karakter '\n'
+<br>int fscanf(FILE &ast;fp, char &ast;format...); - čita string do space-a, a poziva se sa fscanf(fp, "%s", buff);
+
 
 ## Argumenti komandne linije
 
