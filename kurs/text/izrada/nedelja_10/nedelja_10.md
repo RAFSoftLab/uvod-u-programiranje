@@ -274,9 +274,9 @@ Pozivom ove funkcijom se prazni bafer koji je služio za ispis u fajl (sav zaost
 ## Ispis u fajl
 
 Tekst se u fajl  može upisati tako što upišemo pojedinačni karakter ili string. Funkcije kojima se ovo implementira su:
-int fputc(int c, FILE &ast;fp ); - upisuje karakter u fajl,
-int fputs(char &ast;s, FILE &ast;fp ); - upisuje string u fajl,
-int fprintf(FILE &ast;fp, char &ast;format,...) - upisuje formatirani string u fajl (slično kao printf, moguće je ubacivanje vrednosti preko parametara sa znakom %).
+<br>int fputc(int c, FILE &ast;fp ); - upisuje karakter u fajl,
+<br>int fputs(char &ast;s, FILE &ast;fp ); - upisuje string u fajl,
+<br>int fprintf(FILE &ast;fp, char &ast;format,...) - upisuje formatirani string u fajl (slično kao printf, moguće je ubacivanje vrednosti preko parametara sa znakom %).
 
 Na sledećem listingu dat je primer programa koji otvara fajl mojFajl.txt za pisanje, upisuje u njega string i zatvara fajl. Kod zatvaranja i otvaranja fajla proverava se uspešnost i ispisuje poruka.  
 
