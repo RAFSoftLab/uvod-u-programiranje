@@ -197,7 +197,7 @@ typedef struct {
 } Student;	
 ```
 
-## Strukture i pokazivači
+## Strukture i nizovi
 
 Mogu se definisati nizovi čiji su elementi tipa strukture, na primer: 
 
