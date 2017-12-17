@@ -25,7 +25,7 @@ Ovakav dvodimenzionalni niz se može predstaviti i kao tabela koja ima m vrsta i
 
 Ako bismo imali matricu a[3][4], njene vrednosti bi se tabelarno mogle predstaviti na sledeći način:
 
-![alt text](media/nedelja_08/matrice.png)
+![matrica](media/nedelja_08/matrice.png)
 
 Ovde vidimo da se elementi jednodimenzionalnog niza identifikuju sa a[i][j] gde su i i j pozitivni celi brojevi i predstavljaju indekse nizova. 
 Dvodimenzionalni nizovi se mogu inicijalizovati na sličan način kao jednodimenzionalni, dodelom vrednosti svim elementima niza na sledeći način:
@@ -305,7 +305,7 @@ Kada se u funkciji promene vrednosti promenljivih čije adrese su prosleđene ka
 
 Da li se funkcija zamene vrednosti brojeva može implementirati bez pokazivača? Odgovor je ne, osim ako se koriste neke složenije strukture podataka koje sadrže dva elementa koje će se vratiti kao rezultat izvršavanja funkcije.  
 
-Pokazivač može da bude i povratna vrednost iz funkcije, što se defini[e na sledeći način:
+Pokazivač može da bude i povratna vrednost iz funkcije, što se definiše na sledeći način:
 
 ```
 int * funkcija();
