@@ -60,8 +60,8 @@ Promenljiva tipa liste predstavlja se kao pokazivač na prvi element liste:
 ```c
 Element *glava= NULL;
 ```
-Ovom naredbom deklariše se prazna lista, tako što navedemo da je glava liste NULL pokazivač. 
-Pojedinačni elementi liste često se nazivaju čvorovi i struktura za kreiranje liste može da ima i drugačije nazive, umesto Element može se koristiti naziv Cvor ili Node. Takođe, podatak u strukture može biti različitog tipa, a elementi liste mogu da sadrži i više podataka različitog tipa. Na primer možemo napraviti listu koja sadrži podatke o studentima i ima ime, prezime i broj poena studenta. Ovakva lista implementirala bi se sledećom strukturom:
+Ovom naredbom kreira se prazna lista, tako što navedemo da je glava liste NULL pokazivač. 
+Pojedinačni elementi liste često se nazivaju čvorovi i struktura za kreiranje liste može da ima i drugačije nazive, umesto Element može se koristiti naziv Cvor ili Node. Takođe, podatak u strukturi može biti različitog tipa, a elementi liste mogu da sadrže i više podataka različitog tipa. Na primer možemo napraviti listu koja sadrži podatke o studentima i ima ime, prezime i broj poena studenta. Ovakva lista implementirala bi se sledećom strukturom:
 
 ```c
 typedef struct ElementStudent{
