@@ -5,10 +5,10 @@ author: RAF
 ## Dinamičko upravljanje memorijom
 Dinamička alokacija memorije omogućava programerima eksplicitno i fleksibilno upravljanje memorijom koja je u nekim slučajevima neophodna, a u nekim predstavlja prihvatljivije rešenje. 
 U C-u postoje četiri ugrađane funkcije iz biblioteke stdlib.h koje omogućavaju dinamičko upravljanje memorijom:
-malloc - alocira zadati broj bajtova koji se zadaje kao argument,
-realloc - povećava ili smanjuje veličinu memorijskog bloka, ako je potrebno vrši se promena lokacije bloka u memoriji,
-calloc -  alocira određeni broj bajtova i resetuje ih na nulu, ova funkcija ima dva parametra prvi je broj elemenata za koje treba alocirati memoriju, a drugi je broj bajtove koje tip elementa zauzima u memoriji, 
-free - oslobaća blok memorije i vraća je operativnom sistemu. 
+<br>malloc - alocira zadati broj bajtova koji se zadaje kao argument,
+<br>realloc - povećava ili smanjuje veličinu memorijskog bloka, ako je potrebno vrši se promena lokacije bloka u memoriji,
+<br>calloc -  alocira određeni broj bajtova i resetuje ih na nulu, ova funkcija ima dva argumenta, prvi je broj elemenata za koje treba alocirati memoriju, a drugi je broj bajtova koje tip elementa zauzima u memoriji, 
+<br>free - oslobaća blok memorije i vraća je operativnom sistemu. 
 Umesto da deklarišemo niz automatski sa 
 ```c
 int array[10];
@@ -37,7 +37,9 @@ int *array = (int *) malloc(10*sizeof(int)).
 ```
 ## Dinamičke strukture podataka
 Strukture podataka u programima možemo podeliti na dve vrste, to su statičke strukture podataka i dinamičke strukture podataka. Statičke strukture podataka su fiksne veličine i ta veličina se određuje u fazi kompajliranja programa. U ove strukture podataka spadaju na primer nizovi, jer njihovu veličinu zadajemo prilikom deklaracije. Nasuprot statičkim strukturama postoje i dinamičke strukture podataka čija veličina može da se menja u toku izvršavanja programa. 
+
 Statičke strukture se u programima brže obrađuju, ali je njihova mana što mogu zauzimati mnogo više od potrebne memorije. U tom smislu dinamičke strukture imaju prednost jer koriste tačno onoliko memorije koliko je potrebno, ali su, sa druge strane one teže za implementaciju jer je potrebno implementirati i deo koji se odnosi na upravljanje memorijom. Dinamičke strukture podataka se implementiraju korišćenjem pokazivača. 
+
 Jedan primer upotrebe dinamičke strukture je predstavljanje slabo popunjene matrice (matrica čija je većina elemenata nula). Umesto da pamtimo dvosimenzionalni niz koji će biti većinom popunjen nulama i time nepotrebno zauzimamo memoriju, možemo napraviti dinamičku strukturu u kojoj ćemo pamtiti vrstu, kolonu i vrednost samo za element matrice čija je vrednost različita od nule.
 Primeri dinamičkih struktura podataka su liste, gde razlikujemo jednostruko povezane i dvostruko povezane liste, zatim stabla, grafovi, itd. 
 
@@ -70,7 +72,9 @@ typedef struct ElementStudent{
 ```
 Ono što je zajedničko za sve jednostruko povezane liste je da elementi moraju imati pokazivač na sledeći element liste. 
 Nad opisanim strukturama mogu se implementirati mnoge operacije nad listom, kao što su dodavanje elementa u listu, izbacivanje elementa iz liste i obilazak liste radi ispisa elemenata liste, prebrojavanja elemenata ili pronalaska određenog elementa u listi.
+
 Funkcije za rad sa listama koje menjaju sadržaj liste (na primer dodavanje novog elementa) imaju kao ulazni podatak listu, koja je predstavljena kao pokazivač na prvi element liste, a kao rezultat vraćaju pokazivač na prvi element izmenjene liste. Drugi način za implementaciju funkcije sa listama je da se lista prosledi kao pokazivač na pokazivač na prvi element liste, tada se lista ustvari prosleđuje po referenci, a ne po vrednosti i nemamo povratnu vrednost iz funkcije.  
+
 Funkcija za dodavanja elementa u listu se može posmatrati za više slučajeva, kada se element dodaje na početak liste, na kraj liste ili na određeno mesto ukoliko su elementi liste sortirani i tada govorimo u uređenoj listi. Kod funkcije za dodavanje elementa jedan argument je lista, a drugi element koji se dodaje koji može biti već kreiran i alociran element (čvor) liste ili samo podatak. Ako prosleđujemo samo podatak potrebno je u funkciji alocirati memoriju za novi element liste. 
 Funkcija za dodavanje elementa na početak liste celih brojeva prikazana je na sledećem listingu. 
 ```c
