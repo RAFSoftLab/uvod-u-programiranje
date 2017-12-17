@@ -44,7 +44,7 @@ Jedan primer upotrebe dinamičke strukture je predstavljanje slabo popunjene mat
 Primeri dinamičkih struktura podataka su liste, gde razlikujemo jednostruko povezane i dvostruko povezane liste, zatim stabla, grafovi, itd. 
 
 ## Jednostruko povezana lista
-Osnovna dimanička struktura podataka je lista. Na sledećoj slici dat je grafički prikaz jednostruko povazane liste. Kod jednostruko povezane liste susedni elementi liste povezani su jednom vezom. Svaki element liste sadrži neki podatak i referencu (pokazivač) na sledeći element liste. Poseban značaj ima pokazivač na prvi element liste, koji se često zove i glava liste. Kod poslednjeg elementa liste vrednost pokazaviča na sledeći element je NULL. 
+Osnovna dinamička struktura podataka je lista. Na sledećoj slici dat je grafički prikaz jednostruko povazane liste. Kod jednostruko povezane liste susedni elementi liste povezani su jednom vezom. Svaki element liste sadrži neki podatak i referencu (pokazivač) na sledeći element liste. Poseban značaj ima pokazivač na prvi element liste, koji se često zove i glava liste. Kod poslednjeg elementa liste vrednost pokazaviča na sledeći element je NULL. 
 
 ![lista](media/nedelja_11/lista.png)
 
