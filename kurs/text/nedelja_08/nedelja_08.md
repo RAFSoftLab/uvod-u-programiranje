@@ -25,7 +25,7 @@ Ovakav dvodimenzionalni niz se može predstaviti i kao tabela koja ima m vrsta i
 
 Ako bismo imali matricu a[3][4], njene vrednosti bi se tabelarno mogle predstaviti na sledeći način:
 
-![matrica](media/nedelja_08/matrice.png)
+![matrica](media/nedelja_08/matrica.png)
 
 Ovde vidimo da se elementi jednodimenzionalnog niza identifikuju sa a[i][j] gde su i i j pozitivni celi brojevi i predstavljaju indekse nizova. 
 Dvodimenzionalni nizovi se mogu inicijalizovati na sličan način kao jednodimenzionalni, dodelom vrednosti svim elementima niza na sledeći način:
