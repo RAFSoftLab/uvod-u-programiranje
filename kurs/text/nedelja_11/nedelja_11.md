@@ -9,6 +9,7 @@ U C-u postoje četiri ugrađane funkcije iz biblioteke stdlib.h koje omogućavaj
 <br>realloc - povećava ili smanjuje veličinu memorijskog bloka, ako je potrebno vrši se promena lokacije bloka u memoriji,
 <br>calloc -  alocira određeni broj bajtova i resetuje ih na nulu, ova funkcija ima dva argumenta, prvi je broj elemenata za koje treba alocirati memoriju, a drugi je broj bajtova koje tip elementa zauzima u memoriji, 
 <br>free - oslobaća blok memorije i vraća je operativnom sistemu. 
+
 Umesto da deklarišemo niz automatski sa 
 ```c
 int array[10];
