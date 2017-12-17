@@ -4,7 +4,6 @@ author: RAF
 ---
 
 ## Strukture
-
 Ranije smo videli da je niz koncept koji nam omogućava da napravimo kolekciju podataka istog tipa. Strukture u C-u nam omogućavaju da napravimo nove tipove podataka koji predstavljaju kolekciju podataka različitog tipa. 
 Sintaksa kojom se kreira struktura je
 
@@ -45,8 +44,8 @@ s1.brojPoena = 35;
 gets(s1.ime);
 printf("%s %s %d", s1.ime, s1.prezime, s1.brojPoena);
 ```
-## Definicija tipa - typedef
 
+## Definicija tipa - typedef
 Strukture se često koriste zajedno sa oznakom za definiciju tipa typedef. Reč typedef se koristi u C-u za definisanje novih tipova na osnovu postojećih i preimenovanje tipa, na primer:
 
 ```c
@@ -73,7 +72,6 @@ Posle ovoga deklaracija promenljivih tipa student se navodi bez reči struct, pr
 Student s1,s2;
 
 ## Struktura u strukturi
-
 Elementi strukture mogu biti nove strukture, na primer ako hoćemo da studentu dodamo adresu koja će imati poseban podatak o ulici, broju i mestu, to bismo uradili na sledeći način: 
 
 ```c
@@ -94,7 +92,6 @@ struct Student{
 Jedan od elemenata strukture student je nova struktura adresa. Pristup elementima adrese (unutrašnje strukture) implementira se sa s1.adresa.broj. 
 
 ## Strukture i funkcije
-
 Strukture se mogu prosleđivati kao argumenti funkcije i mogu biti povratne vrednosti funkcija. Na sledećem listingu prikazan je primer programa u kome imamo definisan tip strukture pod imenom Student i dve funkcije. Funkcija ispisiStudent kao parametar prima tip Student i ispisuje vrednosti svih elemenata strukture. Funkcija kreiraj vraća povratnu vrednost tipa Student, a kao argumente uzima pojedničane vrednosti elemenata strukture.  
 
 ```c
@@ -140,7 +137,6 @@ Student kreiraj(char ime[50], char prezime[50], int brojPoena){
 }
 ```
 ## Strukture i pokazivači
-
 Mogu se definisati pokazivači na strukture, na isti način kao pokazivači na bilo koji drugi tip promenljive. Na primer, sledećom naredbom definisana je promenljiva student_pok koja predstavlja pokazivač na podatak koji je tipa strukture Student:
 
 ```c
@@ -198,7 +194,6 @@ typedef struct {
 ```
 
 ## Strukture i nizovi
-
 Mogu se definisati nizovi čiji su elementi tipa strukture, na primer: 
 
 ```c
@@ -272,7 +267,6 @@ int fclose(FILE *fp );
 Pozivom ove funkcijom se prazni bafer koji je služio za ispis u fajl (sav zaostali sadržaj se upisuje u fajl), oslobađa se operativna memorija koje je korišćena za obradu fajla. Ukoliko funkcija uspešno završi snimanje u fajl vraća se 0, inače se vraća definisana konstanta EOF. 
 
 ## Ispis u fajl
-
 Tekst se u fajl  može upisati tako što upišemo pojedinačni karakter ili string. Funkcije kojima se ovo implementira su:
 <br>int fputc(int c, FILE &ast;fp ); - upisuje karakter u fajl,
 <br>int fputs(char &ast;s, FILE &ast;fp ); - upisuje string u fajl,
@@ -302,7 +296,6 @@ int main()
 }
 ```
 ## Čitanje iz fajla
-
 Standardne funkcije za čitanje podataka iz fajla su:
 <br>int fgetc(FILE &ast;fp); - čita jedan karakter iz datog fajla, vraća učitani karakter ili EOF ukoliko je došlo do greške,
 <br>char &ast;fgets(char &ast;buf, int n, FILE &ast;fp); - čita do n-1 znakova iz fajla u promenljivu buf kojoj se na kraju dodaje karakter '\0'  kao oznaka za kraj stringa, operacija će učitati n-1 karaktera ili do kraja reda odnosno dok ne naiđe na karakter '\n',
@@ -310,7 +303,6 @@ Standardne funkcije za čitanje podataka iz fajla su:
 
 
 ## Argumenti komandne linije
-
 Argumenti komandne linije se prosleđuju programu prilikom poziva u konzoli operativnog sistema. Argumentima komandne linije u C-u može se pristupiti preko argumenata funkcije main. Funkcija main se može implementirati sa sledećim zaglavljem:
 
 ```c
