@@ -67,7 +67,7 @@ Pojedinačni elementi liste često se nazivaju čvorovi i struktura za kreiranje
 typedef struct ElementStudent{
 	char *ime;
 	char *prezime;
-	float brojPoena;
+	float *brojPoena;
 	struct ElementStudent *sledeci;
 } ElementStudent;
 ```
