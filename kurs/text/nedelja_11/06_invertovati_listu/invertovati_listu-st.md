@@ -1,4 +1,4 @@
-Napisati program koji implementira jednostruko povezanu listu čiji elementi čuvaju ceo broj i funkcije:
+﻿Napisati program koji implementira jednostruko povezanu listu čiji elementi čuvaju ceo broj i funkcije:
 * ```Element* dodajNaKraj(Element* lista, Element novi)```
 * ```Element* invertuj(Element* lista)```
 
@@ -8,7 +8,7 @@ Funkcija *invertuj* invertuje listu
 ***Naomena: Izbrisati liste iz memorije nakon završetka programa!***
 ## Опис улаза
 
-Korisnik unosi celobrojne elemente liste *lista*, svaki element se dodaje na kraj liste. Korisnik unosi elemente liste dok ne naidje na *0*, gde *0* oyna;ava kraj unosa brojeva u listu
+Korisnik unosi celobrojne elemente liste *lista*, svaki element se dodaje na kraj liste. Korisnik unosi elemente liste dok ne naidje na *0*, gde *0* označava kraj unosa brojeva u listu
 
 ## Опис излаза
 
