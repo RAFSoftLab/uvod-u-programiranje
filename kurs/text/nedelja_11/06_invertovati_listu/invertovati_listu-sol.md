@@ -1,0 +1,2 @@
+## Анализа
+Invertovanje liste resavamo tako što pokazivač na sledeci element liste postavimo da pokazuje na prošli element liste. Imamo 3 pokazivača za invertovanje. Pokazivac *curr* pokazuje na trenutni element, pokazivač *last* pokazuje na prosli element i imamo jedan pomoćni pokazivač. U pomoćnom pamtimo pokazivač *last*, dok *last* pamti *curr* pokazivač, i time smo omogućili da pomeraj pokazivača *curr* na sledeći element. Postavimo vrednost pokazivača *last* da pokazuje na pomoćni element i time smo invertovali listu do elementa *last*.
