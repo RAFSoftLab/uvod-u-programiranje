@@ -5,7 +5,7 @@ author: RAF
 ## Struktura podataka binarno stablo
 Binarno stablo je struktura podataka koja se sastoji od čvorova koji su međusobno povezani kao što je prikazano na sledećoj slici.
 
-![lista](media/nedelja_12/stablo.png)
+![stablo](media/nedelja_12/stablo.png)
 
 Svaki čvor sadrži neki podatak plus može imati levo i desno podstablo. Svi čvorovi osim korenskog čvora imaju "roditelja", to je čvor iz koga polazi veza ka posmatranom čvoru. Korenski element nema roditelja, a posebnu vrstu čvorova čine listovi stabla, to su čvorovi kojima je i levo i desno podstablo prazno. Prazno stablo ne sadrži ni jedan čvor.
 
