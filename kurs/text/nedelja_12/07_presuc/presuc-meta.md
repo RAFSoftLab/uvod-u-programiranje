@@ -1,20 +1,12 @@
-# Naziv zadatka
+---
 title: Broj ponavljanja brojeva u binarnom stablu pretrage
-
-# Vremensko ogranicenje u sekundama
 timelimit: 1.0
-
-# Memorijsko ogranicenje u MB
 memlimit: 64
-
-# Autor zadatka (opciono)
-setter: RAF
-
-# Autor editorijala (opciono)
-editorial: RAF
-
-# Lista ljudi koji su doprineli zadatku (opciono)
-contributors: [Slađan Kantar]
-
-# Izvor zadatka (opciono)
+owner: RAF
 origin: RAF
+tags: []
+solutions:
+    c: Rešenje (C)
+status: KANDIDAT
+status-od: 2017-10-01
+---
