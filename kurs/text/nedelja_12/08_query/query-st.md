@@ -5,7 +5,7 @@ Napisati program koji izvršava sledeće naredbe:
 
 ## Opis ulaza
 
-  - Preko standardnog ulaza korisnik unosi celi brojevi N (N>0) koji predstavlja broj naredbi
+  - Preko standardnog ulaza korisnik unosi ceo broj N (N>0) koji predstavlja broj naredbi
   - U sledecih N linija nalaze se naredbe. Naredbu čine dva broja odvojena razmakom, baš kao što je navedeno u definiciji zadatka.
 
 ## Opis izlaza

@@ -1,5 +1,5 @@
 ---
-title: Broj ponavljanja brojeva u binarnom stablu pretrage
+title: Naredbe i upit nad stablom
 timelimit: 1.0
 memlimit: 64
 owner: RAF
