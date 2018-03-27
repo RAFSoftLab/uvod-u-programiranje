@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
     solFile.close();
     inFile.close();
 
-    return 0;  // For incorrect
-    return 1;  // For correct
+    return -1;  // For incorrect < 0
+    return 0;  // For correct
 }
