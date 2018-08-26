@@ -1,0 +1,2 @@
+##Analiza
+Funkcija pomeriUDesno(char s[], int poz) će pomeriti sve karaktere za jedno mesto u desno počev od karaktera na poziciji poz. Cilj je da formiramo novi string na sledeći način: prolazimo kroz sve karaktere u stringu, ukoliko nađemo da su dva susedna karaktera različita, pomerimo sve karaktere u desno za jedno mesto(počev od karaktera koji je bio sa desne strane prilikom poređenja), i na to mesto umetnemo -

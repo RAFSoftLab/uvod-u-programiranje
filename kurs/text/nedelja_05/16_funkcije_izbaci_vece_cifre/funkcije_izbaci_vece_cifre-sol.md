@@ -1,0 +1,3 @@
+## Analiza
+
+Funkcija izbaciVeceCifre(int a, int k) vraća broj koji se dobija kada se iz broja a izbace sve cifre koje su veće od k. Da bismo izbacili sve cifre potrebno je da prodjemo kroz iste. Najlakši način da prodjemo kroz sve cifre jeste da uzimamo jednu po jednu cifru otpozadi (pomoću %10) i nakon što uzmemo poslednju cifru, sklonimo je iz broja(pomoću /10). Pošto je potrebno da izbacimo sve cifre koje su veće od k, to znači da je potrebno da u novom broju koji funkcija izbaciVeceCifre vraća, budu sve cifre iz broja a koje su manje ili jednake k. Pošto idemo otpozadi, svaka cifra ima svoju težinu (početna težina je 1) i sa svakom narednom cifrom koju ubacujemo u novi broj, težina se množi sa 10.

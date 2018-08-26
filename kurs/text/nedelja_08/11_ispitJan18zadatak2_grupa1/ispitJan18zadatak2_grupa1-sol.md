@@ -1,0 +1,5 @@
+## Analiza
+
+Koristićemo funkciju ucitajMatricu(int mat[][100], int n) da ucitamo matricu koju korisnik unosi. Funkcija nadjiBrojRed(int mat[][100], int n) će nam koristiti da pronažemo najveći broj jednakih cifara u svim redovima, takođe funkicja  nadjiBrojKolona(int mat[][100], int n) isto, samo za kolone.
+nadjiBrojRed- za svaki red proveravamo svaki broj(kolonu) koliko se puta pojavio u tom redu, kada nađemo poklapanje povećavamo trenutniBroj, i na kraju ispitivanja datog broja (kolone), proveravamo da li se taj broj više puta pojavio od prethodnog maksimuma, ukoliko jeste označimo ga kao novi maksimum. Istu stvar radi i funkcija nadjiBrojKolona samo što ide po svim kolonima i gleda broj pojavljivanja svakog broja(reda) unutar te kolone.
+Funkcija ispisiRedove(int mat[][100], int n, int brojRed) na standardni izlaz ispisuje sve redove u kojima se makar jedan broj pojavio brojRed puta. Za svaki red ćemo pretpostaviti da se ne ispisuje(flag=0). Ukoliko nađemo barem jedan broj koji se pojavio brojRed puta flag setujemo na 1, i to nam je znak da je potrebno ispisati taj red. Takođe funkcija ispisiKolone(int mat[][100], int n, int brojKolone) radi istu stvar.

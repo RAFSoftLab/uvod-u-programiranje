@@ -1,5 +1,5 @@
 ---
-title: Sortirani unos u listu
+title: Nadovezivanje listi
 timelimit: 1.0
 memlimit: 64
 owner: RAF
