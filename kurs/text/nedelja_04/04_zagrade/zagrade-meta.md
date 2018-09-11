@@ -6,7 +6,8 @@ owner: RAF
 origin: RAF
 tags: []
 solutions:
-    c: Rešenje (C)
+- name: ex0
+  lang: [c]
 status: KANDIDAT
 status-od: 2017-10-01
 ---
