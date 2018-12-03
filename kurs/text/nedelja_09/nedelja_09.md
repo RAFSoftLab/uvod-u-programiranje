@@ -156,7 +156,7 @@ U C-u postoji veliki broj ugrađenih funkcija za rad sa stringovima koje se uvoz
 <tr><td>strstr(s1, s2)</td><td>vraća pokazivač na prvo pojavljivanje stringa s2 u stringu s1</td></tr>
 <tr><td>strlwr(s1)</td><td>sva slova u stringu s1 pretvara u mala slova</td></tr>
 <tr><td>strupr(s1)</td><td>sva slova u stringu s1 pretvara u velika slova</td></tr>
-<tr><td>strtok(str, delimiter)</td><td>deli string na tokene na mestima gde se nalazi delimiter</td></tr>
+<tr><td>strtok(str,sep)</td><td>deli string na tokene na mestima gde se nalazi sep</td></tr>
 </table>
 
 Sledi program koji ilustruje korišćenje nekih od funkcija iz tabele.
